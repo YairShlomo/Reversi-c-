@@ -8,27 +8,41 @@ AIPlayer::AIPlayer(char sign,Board& board,GameLogic* logic):
 }
 
 Point* AIPlayer::yourPlay(vector<Point> vec) {
+    int bestOption = board.getSizeX() * board.getSizeY();
+    int bestPointPos = 0;
+    board.printBoard();
+    for (int i = 0; i < vec.size(); ++i) {
+        //Board b (board.getSizeX(),board.getSizeY())
+        //b.setSign(board.getBoard()[])
+        Board b(board);
+        GameLogic1* tempLogic = new GameLogic1(b);
+        //char** gameBoard=b.getBoard();
+        Point current = vec[i];
 
-    for (unsigned i = 0; i < vec.size(); ++i) {
-        Board 
+        b.setSign(current.getRowNum() - 1, current.getColNum() - 1, getSign());
+        tempLogic->checkFlipPieces(current.getRowNum() - 1, current.getColNum() - 1, oppositeSign(getSign()), true);
+        vector<Point> opponentOptions = tempLogic->optionalTurns(tempLogic->oppositeSign(getSign()));
+        int tempBestOption = board.getSizeX() * board.getSizeY();
+        //b.printBoard();
+
+        for (int j = 0; j < opponentOptions.size(); ++j) {
+            int scoreGame=score(b);
+            if ( scoreGame< bestOption) {
+                tempBestOption = scoreGame;
+                //b.printBoard();
+            }
+        }
+        if (tempBestOption < bestOption) {
+            bestPointPos = i;
+        }
+        delete(tempLogic);
     }
+    Point* myPoint=new Point(vec[bestPointPos].getRowNum(), vec[bestPointPos].getColNum());
+    cout << "currMove: " << flush;
+    myPoint->printPoint();
     cout << "" << endl;
-    cout << "Please enter your move row ,col:(enter row,col separately)" << endl;
-    cin >> userX;
-    if (cin.fail()) {
-        cin.clear();
-        cin.ignore(10000,'\n');
-        cout << "not an integer input" << endl;
-        return NULL;
-    }
-    cin >> userY;
-    if (cin.fail()) {
-        cin.clear();
-        cin.ignore(10000,'\n');
-        cout << "not an integer input" << endl;
-        return NULL;
-    }
-    return new Point(userX, userY);
+
+    return myPoint;
 }
 
 bool AIPlayer::checkNextTurn(GameLogic* logic) {
@@ -40,16 +54,21 @@ bool AIPlayer::checkNextTurn(GameLogic* logic) {
     return true;
 }
 
-int AIPlayer::score(Board b) {
-    int counter = 0;
-    for (int i = 0; i < board.getSizeX(); ++i) {
-        for (int j = 0; j < board.getSizeY(); ++j) {
-            //if (board.getBoard()[i][j] == (char)pl.getSign()) {
-                counter++;
+int AIPlayer::score(Board& b) {
+    int myScore = 0;
+    int opponentScore = 0;
+    for (int i = 0; i < b.getSizeX(); ++i) {
+        for (int j = 0; j < b.getSizeY(); ++j) {
+            if (b.getBoard()[i][j] == getSign()) {
+                myScore++;
+            }
 
+                else if (b.getBoard()[i][j] == logic->oppositeSign(getSign())) {
+                opponentScore++;
+            }
         }
     }
-    return 1;
+    return opponentScore-myScore;
 }
 
 

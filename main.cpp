@@ -1,16 +1,15 @@
 /*
 Name:Yair Shlomo
 ID: 308536150
-Mission 1
+Mission 3
 */
 #include "Board.h"
 #include "Game.h"
 #include "ConsolePlayer.h"
 #include "AIPlayer.h"
-#include <iostream>
 using namespace std;
 int main() {
-    Board board(8,8);
+    Board board(3,3);
     GameLogic1* logic = new GameLogic1(board);
     ConsolePlayer pl1('X');
     AIPlayer pl2('O',board,logic);

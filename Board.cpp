@@ -5,23 +5,63 @@ Mission 2
 */
 #include "Board.h"
 
+
+
+/*
+Board& Board::operator=(Board& board1) {
+    delete [] gameBoard;
+    if (this != &board1) {  // make sure not same object
+        rowCount = board1.rowCount;
+        colCount = board1.colCount;
+        gameBoard = new char *[rowCount];
+        for (int i = 0; i < colCount; ++i) {
+            gameBoard[i] = new char[colCount];
+        }
+        for (int i = 0; i < colCount; ++i) {
+        for (int j = 0; j < colCount; ++j) {
+
+            char sign = board1.getBoard()[i][j];
+            gameBoard[i][j] = sign;
+        }}
+    }
+    return *this;    // Return ref for multiple assignment
+
+}
+ */
+Board::Board (Board& board1):rowCount(board1.rowCount),colCount(board1.colCount) {
+    //delete [] gameBoard;
+   // if (this != &board1) {  // make sure not same object
+        gameBoard = new char *[rowCount];
+        for (int i = 0; i < colCount; ++i) {
+            gameBoard[i] = new char[colCount];
+        }
+        for (int i = 0; i < colCount; ++i) {
+            for (int j = 0; j < colCount; ++j) {
+
+                char sign = board1.getBoard()[i][j];
+                gameBoard[i][j] = sign;
+            }
+        }
+
+}
+
 Board::Board(int rowCount,int colCount):rowCount(rowCount),colCount(colCount) {
-    board = new char *[rowCount];
+    gameBoard = new char *[rowCount];
     for (int i = 0; i < colCount; ++i) {
-        board[i] = new char[colCount];
+        gameBoard[i] = new char[colCount];
     }
     int mdlle = (rowCount / 2) - 1;
-    board[mdlle][mdlle] = 'O';
-    board[mdlle][mdlle + 1] = 'X';
-    board[mdlle + 1][mdlle] = 'X';
-    board[mdlle + 1][mdlle + 1] = 'O';
+    gameBoard[mdlle][mdlle] = 'O';
+    gameBoard[mdlle][mdlle + 1] = 'X';
+    gameBoard[mdlle + 1][mdlle] = 'X';
+    gameBoard[mdlle + 1][mdlle + 1] = 'O';
 }
 
 Board::~Board() {
     for (int i = 0; i < colCount; ++i) {
-        delete board[i];
+        delete gameBoard[i];
     }
-    delete[] board;
+    delete[] gameBoard;
 }
 
 void Board::printBoard() {
@@ -53,27 +93,27 @@ void Board::printRow(int rowNum) {
 }
 
 string Board::getStringVal(int rowNum,int colNum) {
-        if (board[rowNum][colNum] == 'X') {
+        if (gameBoard[rowNum][colNum] == 'X') {
             return "X ";
         }
-        if (board[rowNum][colNum] == 'O') {
+        if (gameBoard[rowNum][colNum] == 'O') {
             return "O ";
         }
         return "  ";
     }
 
 void Board::flip (int x,int y) {
-    if (board[x][y] == 'X') {
-        board[x][y] = 'O';
+    if (gameBoard[x][y] == 'X') {
+        gameBoard[x][y] = 'O';
         return;
     }
-    if (board[x][y] == 'O') {
-        board[x][y] = 'X';
+    if (gameBoard[x][y] == 'O') {
+        gameBoard[x][y] = 'X';
     }
 }
 
 void Board::setSign(int x, int y,char sign) {
-    board[x][y] = sign;
+    gameBoard[x][y] = sign;
 
 }
 
@@ -86,7 +126,7 @@ int Board::getSizeY() {
 }
 
 char** Board::getBoard() {
-    return board;
+    return gameBoard;
 }
 
 

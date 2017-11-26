@@ -15,6 +15,13 @@ using namespace std;
 */
 class Board {
 public:
+    /**
+     * Deep copy constructor
+    */
+    Board (Board& board);
+    /**
+     * Constructor.
+    */
     Board(int rowCount,int colCount);
     /**
     * Destructor of Board.
@@ -67,7 +74,7 @@ public:
 
 private:
     //2 dimension array ,each cell represent cell in board.
-    char** board;
+    char** gameBoard;
     //number of rows of Board.
     int rowCount;
     //number of columns of Board.

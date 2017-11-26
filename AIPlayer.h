@@ -8,10 +8,11 @@ Mission 2
 #define AIPlayer_H_
 using namespace std;
 #include<stdio.h>
+#include<stdlib.h>
 #include<string>
 #include "Player.h"
 #include "Point.h"
-#include "GameLogic1.h"
+#include "GameLogic.h"
 /**
  * ConsolePlayer represent player from console. inherited from Player.
 */
@@ -32,7 +33,7 @@ public:
  * @param vector<Point> - vector of all available points.
  * @return Point* - the point user choose to play
 */
-    Point *yourPlay(vector<Point> vec);
+    Point*yourPlay(vector<Point> vec);
 
     /**
  * checkNextTurn checks if there is any available play to Player and pass turn if not.
@@ -40,8 +41,12 @@ public:
  * @return bool - if there is available play-true. if not-false.
 */
     bool checkNextTurn(GameLogic *logic);
-
-    int score(Board b);
+    /**
+ * score returns the diff between this AIPlayer and the other player
+ * @param board - refrence to a board the checks is been made on.
+ * @return int - the diff between this AIPlayer and the other player
+*/
+    int score(Board& b);
 
 };
 
