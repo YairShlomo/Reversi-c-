@@ -3,10 +3,10 @@ Name:Yair Shlomo
 ID: 308536150
 Mission 3
 */
-#include "Board.h"
-#include "Game.h"
-#include "ConsolePlayer.h"
-#include "AIPlayer.h"
+#include "include/Board.h"
+#include "include/Game.h"
+#include "include/ConsolePlayer.h"
+#include "include/AIPlayer.h"
 using namespace std;
 int main() {
     Board board(3,3);
@@ -16,5 +16,6 @@ int main() {
     Game game(pl1,pl2,board ,logic);
     game.play();
     delete (logic);
+    return 0;
 }
 
