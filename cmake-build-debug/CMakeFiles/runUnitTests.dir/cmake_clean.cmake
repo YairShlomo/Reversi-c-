@@ -1,5 +1,7 @@
 file(REMOVE_RECURSE
   "CMakeFiles/runUnitTests.dir/Tests/gtest_main.cpp.o"
+  "CMakeFiles/runUnitTests.dir/Tests/test_GameLogic1.cpp.o"
+  "CMakeFiles/runUnitTests.dir/Tests/test_Point.cpp.o"
   "CMakeFiles/runUnitTests.dir/Tests/test_Game.cpp.o"
   "CMakeFiles/runUnitTests.dir/src/Game.cpp.o"
   "CMakeFiles/runUnitTests.dir/src/ConsolePlayer.cpp.o"

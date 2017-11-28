@@ -39,19 +39,19 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = /home/yair/clion-2017.2.3/bin/cmake/bin/cmake
+CMAKE_COMMAND = /home/gal/Desktop/clion-2017.2.3/bin/cmake/bin/cmake
 
 # The command to remove a file.
-RM = /home/yair/clion-2017.2.3/bin/cmake/bin/cmake -E remove -f
+RM = /home/gal/Desktop/clion-2017.2.3/bin/cmake/bin/cmake -E remove -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = "/home/yair/CLionProjects/mission 2"
+CMAKE_SOURCE_DIR = /home/gal/CLionProjects/mission-2
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = "/home/yair/CLionProjects/mission 2/cmake-build-debug"
+CMAKE_BINARY_DIR = /home/gal/CLionProjects/mission-2/cmake-build-debug
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -59,37 +59,37 @@ CMAKE_BINARY_DIR = "/home/yair/CLionProjects/mission 2/cmake-build-debug"
 # Special rule for the target install/strip
 install/strip: preinstall
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing the project stripped..."
-	/home/yair/clion-2017.2.3/bin/cmake/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
+	/home/gal/Desktop/clion-2017.2.3/bin/cmake/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
 .PHONY : install/strip
 
 # Special rule for the target install/strip
 install/strip/fast: preinstall/fast
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing the project stripped..."
-	/home/yair/clion-2017.2.3/bin/cmake/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
+	/home/gal/Desktop/clion-2017.2.3/bin/cmake/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
 .PHONY : install/strip/fast
 
 # Special rule for the target install/local
 install/local: preinstall
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing only the local directory..."
-	/home/yair/clion-2017.2.3/bin/cmake/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
+	/home/gal/Desktop/clion-2017.2.3/bin/cmake/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
 .PHONY : install/local
 
 # Special rule for the target install/local
 install/local/fast: preinstall/fast
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing only the local directory..."
-	/home/yair/clion-2017.2.3/bin/cmake/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
+	/home/gal/Desktop/clion-2017.2.3/bin/cmake/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
 .PHONY : install/local/fast
 
 # Special rule for the target install
 install: preinstall
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
-	/home/yair/clion-2017.2.3/bin/cmake/bin/cmake -P cmake_install.cmake
+	/home/gal/Desktop/clion-2017.2.3/bin/cmake/bin/cmake -P cmake_install.cmake
 .PHONY : install
 
 # Special rule for the target install
 install/fast: preinstall/fast
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
-	/home/yair/clion-2017.2.3/bin/cmake/bin/cmake -P cmake_install.cmake
+	/home/gal/Desktop/clion-2017.2.3/bin/cmake/bin/cmake -P cmake_install.cmake
 .PHONY : install/fast
 
 # Special rule for the target list_install_components
@@ -105,7 +105,7 @@ list_install_components/fast: list_install_components
 # Special rule for the target rebuild_cache
 rebuild_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
-	/home/yair/clion-2017.2.3/bin/cmake/bin/cmake -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+	/home/gal/Desktop/clion-2017.2.3/bin/cmake/bin/cmake -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
 .PHONY : rebuild_cache
 
 # Special rule for the target rebuild_cache
@@ -116,7 +116,7 @@ rebuild_cache/fast: rebuild_cache
 # Special rule for the target edit_cache
 edit_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
-	/home/yair/clion-2017.2.3/bin/cmake/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+	/home/gal/Desktop/clion-2017.2.3/bin/cmake/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
 .PHONY : edit_cache
 
 # Special rule for the target edit_cache
@@ -126,9 +126,9 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start "/home/yair/CLionProjects/mission 2/cmake-build-debug/CMakeFiles" "/home/yair/CLionProjects/mission 2/cmake-build-debug/CMakeFiles/progress.marks"
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/gal/CLionProjects/mission-2/cmake-build-debug/CMakeFiles /home/gal/CLionProjects/mission-2/cmake-build-debug/CMakeFiles/progress.marks
 	$(MAKE) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start "/home/yair/CLionProjects/mission 2/cmake-build-debug/CMakeFiles" 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/gal/CLionProjects/mission-2/cmake-build-debug/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -287,6 +287,60 @@ Tests/test_Game.s: Tests/test_Game.cpp.s
 Tests/test_Game.cpp.s:
 	$(MAKE) -f CMakeFiles/runUnitTests.dir/build.make CMakeFiles/runUnitTests.dir/Tests/test_Game.cpp.s
 .PHONY : Tests/test_Game.cpp.s
+
+Tests/test_GameLogic1.o: Tests/test_GameLogic1.cpp.o
+
+.PHONY : Tests/test_GameLogic1.o
+
+# target to build an object file
+Tests/test_GameLogic1.cpp.o:
+	$(MAKE) -f CMakeFiles/runUnitTests.dir/build.make CMakeFiles/runUnitTests.dir/Tests/test_GameLogic1.cpp.o
+.PHONY : Tests/test_GameLogic1.cpp.o
+
+Tests/test_GameLogic1.i: Tests/test_GameLogic1.cpp.i
+
+.PHONY : Tests/test_GameLogic1.i
+
+# target to preprocess a source file
+Tests/test_GameLogic1.cpp.i:
+	$(MAKE) -f CMakeFiles/runUnitTests.dir/build.make CMakeFiles/runUnitTests.dir/Tests/test_GameLogic1.cpp.i
+.PHONY : Tests/test_GameLogic1.cpp.i
+
+Tests/test_GameLogic1.s: Tests/test_GameLogic1.cpp.s
+
+.PHONY : Tests/test_GameLogic1.s
+
+# target to generate assembly for a file
+Tests/test_GameLogic1.cpp.s:
+	$(MAKE) -f CMakeFiles/runUnitTests.dir/build.make CMakeFiles/runUnitTests.dir/Tests/test_GameLogic1.cpp.s
+.PHONY : Tests/test_GameLogic1.cpp.s
+
+Tests/test_Point.o: Tests/test_Point.cpp.o
+
+.PHONY : Tests/test_Point.o
+
+# target to build an object file
+Tests/test_Point.cpp.o:
+	$(MAKE) -f CMakeFiles/runUnitTests.dir/build.make CMakeFiles/runUnitTests.dir/Tests/test_Point.cpp.o
+.PHONY : Tests/test_Point.cpp.o
+
+Tests/test_Point.i: Tests/test_Point.cpp.i
+
+.PHONY : Tests/test_Point.i
+
+# target to preprocess a source file
+Tests/test_Point.cpp.i:
+	$(MAKE) -f CMakeFiles/runUnitTests.dir/build.make CMakeFiles/runUnitTests.dir/Tests/test_Point.cpp.i
+.PHONY : Tests/test_Point.cpp.i
+
+Tests/test_Point.s: Tests/test_Point.cpp.s
+
+.PHONY : Tests/test_Point.s
+
+# target to generate assembly for a file
+Tests/test_Point.cpp.s:
+	$(MAKE) -f CMakeFiles/runUnitTests.dir/build.make CMakeFiles/runUnitTests.dir/Tests/test_Point.cpp.s
+.PHONY : Tests/test_Point.cpp.s
 
 main.o: main.cpp.o
 
@@ -579,6 +633,12 @@ help:
 	@echo "... Tests/test_Game.o"
 	@echo "... Tests/test_Game.i"
 	@echo "... Tests/test_Game.s"
+	@echo "... Tests/test_GameLogic1.o"
+	@echo "... Tests/test_GameLogic1.i"
+	@echo "... Tests/test_GameLogic1.s"
+	@echo "... Tests/test_Point.o"
+	@echo "... Tests/test_Point.i"
+	@echo "... Tests/test_Point.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"

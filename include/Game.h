@@ -1,8 +1,10 @@
 /*
 Name:Yair Shlomo
 ID: 308536150
-Mission 2
+Name:Gal Eini
+ID: 305216962
 */
+
 #ifndef Game_H_
 #define Game_H_
 using namespace std;
