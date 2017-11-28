@@ -18,24 +18,17 @@ Point* AIPlayer::yourPlay(vector<Point> vec) {
     int bestPointPos = 0;
     board.printBoard();
     for (int i = 0; i < vec.size(); ++i) {
-        //Board b (board.getSizeX(),board.getSizeY())
-        //b.setSign(board.getBoard()[])
         Board b(board);
         GameLogic1* tempLogic = new GameLogic1(b);
-        //char** gameBoard=b.getBoard();
         Point current = vec[i];
-
         b.setSign(current.getRowNum() - 1, current.getColNum() - 1, getSign());
         tempLogic->checkFlipPieces(current.getRowNum() - 1, current.getColNum() - 1, oppositeSign(getSign()), true);
         vector<Point> opponentOptions = tempLogic->optionalTurns(tempLogic->oppositeSign(getSign()));
         int tempBestOption = board.getSizeX() * board.getSizeY();
-        //b.printBoard();
-
         for (int j = 0; j < opponentOptions.size(); ++j) {
             int scoreGame=score(b);
             if ( scoreGame< bestOption) {
                 tempBestOption = scoreGame;
-                //b.printBoard();
             }
         }
         if (tempBestOption < bestOption) {
@@ -47,14 +40,12 @@ Point* AIPlayer::yourPlay(vector<Point> vec) {
     cout << "currMove: " << flush;
     myPoint->printPoint();
     cout << "" << endl;
-
     return myPoint;
 }
 
 bool AIPlayer::checkNextTurn(GameLogic* logic) {
     if (logic->optionalTurns((getSign())).empty()) {
-        cout << "No possible moves. play passes back to other player. press any key to countinue" << endl;
-        cin.get();
+        cout << "No possible moves. play passes back to other player." << endl;
         return false;
     }
     return true;
@@ -68,7 +59,6 @@ int AIPlayer::score(Board& b) {
             if (b.getBoard()[i][j] == getSign()) {
                 myScore++;
             }
-
                 else if (b.getBoard()[i][j] == logic->oppositeSign(getSign())) {
                 opponentScore++;
             }

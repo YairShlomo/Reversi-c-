@@ -29,7 +29,7 @@ int Game::play1Turn(Player &pl) {
         return 1;
     }
     countMoveTurn=0;
-   board.printBoard();
+    board.printBoard();
     vector<Point> optionalMoves=logic->optionalTurns(pl.getSign());
     Point* userPlay=pl.yourPlay(optionalMoves);
     if(userPlay==NULL){
@@ -45,10 +45,8 @@ int Game::play1Turn(Player &pl) {
     board.setSign(userPlay->getRowNum()-1,userPlay->getColNum()-1,pl.getSign());
     logic->checkFlipPieces(userPlay->getRowNum()-1,userPlay->getColNum()-1,pl.oppositeSign(pl.getSign()),true);
     oppositeTurn();
-
     delete(userPlay);
     return 0;
-
 }
 
 void Game::oppositeTurn() {

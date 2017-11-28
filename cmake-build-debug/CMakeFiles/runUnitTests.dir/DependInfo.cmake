@@ -4,6 +4,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
+<<<<<<< HEAD
   "/home/gal/CLionProjects/mission-2/Tests/gtest_main.cpp" "/home/gal/CLionProjects/mission-2/cmake-build-debug/CMakeFiles/runUnitTests.dir/Tests/gtest_main.cpp.o"
   "/home/gal/CLionProjects/mission-2/Tests/test_Game.cpp" "/home/gal/CLionProjects/mission-2/cmake-build-debug/CMakeFiles/runUnitTests.dir/Tests/test_Game.cpp.o"
   "/home/gal/CLionProjects/mission-2/Tests/test_GameLogic1.cpp" "/home/gal/CLionProjects/mission-2/cmake-build-debug/CMakeFiles/runUnitTests.dir/Tests/test_GameLogic1.cpp.o"
@@ -16,6 +17,20 @@ set(CMAKE_DEPENDS_CHECK_CXX
   "/home/gal/CLionProjects/mission-2/src/GameLogic1.cpp" "/home/gal/CLionProjects/mission-2/cmake-build-debug/CMakeFiles/runUnitTests.dir/src/GameLogic1.cpp.o"
   "/home/gal/CLionProjects/mission-2/src/Player.cpp" "/home/gal/CLionProjects/mission-2/cmake-build-debug/CMakeFiles/runUnitTests.dir/src/Player.cpp.o"
   "/home/gal/CLionProjects/mission-2/src/Point.cpp" "/home/gal/CLionProjects/mission-2/cmake-build-debug/CMakeFiles/runUnitTests.dir/src/Point.cpp.o"
+=======
+  "/home/yair/CLionProjects/mission 2/Tests/gtest_main.cpp" "/home/yair/CLionProjects/mission 2/cmake-build-debug/CMakeFiles/runUnitTests.dir/Tests/gtest_main.cpp.o"
+  "/home/yair/CLionProjects/mission 2/Tests/test_AIPlayer.cpp" "/home/yair/CLionProjects/mission 2/cmake-build-debug/CMakeFiles/runUnitTests.dir/Tests/test_AIPlayer.cpp.o"
+  "/home/yair/CLionProjects/mission 2/Tests/test_Board.cpp" "/home/yair/CLionProjects/mission 2/cmake-build-debug/CMakeFiles/runUnitTests.dir/Tests/test_Board.cpp.o"
+  "/home/yair/CLionProjects/mission 2/Tests/test_Game.cpp" "/home/yair/CLionProjects/mission 2/cmake-build-debug/CMakeFiles/runUnitTests.dir/Tests/test_Game.cpp.o"
+  "/home/yair/CLionProjects/mission 2/src/AIPlayer.cpp" "/home/yair/CLionProjects/mission 2/cmake-build-debug/CMakeFiles/runUnitTests.dir/src/AIPlayer.cpp.o"
+  "/home/yair/CLionProjects/mission 2/src/Board.cpp" "/home/yair/CLionProjects/mission 2/cmake-build-debug/CMakeFiles/runUnitTests.dir/src/Board.cpp.o"
+  "/home/yair/CLionProjects/mission 2/src/ConsolePlayer.cpp" "/home/yair/CLionProjects/mission 2/cmake-build-debug/CMakeFiles/runUnitTests.dir/src/ConsolePlayer.cpp.o"
+  "/home/yair/CLionProjects/mission 2/src/Game.cpp" "/home/yair/CLionProjects/mission 2/cmake-build-debug/CMakeFiles/runUnitTests.dir/src/Game.cpp.o"
+  "/home/yair/CLionProjects/mission 2/src/GameLogic.cpp" "/home/yair/CLionProjects/mission 2/cmake-build-debug/CMakeFiles/runUnitTests.dir/src/GameLogic.cpp.o"
+  "/home/yair/CLionProjects/mission 2/src/GameLogic1.cpp" "/home/yair/CLionProjects/mission 2/cmake-build-debug/CMakeFiles/runUnitTests.dir/src/GameLogic1.cpp.o"
+  "/home/yair/CLionProjects/mission 2/src/Player.cpp" "/home/yair/CLionProjects/mission 2/cmake-build-debug/CMakeFiles/runUnitTests.dir/src/Player.cpp.o"
+  "/home/yair/CLionProjects/mission 2/src/Point.cpp" "/home/yair/CLionProjects/mission 2/cmake-build-debug/CMakeFiles/runUnitTests.dir/src/Point.cpp.o"
+>>>>>>> 2a4893f6d4c7c9d48cbc16341fe2ebf4184fa79c
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 

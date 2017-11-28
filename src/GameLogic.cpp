@@ -43,7 +43,6 @@ bool GameLogic::checkValidPoint(Point* userPoint,char sign) {
     if ((userPoint->getRowNum()>rowCount)|(userPoint->getRowNum()<0)
         |(userPoint->getColNum()>colCount)|(userPoint->getColNum()<0)) {
         cout << "not allowed move,please try again" << endl;
-
         return false;
     }
     if(CanPutInPiece(userPoint->getRowNum()-1,userPoint->getColNum()-1,sign)) {

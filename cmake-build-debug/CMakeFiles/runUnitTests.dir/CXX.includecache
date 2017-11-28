@@ -282,6 +282,7 @@ acxx_demangle.h
 gtest/gtest.h
 -
 
+<<<<<<< HEAD
 /home/gal/CLionProjects/mission-2/Tests/test_Game.cpp
 
 /home/gal/CLionProjects/mission-2/Tests/test_GameLogic1.cpp
@@ -313,6 +314,57 @@ gtest/gtest.h
 -
 ../include/Point.h
 /home/gal/CLionProjects/mission-2/include/Point.h
+=======
+/home/yair/CLionProjects/mission 2/Tests/test_AIPlayer.cpp
+gtest/gtest.h
+-
+../include/Game.h
+/home/yair/CLionProjects/mission 2/include/Game.h
+../include/AIPlayer.h
+/home/yair/CLionProjects/mission 2/include/AIPlayer.h
+test_AIPlayer.h
+/home/yair/CLionProjects/mission 2/Tests/test_AIPlayer.h
+
+/home/yair/CLionProjects/mission 2/Tests/test_AIPlayer.h
+gtest/gtest.h
+-
+../include/Game.h
+/home/yair/CLionProjects/mission 2/include/Game.h
+../include/AIPlayer.h
+/home/yair/CLionProjects/mission 2/include/AIPlayer.h
+iostream
+-
+
+/home/yair/CLionProjects/mission 2/Tests/test_Board.cpp
+gtest/gtest.h
+-
+test_Board.h
+/home/yair/CLionProjects/mission 2/Tests/test_Board.h
+
+/home/yair/CLionProjects/mission 2/Tests/test_Board.h
+gtest/gtest.h
+-
+../include/Game.h
+/home/yair/CLionProjects/mission 2/include/Game.h
+../include/AIPlayer.h
+/home/yair/CLionProjects/mission 2/include/AIPlayer.h
+iostream
+-
+
+/home/yair/CLionProjects/mission 2/Tests/test_Game.cpp
+gtest/gtest.h
+-
+test_Game.h
+/home/yair/CLionProjects/mission 2/Tests/test_Game.h
+
+/home/yair/CLionProjects/mission 2/Tests/test_Game.h
+gtest/gtest.h
+-
+../include/Game.h
+/home/yair/CLionProjects/mission 2/include/Game.h
+../include/AIPlayer.h
+/home/yair/CLionProjects/mission 2/include/AIPlayer.h
+>>>>>>> 2a4893f6d4c7c9d48cbc16341fe2ebf4184fa79c
 iostream
 -
 
