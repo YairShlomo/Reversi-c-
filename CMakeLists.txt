@@ -4,7 +4,11 @@ add_subdirectory(lib/googletest-master)
 include_directories(lib/googletest-master/googletest/include)
 set(CMAKE_CXX_STANDARD 11)
 set(SOURCE_FILES src/Game.cpp src/ConsolePlayer.cpp src/Point.cpp src/GameLogic1.cpp src/Board.cpp src/Player.cpp src/GameLogic.cpp src/AIPlayer.cpp)
+<<<<<<< HEAD
+set(TEST_FILES Tests/test_GameLogic1.cpp Tests/test_Point.cpp Tests/test_Point.h Tests/test_GameLogic1.h Tests/test_Game.cpp)
+=======
 set(TEST_FILES Tests/test_Game.cpp Tests/test_AIPlayer.cpp Tests/test_Game.h Tests/test_Board.cpp Tests/test_AIPlayer.h Tests/test_Board.h)
+>>>>>>> 2a4893f6d4c7c9d48cbc16341fe2ebf4184fa79c
 add_executable(runMain main.cpp ${SOURCE_FILES})
 add_executable(runUnitTests Tests/gtest_main.cpp ${TEST_FILES} ${SOURCE_FILES})
 target_link_libraries(runUnitTests gtest gtest_main)

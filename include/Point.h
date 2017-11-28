@@ -1,8 +1,10 @@
 /*
 Name:Yair Shlomo
 ID: 308536150
-Mission 1
+Name:Gal Eini
+ID: 305216962
 */
+
 
 #ifndef Point_H_
 #define Point_H_

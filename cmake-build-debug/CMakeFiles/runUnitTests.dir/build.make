@@ -34,19 +34,19 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = /home/yair/clion-2017.2.3/bin/cmake/bin/cmake
+CMAKE_COMMAND = /home/gal/Desktop/clion-2017.2.3/bin/cmake/bin/cmake
 
 # The command to remove a file.
-RM = /home/yair/clion-2017.2.3/bin/cmake/bin/cmake -E remove -f
+RM = /home/gal/Desktop/clion-2017.2.3/bin/cmake/bin/cmake -E remove -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = "/home/yair/CLionProjects/mission 2"
+CMAKE_SOURCE_DIR = /home/gal/CLionProjects/mission-2
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = "/home/yair/CLionProjects/mission 2/cmake-build-debug"
+CMAKE_BINARY_DIR = /home/gal/CLionProjects/mission-2/cmake-build-debug
 
 # Include any dependencies generated for this target.
 include CMakeFiles/runUnitTests.dir/depend.make
@@ -59,16 +59,16 @@ include CMakeFiles/runUnitTests.dir/flags.make
 
 CMakeFiles/runUnitTests.dir/Tests/gtest_main.cpp.o: CMakeFiles/runUnitTests.dir/flags.make
 CMakeFiles/runUnitTests.dir/Tests/gtest_main.cpp.o: ../Tests/gtest_main.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/home/yair/CLionProjects/mission 2/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/runUnitTests.dir/Tests/gtest_main.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/runUnitTests.dir/Tests/gtest_main.cpp.o -c "/home/yair/CLionProjects/mission 2/Tests/gtest_main.cpp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/gal/CLionProjects/mission-2/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/runUnitTests.dir/Tests/gtest_main.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/runUnitTests.dir/Tests/gtest_main.cpp.o -c /home/gal/CLionProjects/mission-2/Tests/gtest_main.cpp
 
 CMakeFiles/runUnitTests.dir/Tests/gtest_main.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/runUnitTests.dir/Tests/gtest_main.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/home/yair/CLionProjects/mission 2/Tests/gtest_main.cpp" > CMakeFiles/runUnitTests.dir/Tests/gtest_main.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/gal/CLionProjects/mission-2/Tests/gtest_main.cpp > CMakeFiles/runUnitTests.dir/Tests/gtest_main.cpp.i
 
 CMakeFiles/runUnitTests.dir/Tests/gtest_main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/runUnitTests.dir/Tests/gtest_main.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/home/yair/CLionProjects/mission 2/Tests/gtest_main.cpp" -o CMakeFiles/runUnitTests.dir/Tests/gtest_main.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/gal/CLionProjects/mission-2/Tests/gtest_main.cpp -o CMakeFiles/runUnitTests.dir/Tests/gtest_main.cpp.s
 
 CMakeFiles/runUnitTests.dir/Tests/gtest_main.cpp.o.requires:
 
@@ -81,18 +81,66 @@ CMakeFiles/runUnitTests.dir/Tests/gtest_main.cpp.o.provides: CMakeFiles/runUnitT
 CMakeFiles/runUnitTests.dir/Tests/gtest_main.cpp.o.provides.build: CMakeFiles/runUnitTests.dir/Tests/gtest_main.cpp.o
 
 
+CMakeFiles/runUnitTests.dir/Tests/test_GameLogic1.cpp.o: CMakeFiles/runUnitTests.dir/flags.make
+CMakeFiles/runUnitTests.dir/Tests/test_GameLogic1.cpp.o: ../Tests/test_GameLogic1.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/gal/CLionProjects/mission-2/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/runUnitTests.dir/Tests/test_GameLogic1.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/runUnitTests.dir/Tests/test_GameLogic1.cpp.o -c /home/gal/CLionProjects/mission-2/Tests/test_GameLogic1.cpp
+
+CMakeFiles/runUnitTests.dir/Tests/test_GameLogic1.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/runUnitTests.dir/Tests/test_GameLogic1.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/gal/CLionProjects/mission-2/Tests/test_GameLogic1.cpp > CMakeFiles/runUnitTests.dir/Tests/test_GameLogic1.cpp.i
+
+CMakeFiles/runUnitTests.dir/Tests/test_GameLogic1.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/runUnitTests.dir/Tests/test_GameLogic1.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/gal/CLionProjects/mission-2/Tests/test_GameLogic1.cpp -o CMakeFiles/runUnitTests.dir/Tests/test_GameLogic1.cpp.s
+
+CMakeFiles/runUnitTests.dir/Tests/test_GameLogic1.cpp.o.requires:
+
+.PHONY : CMakeFiles/runUnitTests.dir/Tests/test_GameLogic1.cpp.o.requires
+
+CMakeFiles/runUnitTests.dir/Tests/test_GameLogic1.cpp.o.provides: CMakeFiles/runUnitTests.dir/Tests/test_GameLogic1.cpp.o.requires
+	$(MAKE) -f CMakeFiles/runUnitTests.dir/build.make CMakeFiles/runUnitTests.dir/Tests/test_GameLogic1.cpp.o.provides.build
+.PHONY : CMakeFiles/runUnitTests.dir/Tests/test_GameLogic1.cpp.o.provides
+
+CMakeFiles/runUnitTests.dir/Tests/test_GameLogic1.cpp.o.provides.build: CMakeFiles/runUnitTests.dir/Tests/test_GameLogic1.cpp.o
+
+
+CMakeFiles/runUnitTests.dir/Tests/test_Point.cpp.o: CMakeFiles/runUnitTests.dir/flags.make
+CMakeFiles/runUnitTests.dir/Tests/test_Point.cpp.o: ../Tests/test_Point.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/gal/CLionProjects/mission-2/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/runUnitTests.dir/Tests/test_Point.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/runUnitTests.dir/Tests/test_Point.cpp.o -c /home/gal/CLionProjects/mission-2/Tests/test_Point.cpp
+
+CMakeFiles/runUnitTests.dir/Tests/test_Point.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/runUnitTests.dir/Tests/test_Point.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/gal/CLionProjects/mission-2/Tests/test_Point.cpp > CMakeFiles/runUnitTests.dir/Tests/test_Point.cpp.i
+
+CMakeFiles/runUnitTests.dir/Tests/test_Point.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/runUnitTests.dir/Tests/test_Point.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/gal/CLionProjects/mission-2/Tests/test_Point.cpp -o CMakeFiles/runUnitTests.dir/Tests/test_Point.cpp.s
+
+CMakeFiles/runUnitTests.dir/Tests/test_Point.cpp.o.requires:
+
+.PHONY : CMakeFiles/runUnitTests.dir/Tests/test_Point.cpp.o.requires
+
+CMakeFiles/runUnitTests.dir/Tests/test_Point.cpp.o.provides: CMakeFiles/runUnitTests.dir/Tests/test_Point.cpp.o.requires
+	$(MAKE) -f CMakeFiles/runUnitTests.dir/build.make CMakeFiles/runUnitTests.dir/Tests/test_Point.cpp.o.provides.build
+.PHONY : CMakeFiles/runUnitTests.dir/Tests/test_Point.cpp.o.provides
+
+CMakeFiles/runUnitTests.dir/Tests/test_Point.cpp.o.provides.build: CMakeFiles/runUnitTests.dir/Tests/test_Point.cpp.o
+
+
 CMakeFiles/runUnitTests.dir/Tests/test_Game.cpp.o: CMakeFiles/runUnitTests.dir/flags.make
 CMakeFiles/runUnitTests.dir/Tests/test_Game.cpp.o: ../Tests/test_Game.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/home/yair/CLionProjects/mission 2/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/runUnitTests.dir/Tests/test_Game.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/runUnitTests.dir/Tests/test_Game.cpp.o -c "/home/yair/CLionProjects/mission 2/Tests/test_Game.cpp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/gal/CLionProjects/mission-2/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/runUnitTests.dir/Tests/test_Game.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/runUnitTests.dir/Tests/test_Game.cpp.o -c /home/gal/CLionProjects/mission-2/Tests/test_Game.cpp
 
 CMakeFiles/runUnitTests.dir/Tests/test_Game.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/runUnitTests.dir/Tests/test_Game.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/home/yair/CLionProjects/mission 2/Tests/test_Game.cpp" > CMakeFiles/runUnitTests.dir/Tests/test_Game.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/gal/CLionProjects/mission-2/Tests/test_Game.cpp > CMakeFiles/runUnitTests.dir/Tests/test_Game.cpp.i
 
 CMakeFiles/runUnitTests.dir/Tests/test_Game.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/runUnitTests.dir/Tests/test_Game.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/home/yair/CLionProjects/mission 2/Tests/test_Game.cpp" -o CMakeFiles/runUnitTests.dir/Tests/test_Game.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/gal/CLionProjects/mission-2/Tests/test_Game.cpp -o CMakeFiles/runUnitTests.dir/Tests/test_Game.cpp.s
 
 CMakeFiles/runUnitTests.dir/Tests/test_Game.cpp.o.requires:
 
@@ -155,16 +203,21 @@ CMakeFiles/runUnitTests.dir/Tests/test_Board.cpp.o.provides.build: CMakeFiles/ru
 
 CMakeFiles/runUnitTests.dir/src/Game.cpp.o: CMakeFiles/runUnitTests.dir/flags.make
 CMakeFiles/runUnitTests.dir/src/Game.cpp.o: ../src/Game.cpp
+<<<<<<< HEAD
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/gal/CLionProjects/mission-2/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/runUnitTests.dir/src/Game.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/runUnitTests.dir/src/Game.cpp.o -c /home/gal/CLionProjects/mission-2/src/Game.cpp
+=======
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/home/yair/CLionProjects/mission 2/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/runUnitTests.dir/src/Game.cpp.o"
 	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/runUnitTests.dir/src/Game.cpp.o -c "/home/yair/CLionProjects/mission 2/src/Game.cpp"
+>>>>>>> 2a4893f6d4c7c9d48cbc16341fe2ebf4184fa79c
 
 CMakeFiles/runUnitTests.dir/src/Game.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/runUnitTests.dir/src/Game.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/home/yair/CLionProjects/mission 2/src/Game.cpp" > CMakeFiles/runUnitTests.dir/src/Game.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/gal/CLionProjects/mission-2/src/Game.cpp > CMakeFiles/runUnitTests.dir/src/Game.cpp.i
 
 CMakeFiles/runUnitTests.dir/src/Game.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/runUnitTests.dir/src/Game.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/home/yair/CLionProjects/mission 2/src/Game.cpp" -o CMakeFiles/runUnitTests.dir/src/Game.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/gal/CLionProjects/mission-2/src/Game.cpp -o CMakeFiles/runUnitTests.dir/src/Game.cpp.s
 
 CMakeFiles/runUnitTests.dir/src/Game.cpp.o.requires:
 
@@ -179,16 +232,21 @@ CMakeFiles/runUnitTests.dir/src/Game.cpp.o.provides.build: CMakeFiles/runUnitTes
 
 CMakeFiles/runUnitTests.dir/src/ConsolePlayer.cpp.o: CMakeFiles/runUnitTests.dir/flags.make
 CMakeFiles/runUnitTests.dir/src/ConsolePlayer.cpp.o: ../src/ConsolePlayer.cpp
+<<<<<<< HEAD
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/gal/CLionProjects/mission-2/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/runUnitTests.dir/src/ConsolePlayer.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/runUnitTests.dir/src/ConsolePlayer.cpp.o -c /home/gal/CLionProjects/mission-2/src/ConsolePlayer.cpp
+=======
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/home/yair/CLionProjects/mission 2/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/runUnitTests.dir/src/ConsolePlayer.cpp.o"
 	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/runUnitTests.dir/src/ConsolePlayer.cpp.o -c "/home/yair/CLionProjects/mission 2/src/ConsolePlayer.cpp"
+>>>>>>> 2a4893f6d4c7c9d48cbc16341fe2ebf4184fa79c
 
 CMakeFiles/runUnitTests.dir/src/ConsolePlayer.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/runUnitTests.dir/src/ConsolePlayer.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/home/yair/CLionProjects/mission 2/src/ConsolePlayer.cpp" > CMakeFiles/runUnitTests.dir/src/ConsolePlayer.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/gal/CLionProjects/mission-2/src/ConsolePlayer.cpp > CMakeFiles/runUnitTests.dir/src/ConsolePlayer.cpp.i
 
 CMakeFiles/runUnitTests.dir/src/ConsolePlayer.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/runUnitTests.dir/src/ConsolePlayer.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/home/yair/CLionProjects/mission 2/src/ConsolePlayer.cpp" -o CMakeFiles/runUnitTests.dir/src/ConsolePlayer.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/gal/CLionProjects/mission-2/src/ConsolePlayer.cpp -o CMakeFiles/runUnitTests.dir/src/ConsolePlayer.cpp.s
 
 CMakeFiles/runUnitTests.dir/src/ConsolePlayer.cpp.o.requires:
 
@@ -203,16 +261,21 @@ CMakeFiles/runUnitTests.dir/src/ConsolePlayer.cpp.o.provides.build: CMakeFiles/r
 
 CMakeFiles/runUnitTests.dir/src/Point.cpp.o: CMakeFiles/runUnitTests.dir/flags.make
 CMakeFiles/runUnitTests.dir/src/Point.cpp.o: ../src/Point.cpp
+<<<<<<< HEAD
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/gal/CLionProjects/mission-2/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/runUnitTests.dir/src/Point.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/runUnitTests.dir/src/Point.cpp.o -c /home/gal/CLionProjects/mission-2/src/Point.cpp
+=======
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/home/yair/CLionProjects/mission 2/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/runUnitTests.dir/src/Point.cpp.o"
 	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/runUnitTests.dir/src/Point.cpp.o -c "/home/yair/CLionProjects/mission 2/src/Point.cpp"
+>>>>>>> 2a4893f6d4c7c9d48cbc16341fe2ebf4184fa79c
 
 CMakeFiles/runUnitTests.dir/src/Point.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/runUnitTests.dir/src/Point.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/home/yair/CLionProjects/mission 2/src/Point.cpp" > CMakeFiles/runUnitTests.dir/src/Point.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/gal/CLionProjects/mission-2/src/Point.cpp > CMakeFiles/runUnitTests.dir/src/Point.cpp.i
 
 CMakeFiles/runUnitTests.dir/src/Point.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/runUnitTests.dir/src/Point.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/home/yair/CLionProjects/mission 2/src/Point.cpp" -o CMakeFiles/runUnitTests.dir/src/Point.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/gal/CLionProjects/mission-2/src/Point.cpp -o CMakeFiles/runUnitTests.dir/src/Point.cpp.s
 
 CMakeFiles/runUnitTests.dir/src/Point.cpp.o.requires:
 
@@ -227,16 +290,21 @@ CMakeFiles/runUnitTests.dir/src/Point.cpp.o.provides.build: CMakeFiles/runUnitTe
 
 CMakeFiles/runUnitTests.dir/src/GameLogic1.cpp.o: CMakeFiles/runUnitTests.dir/flags.make
 CMakeFiles/runUnitTests.dir/src/GameLogic1.cpp.o: ../src/GameLogic1.cpp
+<<<<<<< HEAD
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/gal/CLionProjects/mission-2/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/runUnitTests.dir/src/GameLogic1.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/runUnitTests.dir/src/GameLogic1.cpp.o -c /home/gal/CLionProjects/mission-2/src/GameLogic1.cpp
+=======
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/home/yair/CLionProjects/mission 2/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/runUnitTests.dir/src/GameLogic1.cpp.o"
 	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/runUnitTests.dir/src/GameLogic1.cpp.o -c "/home/yair/CLionProjects/mission 2/src/GameLogic1.cpp"
+>>>>>>> 2a4893f6d4c7c9d48cbc16341fe2ebf4184fa79c
 
 CMakeFiles/runUnitTests.dir/src/GameLogic1.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/runUnitTests.dir/src/GameLogic1.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/home/yair/CLionProjects/mission 2/src/GameLogic1.cpp" > CMakeFiles/runUnitTests.dir/src/GameLogic1.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/gal/CLionProjects/mission-2/src/GameLogic1.cpp > CMakeFiles/runUnitTests.dir/src/GameLogic1.cpp.i
 
 CMakeFiles/runUnitTests.dir/src/GameLogic1.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/runUnitTests.dir/src/GameLogic1.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/home/yair/CLionProjects/mission 2/src/GameLogic1.cpp" -o CMakeFiles/runUnitTests.dir/src/GameLogic1.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/gal/CLionProjects/mission-2/src/GameLogic1.cpp -o CMakeFiles/runUnitTests.dir/src/GameLogic1.cpp.s
 
 CMakeFiles/runUnitTests.dir/src/GameLogic1.cpp.o.requires:
 
@@ -251,16 +319,21 @@ CMakeFiles/runUnitTests.dir/src/GameLogic1.cpp.o.provides.build: CMakeFiles/runU
 
 CMakeFiles/runUnitTests.dir/src/Board.cpp.o: CMakeFiles/runUnitTests.dir/flags.make
 CMakeFiles/runUnitTests.dir/src/Board.cpp.o: ../src/Board.cpp
+<<<<<<< HEAD
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/gal/CLionProjects/mission-2/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/runUnitTests.dir/src/Board.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/runUnitTests.dir/src/Board.cpp.o -c /home/gal/CLionProjects/mission-2/src/Board.cpp
+=======
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/home/yair/CLionProjects/mission 2/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/runUnitTests.dir/src/Board.cpp.o"
 	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/runUnitTests.dir/src/Board.cpp.o -c "/home/yair/CLionProjects/mission 2/src/Board.cpp"
+>>>>>>> 2a4893f6d4c7c9d48cbc16341fe2ebf4184fa79c
 
 CMakeFiles/runUnitTests.dir/src/Board.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/runUnitTests.dir/src/Board.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/home/yair/CLionProjects/mission 2/src/Board.cpp" > CMakeFiles/runUnitTests.dir/src/Board.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/gal/CLionProjects/mission-2/src/Board.cpp > CMakeFiles/runUnitTests.dir/src/Board.cpp.i
 
 CMakeFiles/runUnitTests.dir/src/Board.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/runUnitTests.dir/src/Board.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/home/yair/CLionProjects/mission 2/src/Board.cpp" -o CMakeFiles/runUnitTests.dir/src/Board.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/gal/CLionProjects/mission-2/src/Board.cpp -o CMakeFiles/runUnitTests.dir/src/Board.cpp.s
 
 CMakeFiles/runUnitTests.dir/src/Board.cpp.o.requires:
 
@@ -275,16 +348,21 @@ CMakeFiles/runUnitTests.dir/src/Board.cpp.o.provides.build: CMakeFiles/runUnitTe
 
 CMakeFiles/runUnitTests.dir/src/Player.cpp.o: CMakeFiles/runUnitTests.dir/flags.make
 CMakeFiles/runUnitTests.dir/src/Player.cpp.o: ../src/Player.cpp
+<<<<<<< HEAD
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/gal/CLionProjects/mission-2/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/runUnitTests.dir/src/Player.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/runUnitTests.dir/src/Player.cpp.o -c /home/gal/CLionProjects/mission-2/src/Player.cpp
+=======
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/home/yair/CLionProjects/mission 2/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/runUnitTests.dir/src/Player.cpp.o"
 	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/runUnitTests.dir/src/Player.cpp.o -c "/home/yair/CLionProjects/mission 2/src/Player.cpp"
+>>>>>>> 2a4893f6d4c7c9d48cbc16341fe2ebf4184fa79c
 
 CMakeFiles/runUnitTests.dir/src/Player.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/runUnitTests.dir/src/Player.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/home/yair/CLionProjects/mission 2/src/Player.cpp" > CMakeFiles/runUnitTests.dir/src/Player.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/gal/CLionProjects/mission-2/src/Player.cpp > CMakeFiles/runUnitTests.dir/src/Player.cpp.i
 
 CMakeFiles/runUnitTests.dir/src/Player.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/runUnitTests.dir/src/Player.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/home/yair/CLionProjects/mission 2/src/Player.cpp" -o CMakeFiles/runUnitTests.dir/src/Player.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/gal/CLionProjects/mission-2/src/Player.cpp -o CMakeFiles/runUnitTests.dir/src/Player.cpp.s
 
 CMakeFiles/runUnitTests.dir/src/Player.cpp.o.requires:
 
@@ -299,16 +377,21 @@ CMakeFiles/runUnitTests.dir/src/Player.cpp.o.provides.build: CMakeFiles/runUnitT
 
 CMakeFiles/runUnitTests.dir/src/GameLogic.cpp.o: CMakeFiles/runUnitTests.dir/flags.make
 CMakeFiles/runUnitTests.dir/src/GameLogic.cpp.o: ../src/GameLogic.cpp
+<<<<<<< HEAD
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/gal/CLionProjects/mission-2/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/runUnitTests.dir/src/GameLogic.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/runUnitTests.dir/src/GameLogic.cpp.o -c /home/gal/CLionProjects/mission-2/src/GameLogic.cpp
+=======
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/home/yair/CLionProjects/mission 2/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/runUnitTests.dir/src/GameLogic.cpp.o"
 	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/runUnitTests.dir/src/GameLogic.cpp.o -c "/home/yair/CLionProjects/mission 2/src/GameLogic.cpp"
+>>>>>>> 2a4893f6d4c7c9d48cbc16341fe2ebf4184fa79c
 
 CMakeFiles/runUnitTests.dir/src/GameLogic.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/runUnitTests.dir/src/GameLogic.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/home/yair/CLionProjects/mission 2/src/GameLogic.cpp" > CMakeFiles/runUnitTests.dir/src/GameLogic.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/gal/CLionProjects/mission-2/src/GameLogic.cpp > CMakeFiles/runUnitTests.dir/src/GameLogic.cpp.i
 
 CMakeFiles/runUnitTests.dir/src/GameLogic.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/runUnitTests.dir/src/GameLogic.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/home/yair/CLionProjects/mission 2/src/GameLogic.cpp" -o CMakeFiles/runUnitTests.dir/src/GameLogic.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/gal/CLionProjects/mission-2/src/GameLogic.cpp -o CMakeFiles/runUnitTests.dir/src/GameLogic.cpp.s
 
 CMakeFiles/runUnitTests.dir/src/GameLogic.cpp.o.requires:
 
@@ -323,16 +406,21 @@ CMakeFiles/runUnitTests.dir/src/GameLogic.cpp.o.provides.build: CMakeFiles/runUn
 
 CMakeFiles/runUnitTests.dir/src/AIPlayer.cpp.o: CMakeFiles/runUnitTests.dir/flags.make
 CMakeFiles/runUnitTests.dir/src/AIPlayer.cpp.o: ../src/AIPlayer.cpp
+<<<<<<< HEAD
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/gal/CLionProjects/mission-2/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object CMakeFiles/runUnitTests.dir/src/AIPlayer.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/runUnitTests.dir/src/AIPlayer.cpp.o -c /home/gal/CLionProjects/mission-2/src/AIPlayer.cpp
+=======
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/home/yair/CLionProjects/mission 2/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object CMakeFiles/runUnitTests.dir/src/AIPlayer.cpp.o"
 	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/runUnitTests.dir/src/AIPlayer.cpp.o -c "/home/yair/CLionProjects/mission 2/src/AIPlayer.cpp"
+>>>>>>> 2a4893f6d4c7c9d48cbc16341fe2ebf4184fa79c
 
 CMakeFiles/runUnitTests.dir/src/AIPlayer.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/runUnitTests.dir/src/AIPlayer.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/home/yair/CLionProjects/mission 2/src/AIPlayer.cpp" > CMakeFiles/runUnitTests.dir/src/AIPlayer.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/gal/CLionProjects/mission-2/src/AIPlayer.cpp > CMakeFiles/runUnitTests.dir/src/AIPlayer.cpp.i
 
 CMakeFiles/runUnitTests.dir/src/AIPlayer.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/runUnitTests.dir/src/AIPlayer.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/home/yair/CLionProjects/mission 2/src/AIPlayer.cpp" -o CMakeFiles/runUnitTests.dir/src/AIPlayer.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/gal/CLionProjects/mission-2/src/AIPlayer.cpp -o CMakeFiles/runUnitTests.dir/src/AIPlayer.cpp.s
 
 CMakeFiles/runUnitTests.dir/src/AIPlayer.cpp.o.requires:
 
@@ -348,6 +436,8 @@ CMakeFiles/runUnitTests.dir/src/AIPlayer.cpp.o.provides.build: CMakeFiles/runUni
 # Object files for target runUnitTests
 runUnitTests_OBJECTS = \
 "CMakeFiles/runUnitTests.dir/Tests/gtest_main.cpp.o" \
+"CMakeFiles/runUnitTests.dir/Tests/test_GameLogic1.cpp.o" \
+"CMakeFiles/runUnitTests.dir/Tests/test_Point.cpp.o" \
 "CMakeFiles/runUnitTests.dir/Tests/test_Game.cpp.o" \
 "CMakeFiles/runUnitTests.dir/Tests/test_AIPlayer.cpp.o" \
 "CMakeFiles/runUnitTests.dir/Tests/test_Board.cpp.o" \
@@ -364,6 +454,8 @@ runUnitTests_OBJECTS = \
 runUnitTests_EXTERNAL_OBJECTS =
 
 runUnitTests: CMakeFiles/runUnitTests.dir/Tests/gtest_main.cpp.o
+runUnitTests: CMakeFiles/runUnitTests.dir/Tests/test_GameLogic1.cpp.o
+runUnitTests: CMakeFiles/runUnitTests.dir/Tests/test_Point.cpp.o
 runUnitTests: CMakeFiles/runUnitTests.dir/Tests/test_Game.cpp.o
 runUnitTests: CMakeFiles/runUnitTests.dir/Tests/test_AIPlayer.cpp.o
 runUnitTests: CMakeFiles/runUnitTests.dir/Tests/test_Board.cpp.o
@@ -380,7 +472,11 @@ runUnitTests: lib/googletest-master/googlemock/gtest/libgtest.a
 runUnitTests: lib/googletest-master/googlemock/gtest/libgtest_main.a
 runUnitTests: lib/googletest-master/googlemock/gtest/libgtest.a
 runUnitTests: CMakeFiles/runUnitTests.dir/link.txt
+<<<<<<< HEAD
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/gal/CLionProjects/mission-2/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Linking CXX executable runUnitTests"
+=======
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir="/home/yair/CLionProjects/mission 2/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_13) "Linking CXX executable runUnitTests"
+>>>>>>> 2a4893f6d4c7c9d48cbc16341fe2ebf4184fa79c
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/runUnitTests.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -389,6 +485,8 @@ CMakeFiles/runUnitTests.dir/build: runUnitTests
 .PHONY : CMakeFiles/runUnitTests.dir/build
 
 CMakeFiles/runUnitTests.dir/requires: CMakeFiles/runUnitTests.dir/Tests/gtest_main.cpp.o.requires
+CMakeFiles/runUnitTests.dir/requires: CMakeFiles/runUnitTests.dir/Tests/test_GameLogic1.cpp.o.requires
+CMakeFiles/runUnitTests.dir/requires: CMakeFiles/runUnitTests.dir/Tests/test_Point.cpp.o.requires
 CMakeFiles/runUnitTests.dir/requires: CMakeFiles/runUnitTests.dir/Tests/test_Game.cpp.o.requires
 CMakeFiles/runUnitTests.dir/requires: CMakeFiles/runUnitTests.dir/Tests/test_AIPlayer.cpp.o.requires
 CMakeFiles/runUnitTests.dir/requires: CMakeFiles/runUnitTests.dir/Tests/test_Board.cpp.o.requires
@@ -408,6 +506,6 @@ CMakeFiles/runUnitTests.dir/clean:
 .PHONY : CMakeFiles/runUnitTests.dir/clean
 
 CMakeFiles/runUnitTests.dir/depend:
-	cd "/home/yair/CLionProjects/mission 2/cmake-build-debug" && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" "/home/yair/CLionProjects/mission 2" "/home/yair/CLionProjects/mission 2" "/home/yair/CLionProjects/mission 2/cmake-build-debug" "/home/yair/CLionProjects/mission 2/cmake-build-debug" "/home/yair/CLionProjects/mission 2/cmake-build-debug/CMakeFiles/runUnitTests.dir/DependInfo.cmake" --color=$(COLOR)
+	cd /home/gal/CLionProjects/mission-2/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/gal/CLionProjects/mission-2 /home/gal/CLionProjects/mission-2 /home/gal/CLionProjects/mission-2/cmake-build-debug /home/gal/CLionProjects/mission-2/cmake-build-debug /home/gal/CLionProjects/mission-2/cmake-build-debug/CMakeFiles/runUnitTests.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/runUnitTests.dir/depend
 

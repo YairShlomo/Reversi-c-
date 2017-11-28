@@ -1,8 +1,10 @@
 /*
 Name:Yair Shlomo
 ID: 308536150
-Mission 2
+Name:Gal Eini
+ID: 305216962
 */
+
 
 #ifndef Player_H_
 #define Player_H_

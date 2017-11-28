@@ -24,6 +24,9 @@ CMakeFiles/runUnitTests.dir/Tests/gtest_main.cpp.o
  ../lib/googletest-master/googletest/include/gtest/internal/gtest-string.h
  ../lib/googletest-master/googletest/include/gtest/internal/gtest-tuple.h
  ../lib/googletest-master/googletest/include/gtest/internal/gtest-type-util.h
+<<<<<<< HEAD
+ /home/gal/CLionProjects/mission-2/Tests/gtest_main.cpp
+=======
  /home/yair/CLionProjects/mission 2/Tests/gtest_main.cpp
 CMakeFiles/runUnitTests.dir/Tests/test_AIPlayer.cpp.o
  ../lib/googletest-master/googletest/include/gtest/gtest-death-test.h
@@ -89,7 +92,10 @@ CMakeFiles/runUnitTests.dir/Tests/test_Board.cpp.o
  /home/yair/CLionProjects/mission 2/include/GameLogic1.h
  /home/yair/CLionProjects/mission 2/include/Player.h
  /home/yair/CLionProjects/mission 2/include/Point.h
+>>>>>>> 2a4893f6d4c7c9d48cbc16341fe2ebf4184fa79c
 CMakeFiles/runUnitTests.dir/Tests/test_Game.cpp.o
+ /home/gal/CLionProjects/mission-2/Tests/test_Game.cpp
+CMakeFiles/runUnitTests.dir/Tests/test_GameLogic1.cpp.o
  ../lib/googletest-master/googletest/include/gtest/gtest-death-test.h
  ../lib/googletest-master/googletest/include/gtest/gtest-message.h
  ../lib/googletest-master/googletest/include/gtest/gtest-param-test.h
@@ -112,6 +118,40 @@ CMakeFiles/runUnitTests.dir/Tests/test_Game.cpp.o
  ../lib/googletest-master/googletest/include/gtest/internal/gtest-string.h
  ../lib/googletest-master/googletest/include/gtest/internal/gtest-tuple.h
  ../lib/googletest-master/googletest/include/gtest/internal/gtest-type-util.h
+<<<<<<< HEAD
+ /home/gal/CLionProjects/mission-2/Tests/test_GameLogic1.cpp
+ /home/gal/CLionProjects/mission-2/Tests/test_GameLogic1.h
+ /home/gal/CLionProjects/mission-2/include/Board.h
+ /home/gal/CLionProjects/mission-2/include/GameLogic.h
+ /home/gal/CLionProjects/mission-2/include/GameLogic1.h
+ /home/gal/CLionProjects/mission-2/include/Point.h
+CMakeFiles/runUnitTests.dir/Tests/test_Point.cpp.o
+ ../lib/googletest-master/googletest/include/gtest/gtest-death-test.h
+ ../lib/googletest-master/googletest/include/gtest/gtest-message.h
+ ../lib/googletest-master/googletest/include/gtest/gtest-param-test.h
+ ../lib/googletest-master/googletest/include/gtest/gtest-printers.h
+ ../lib/googletest-master/googletest/include/gtest/gtest-test-part.h
+ ../lib/googletest-master/googletest/include/gtest/gtest-typed-test.h
+ ../lib/googletest-master/googletest/include/gtest/gtest.h
+ ../lib/googletest-master/googletest/include/gtest/gtest_pred_impl.h
+ ../lib/googletest-master/googletest/include/gtest/gtest_prod.h
+ ../lib/googletest-master/googletest/include/gtest/internal/custom/gtest-port.h
+ ../lib/googletest-master/googletest/include/gtest/internal/custom/gtest-printers.h
+ ../lib/googletest-master/googletest/include/gtest/internal/gtest-death-test-internal.h
+ ../lib/googletest-master/googletest/include/gtest/internal/gtest-filepath.h
+ ../lib/googletest-master/googletest/include/gtest/internal/gtest-internal.h
+ ../lib/googletest-master/googletest/include/gtest/internal/gtest-linked_ptr.h
+ ../lib/googletest-master/googletest/include/gtest/internal/gtest-param-util-generated.h
+ ../lib/googletest-master/googletest/include/gtest/internal/gtest-param-util.h
+ ../lib/googletest-master/googletest/include/gtest/internal/gtest-port-arch.h
+ ../lib/googletest-master/googletest/include/gtest/internal/gtest-port.h
+ ../lib/googletest-master/googletest/include/gtest/internal/gtest-string.h
+ ../lib/googletest-master/googletest/include/gtest/internal/gtest-tuple.h
+ ../lib/googletest-master/googletest/include/gtest/internal/gtest-type-util.h
+ /home/gal/CLionProjects/mission-2/Tests/test_Point.cpp
+ /home/gal/CLionProjects/mission-2/Tests/test_Point.h
+ /home/gal/CLionProjects/mission-2/include/Point.h
+=======
  /home/yair/CLionProjects/mission 2/Tests/test_Game.cpp
  /home/yair/CLionProjects/mission 2/Tests/test_Game.h
  /home/yair/CLionProjects/mission 2/include/AIPlayer.h
@@ -121,52 +161,53 @@ CMakeFiles/runUnitTests.dir/Tests/test_Game.cpp.o
  /home/yair/CLionProjects/mission 2/include/GameLogic1.h
  /home/yair/CLionProjects/mission 2/include/Player.h
  /home/yair/CLionProjects/mission 2/include/Point.h
+>>>>>>> 2a4893f6d4c7c9d48cbc16341fe2ebf4184fa79c
 CMakeFiles/runUnitTests.dir/src/AIPlayer.cpp.o
- /home/yair/CLionProjects/mission 2/include/AIPlayer.h
- /home/yair/CLionProjects/mission 2/include/Board.h
- /home/yair/CLionProjects/mission 2/include/GameLogic.h
- /home/yair/CLionProjects/mission 2/include/GameLogic1.h
- /home/yair/CLionProjects/mission 2/include/Player.h
- /home/yair/CLionProjects/mission 2/include/Point.h
- /home/yair/CLionProjects/mission 2/src/AIPlayer.cpp
+ /home/gal/CLionProjects/mission-2/include/AIPlayer.h
+ /home/gal/CLionProjects/mission-2/include/Board.h
+ /home/gal/CLionProjects/mission-2/include/GameLogic.h
+ /home/gal/CLionProjects/mission-2/include/GameLogic1.h
+ /home/gal/CLionProjects/mission-2/include/Player.h
+ /home/gal/CLionProjects/mission-2/include/Point.h
+ /home/gal/CLionProjects/mission-2/src/AIPlayer.cpp
 CMakeFiles/runUnitTests.dir/src/Board.cpp.o
- /home/yair/CLionProjects/mission 2/include/Board.h
- /home/yair/CLionProjects/mission 2/src/Board.cpp
+ /home/gal/CLionProjects/mission-2/include/Board.h
+ /home/gal/CLionProjects/mission-2/src/Board.cpp
 CMakeFiles/runUnitTests.dir/src/ConsolePlayer.cpp.o
- /home/yair/CLionProjects/mission 2/include/Board.h
- /home/yair/CLionProjects/mission 2/include/ConsolePlayer.h
- /home/yair/CLionProjects/mission 2/include/GameLogic.h
- /home/yair/CLionProjects/mission 2/include/GameLogic1.h
- /home/yair/CLionProjects/mission 2/include/Player.h
- /home/yair/CLionProjects/mission 2/include/Point.h
- /home/yair/CLionProjects/mission 2/src/ConsolePlayer.cpp
+ /home/gal/CLionProjects/mission-2/include/Board.h
+ /home/gal/CLionProjects/mission-2/include/ConsolePlayer.h
+ /home/gal/CLionProjects/mission-2/include/GameLogic.h
+ /home/gal/CLionProjects/mission-2/include/GameLogic1.h
+ /home/gal/CLionProjects/mission-2/include/Player.h
+ /home/gal/CLionProjects/mission-2/include/Point.h
+ /home/gal/CLionProjects/mission-2/src/ConsolePlayer.cpp
 CMakeFiles/runUnitTests.dir/src/Game.cpp.o
- /home/yair/CLionProjects/mission 2/include/Board.h
- /home/yair/CLionProjects/mission 2/include/Game.h
- /home/yair/CLionProjects/mission 2/include/GameLogic.h
- /home/yair/CLionProjects/mission 2/include/GameLogic1.h
- /home/yair/CLionProjects/mission 2/include/Player.h
- /home/yair/CLionProjects/mission 2/include/Point.h
- /home/yair/CLionProjects/mission 2/src/Game.cpp
+ /home/gal/CLionProjects/mission-2/include/Board.h
+ /home/gal/CLionProjects/mission-2/include/Game.h
+ /home/gal/CLionProjects/mission-2/include/GameLogic.h
+ /home/gal/CLionProjects/mission-2/include/GameLogic1.h
+ /home/gal/CLionProjects/mission-2/include/Player.h
+ /home/gal/CLionProjects/mission-2/include/Point.h
+ /home/gal/CLionProjects/mission-2/src/Game.cpp
 CMakeFiles/runUnitTests.dir/src/GameLogic.cpp.o
- /home/yair/CLionProjects/mission 2/include/Board.h
- /home/yair/CLionProjects/mission 2/include/GameLogic.h
- /home/yair/CLionProjects/mission 2/include/Point.h
- /home/yair/CLionProjects/mission 2/src/GameLogic.cpp
+ /home/gal/CLionProjects/mission-2/include/Board.h
+ /home/gal/CLionProjects/mission-2/include/GameLogic.h
+ /home/gal/CLionProjects/mission-2/include/Point.h
+ /home/gal/CLionProjects/mission-2/src/GameLogic.cpp
 CMakeFiles/runUnitTests.dir/src/GameLogic1.cpp.o
- /home/yair/CLionProjects/mission 2/include/Board.h
- /home/yair/CLionProjects/mission 2/include/GameLogic.h
- /home/yair/CLionProjects/mission 2/include/GameLogic1.h
- /home/yair/CLionProjects/mission 2/include/Point.h
- /home/yair/CLionProjects/mission 2/src/GameLogic1.cpp
+ /home/gal/CLionProjects/mission-2/include/Board.h
+ /home/gal/CLionProjects/mission-2/include/GameLogic.h
+ /home/gal/CLionProjects/mission-2/include/GameLogic1.h
+ /home/gal/CLionProjects/mission-2/include/Point.h
+ /home/gal/CLionProjects/mission-2/src/GameLogic1.cpp
 CMakeFiles/runUnitTests.dir/src/Player.cpp.o
- /home/yair/CLionProjects/mission 2/include/Board.h
- /home/yair/CLionProjects/mission 2/include/ConsolePlayer.h
- /home/yair/CLionProjects/mission 2/include/GameLogic.h
- /home/yair/CLionProjects/mission 2/include/GameLogic1.h
- /home/yair/CLionProjects/mission 2/include/Player.h
- /home/yair/CLionProjects/mission 2/include/Point.h
- /home/yair/CLionProjects/mission 2/src/Player.cpp
+ /home/gal/CLionProjects/mission-2/include/Board.h
+ /home/gal/CLionProjects/mission-2/include/ConsolePlayer.h
+ /home/gal/CLionProjects/mission-2/include/GameLogic.h
+ /home/gal/CLionProjects/mission-2/include/GameLogic1.h
+ /home/gal/CLionProjects/mission-2/include/Player.h
+ /home/gal/CLionProjects/mission-2/include/Point.h
+ /home/gal/CLionProjects/mission-2/src/Player.cpp
 CMakeFiles/runUnitTests.dir/src/Point.cpp.o
- /home/yair/CLionProjects/mission 2/include/Point.h
- /home/yair/CLionProjects/mission 2/src/Point.cpp
+ /home/gal/CLionProjects/mission-2/include/Point.h
+ /home/gal/CLionProjects/mission-2/src/Point.cpp

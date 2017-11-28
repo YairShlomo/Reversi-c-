@@ -1,3 +1,5 @@
+<<<<<<< HEAD
+=======
 
 #include <gtest/gtest.h>
 #include "test_Game.h"
@@ -22,3 +24,4 @@ TEST_F(test_Game,checkPlay1Turn) {
     EXPECT_EQ(game.play1Turn(pl2), 0);
 }
 
+>>>>>>> 2a4893f6d4c7c9d48cbc16341fe2ebf4184fa79c
