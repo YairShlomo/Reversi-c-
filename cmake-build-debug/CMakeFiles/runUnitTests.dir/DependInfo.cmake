@@ -5,6 +5,8 @@ set(CMAKE_DEPENDS_LANGUAGES
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
   "/home/yair/CLionProjects/mission 2/Tests/gtest_main.cpp" "/home/yair/CLionProjects/mission 2/cmake-build-debug/CMakeFiles/runUnitTests.dir/Tests/gtest_main.cpp.o"
+  "/home/yair/CLionProjects/mission 2/Tests/test_AIPlayer.cpp" "/home/yair/CLionProjects/mission 2/cmake-build-debug/CMakeFiles/runUnitTests.dir/Tests/test_AIPlayer.cpp.o"
+  "/home/yair/CLionProjects/mission 2/Tests/test_Board.cpp" "/home/yair/CLionProjects/mission 2/cmake-build-debug/CMakeFiles/runUnitTests.dir/Tests/test_Board.cpp.o"
   "/home/yair/CLionProjects/mission 2/Tests/test_Game.cpp" "/home/yair/CLionProjects/mission 2/cmake-build-debug/CMakeFiles/runUnitTests.dir/Tests/test_Game.cpp.o"
   "/home/yair/CLionProjects/mission 2/src/AIPlayer.cpp" "/home/yair/CLionProjects/mission 2/cmake-build-debug/CMakeFiles/runUnitTests.dir/src/AIPlayer.cpp.o"
   "/home/yair/CLionProjects/mission 2/src/Board.cpp" "/home/yair/CLionProjects/mission 2/cmake-build-debug/CMakeFiles/runUnitTests.dir/src/Board.cpp.o"

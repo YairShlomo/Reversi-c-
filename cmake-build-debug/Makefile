@@ -261,6 +261,60 @@ Tests/gtest_main.cpp.s:
 	$(MAKE) -f CMakeFiles/runUnitTests.dir/build.make CMakeFiles/runUnitTests.dir/Tests/gtest_main.cpp.s
 .PHONY : Tests/gtest_main.cpp.s
 
+Tests/test_AIPlayer.o: Tests/test_AIPlayer.cpp.o
+
+.PHONY : Tests/test_AIPlayer.o
+
+# target to build an object file
+Tests/test_AIPlayer.cpp.o:
+	$(MAKE) -f CMakeFiles/runUnitTests.dir/build.make CMakeFiles/runUnitTests.dir/Tests/test_AIPlayer.cpp.o
+.PHONY : Tests/test_AIPlayer.cpp.o
+
+Tests/test_AIPlayer.i: Tests/test_AIPlayer.cpp.i
+
+.PHONY : Tests/test_AIPlayer.i
+
+# target to preprocess a source file
+Tests/test_AIPlayer.cpp.i:
+	$(MAKE) -f CMakeFiles/runUnitTests.dir/build.make CMakeFiles/runUnitTests.dir/Tests/test_AIPlayer.cpp.i
+.PHONY : Tests/test_AIPlayer.cpp.i
+
+Tests/test_AIPlayer.s: Tests/test_AIPlayer.cpp.s
+
+.PHONY : Tests/test_AIPlayer.s
+
+# target to generate assembly for a file
+Tests/test_AIPlayer.cpp.s:
+	$(MAKE) -f CMakeFiles/runUnitTests.dir/build.make CMakeFiles/runUnitTests.dir/Tests/test_AIPlayer.cpp.s
+.PHONY : Tests/test_AIPlayer.cpp.s
+
+Tests/test_Board.o: Tests/test_Board.cpp.o
+
+.PHONY : Tests/test_Board.o
+
+# target to build an object file
+Tests/test_Board.cpp.o:
+	$(MAKE) -f CMakeFiles/runUnitTests.dir/build.make CMakeFiles/runUnitTests.dir/Tests/test_Board.cpp.o
+.PHONY : Tests/test_Board.cpp.o
+
+Tests/test_Board.i: Tests/test_Board.cpp.i
+
+.PHONY : Tests/test_Board.i
+
+# target to preprocess a source file
+Tests/test_Board.cpp.i:
+	$(MAKE) -f CMakeFiles/runUnitTests.dir/build.make CMakeFiles/runUnitTests.dir/Tests/test_Board.cpp.i
+.PHONY : Tests/test_Board.cpp.i
+
+Tests/test_Board.s: Tests/test_Board.cpp.s
+
+.PHONY : Tests/test_Board.s
+
+# target to generate assembly for a file
+Tests/test_Board.cpp.s:
+	$(MAKE) -f CMakeFiles/runUnitTests.dir/build.make CMakeFiles/runUnitTests.dir/Tests/test_Board.cpp.s
+.PHONY : Tests/test_Board.cpp.s
+
 Tests/test_Game.o: Tests/test_Game.cpp.o
 
 .PHONY : Tests/test_Game.o
@@ -576,6 +630,12 @@ help:
 	@echo "... Tests/gtest_main.o"
 	@echo "... Tests/gtest_main.i"
 	@echo "... Tests/gtest_main.s"
+	@echo "... Tests/test_AIPlayer.o"
+	@echo "... Tests/test_AIPlayer.i"
+	@echo "... Tests/test_AIPlayer.s"
+	@echo "... Tests/test_Board.o"
+	@echo "... Tests/test_Board.i"
+	@echo "... Tests/test_Board.s"
 	@echo "... Tests/test_Game.o"
 	@echo "... Tests/test_Game.i"
 	@echo "... Tests/test_Game.s"
