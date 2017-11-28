@@ -278,97 +278,95 @@ cxxabi.h
 acxx_demangle.h
 -
 
-/home/gal/CLionProjects/mission-2/Tests/gtest_main.cpp
+/home/yair/CLionProjects/mission 3/mission-2/Tests/gtest_main.cpp
 gtest/gtest.h
 -
 
-<<<<<<< HEAD
-/home/gal/CLionProjects/mission-2/Tests/test_Game.cpp
-
-/home/gal/CLionProjects/mission-2/Tests/test_GameLogic1.cpp
-gtest/gtest.h
--
-../include/GameLogic1.h
-/home/gal/CLionProjects/mission-2/include/GameLogic1.h
-../include/Board.h
-/home/gal/CLionProjects/mission-2/include/Board.h
-test_GameLogic1.h
-/home/gal/CLionProjects/mission-2/Tests/test_GameLogic1.h
-
-/home/gal/CLionProjects/mission-2/Tests/test_GameLogic1.h
-gtest/gtest.h
--
-../include/GameLogic1.h
-/home/gal/CLionProjects/mission-2/include/GameLogic1.h
-../include/Board.h
-/home/gal/CLionProjects/mission-2/include/Board.h
-iostream
--
-
-/home/gal/CLionProjects/mission-2/Tests/test_Point.cpp
-test_Point.h
-/home/gal/CLionProjects/mission-2/Tests/test_Point.h
-
-/home/gal/CLionProjects/mission-2/Tests/test_Point.h
-gtest/gtest.h
--
-../include/Point.h
-/home/gal/CLionProjects/mission-2/include/Point.h
-=======
-/home/yair/CLionProjects/mission 2/Tests/test_AIPlayer.cpp
+/home/yair/CLionProjects/mission 3/mission-2/Tests/test_AIPlayer.cpp
 gtest/gtest.h
 -
 ../include/Game.h
-/home/yair/CLionProjects/mission 2/include/Game.h
+/home/yair/CLionProjects/mission 3/mission-2/include/Game.h
 ../include/AIPlayer.h
-/home/yair/CLionProjects/mission 2/include/AIPlayer.h
+/home/yair/CLionProjects/mission 3/mission-2/include/AIPlayer.h
 test_AIPlayer.h
-/home/yair/CLionProjects/mission 2/Tests/test_AIPlayer.h
+/home/yair/CLionProjects/mission 3/mission-2/Tests/test_AIPlayer.h
 
-/home/yair/CLionProjects/mission 2/Tests/test_AIPlayer.h
+/home/yair/CLionProjects/mission 3/mission-2/Tests/test_AIPlayer.h
 gtest/gtest.h
 -
 ../include/Game.h
-/home/yair/CLionProjects/mission 2/include/Game.h
+/home/yair/CLionProjects/mission 3/mission-2/include/Game.h
 ../include/AIPlayer.h
-/home/yair/CLionProjects/mission 2/include/AIPlayer.h
+/home/yair/CLionProjects/mission 3/mission-2/include/AIPlayer.h
 iostream
 -
 
-/home/yair/CLionProjects/mission 2/Tests/test_Board.cpp
+/home/yair/CLionProjects/mission 3/mission-2/Tests/test_Board.cpp
 gtest/gtest.h
 -
 test_Board.h
-/home/yair/CLionProjects/mission 2/Tests/test_Board.h
+/home/yair/CLionProjects/mission 3/mission-2/Tests/test_Board.h
 
-/home/yair/CLionProjects/mission 2/Tests/test_Board.h
+/home/yair/CLionProjects/mission 3/mission-2/Tests/test_Board.h
 gtest/gtest.h
 -
 ../include/Game.h
-/home/yair/CLionProjects/mission 2/include/Game.h
+/home/yair/CLionProjects/mission 3/mission-2/include/Game.h
 ../include/AIPlayer.h
-/home/yair/CLionProjects/mission 2/include/AIPlayer.h
+/home/yair/CLionProjects/mission 3/mission-2/include/AIPlayer.h
 iostream
 -
 
-/home/yair/CLionProjects/mission 2/Tests/test_Game.cpp
+/home/yair/CLionProjects/mission 3/mission-2/Tests/test_Game.cpp
 gtest/gtest.h
 -
 test_Game.h
-/home/yair/CLionProjects/mission 2/Tests/test_Game.h
+/home/yair/CLionProjects/mission 3/mission-2/Tests/test_Game.h
 
-/home/yair/CLionProjects/mission 2/Tests/test_Game.h
+/home/yair/CLionProjects/mission 3/mission-2/Tests/test_Game.h
 gtest/gtest.h
 -
 ../include/Game.h
-/home/yair/CLionProjects/mission 2/include/Game.h
+/home/yair/CLionProjects/mission 3/mission-2/include/Game.h
 ../include/AIPlayer.h
-/home/yair/CLionProjects/mission 2/include/AIPlayer.h
->>>>>>> 2a4893f6d4c7c9d48cbc16341fe2ebf4184fa79c
+/home/yair/CLionProjects/mission 3/mission-2/include/AIPlayer.h
 iostream
 -
 
-/home/gal/CLionProjects/mission-2/include/AIPlayer.h
+/home/yair/CLionProjects/mission 3/mission-2/Tests/test_GameLogic1.cpp
+gtest/gtest.h
+-
+../include/GameLogic1.h
+/home/yair/CLionProjects/mission 3/mission-2/include/GameLogic1.h
+../include/Board.h
+/home/yair/CLionProjects/mission 3/mission-2/include/Board.h
+test_GameLogic1.h
+/home/yair/CLionProjects/mission 3/mission-2/Tests/test_GameLogic1.h
+
+/home/yair/CLionProjects/mission 3/mission-2/Tests/test_GameLogic1.h
+gtest/gtest.h
+-
+../include/GameLogic1.h
+/home/yair/CLionProjects/mission 3/mission-2/include/GameLogic1.h
+../include/Board.h
+/home/yair/CLionProjects/mission 3/mission-2/include/Board.h
+iostream
+-
+
+/home/yair/CLionProjects/mission 3/mission-2/Tests/test_Point.cpp
+test_Point.h
+/home/yair/CLionProjects/mission 3/mission-2/Tests/test_Point.h
+
+/home/yair/CLionProjects/mission 3/mission-2/Tests/test_Point.h
+gtest/gtest.h
+-
+../include/Point.h
+/home/yair/CLionProjects/mission 3/mission-2/include/Point.h
+iostream
+-
+
+/home/yair/CLionProjects/mission 3/mission-2/include/AIPlayer.h
 stdio.h
 -
 stdlib.h
@@ -376,13 +374,13 @@ stdlib.h
 string
 -
 Player.h
-/home/gal/CLionProjects/mission-2/include/Player.h
+/home/yair/CLionProjects/mission 3/mission-2/include/Player.h
 Point.h
-/home/gal/CLionProjects/mission-2/include/Point.h
+/home/yair/CLionProjects/mission 3/mission-2/include/Point.h
 GameLogic.h
-/home/gal/CLionProjects/mission-2/include/GameLogic.h
+/home/yair/CLionProjects/mission 3/mission-2/include/GameLogic.h
 
-/home/gal/CLionProjects/mission-2/include/Board.h
+/home/yair/CLionProjects/mission 3/mission-2/include/Board.h
 stdio.h
 -
 string
@@ -390,19 +388,19 @@ string
 iostream
 -
 
-/home/gal/CLionProjects/mission-2/include/ConsolePlayer.h
+/home/yair/CLionProjects/mission 3/mission-2/include/ConsolePlayer.h
 stdio.h
 -
 string
 -
 Player.h
-/home/gal/CLionProjects/mission-2/include/Player.h
+/home/yair/CLionProjects/mission 3/mission-2/include/Player.h
 Point.h
-/home/gal/CLionProjects/mission-2/include/Point.h
+/home/yair/CLionProjects/mission 3/mission-2/include/Point.h
 GameLogic1.h
-/home/gal/CLionProjects/mission-2/include/GameLogic1.h
+/home/yair/CLionProjects/mission 3/mission-2/include/GameLogic1.h
 
-/home/gal/CLionProjects/mission-2/include/Game.h
+/home/yair/CLionProjects/mission 3/mission-2/include/Game.h
 stdio.h
 -
 string
@@ -410,39 +408,39 @@ string
 iostream
 -
 Board.h
-/home/gal/CLionProjects/mission-2/include/Board.h
+/home/yair/CLionProjects/mission 3/mission-2/include/Board.h
 Player.h
-/home/gal/CLionProjects/mission-2/include/Player.h
+/home/yair/CLionProjects/mission 3/mission-2/include/Player.h
 GameLogic1.h
-/home/gal/CLionProjects/mission-2/include/GameLogic1.h
+/home/yair/CLionProjects/mission 3/mission-2/include/GameLogic1.h
 
-/home/gal/CLionProjects/mission-2/include/GameLogic.h
+/home/yair/CLionProjects/mission 3/mission-2/include/GameLogic.h
 stdio.h
 -
 string
 -
 Point.h
-/home/gal/CLionProjects/mission-2/include/Point.h
+/home/yair/CLionProjects/mission 3/mission-2/include/Point.h
 Board.h
-/home/gal/CLionProjects/mission-2/include/Board.h
+/home/yair/CLionProjects/mission 3/mission-2/include/Board.h
 vector
 -
 
-/home/gal/CLionProjects/mission-2/include/GameLogic1.h
+/home/yair/CLionProjects/mission 3/mission-2/include/GameLogic1.h
 stdio.h
 -
 string
 -
 GameLogic.h
-/home/gal/CLionProjects/mission-2/include/GameLogic.h
+/home/yair/CLionProjects/mission 3/mission-2/include/GameLogic.h
 Point.h
-/home/gal/CLionProjects/mission-2/include/Point.h
+/home/yair/CLionProjects/mission 3/mission-2/include/Point.h
 Board.h
-/home/gal/CLionProjects/mission-2/include/Board.h
+/home/yair/CLionProjects/mission 3/mission-2/include/Board.h
 vector
 -
 
-/home/gal/CLionProjects/mission-2/include/Player.h
+/home/yair/CLionProjects/mission 3/mission-2/include/Player.h
 stdio.h
 -
 string
@@ -450,61 +448,61 @@ string
 vector
 -
 Point.h
-/home/gal/CLionProjects/mission-2/include/Point.h
+/home/yair/CLionProjects/mission 3/mission-2/include/Point.h
 GameLogic1.h
-/home/gal/CLionProjects/mission-2/include/GameLogic1.h
+/home/yair/CLionProjects/mission 3/mission-2/include/GameLogic1.h
 
-/home/gal/CLionProjects/mission-2/include/Point.h
+/home/yair/CLionProjects/mission 3/mission-2/include/Point.h
 stdio.h
 -
 string
 -
 
-/home/gal/CLionProjects/mission-2/src/AIPlayer.cpp
+/home/yair/CLionProjects/mission 3/mission-2/src/AIPlayer.cpp
 ../include/AIPlayer.h
-/home/gal/CLionProjects/mission-2/include/AIPlayer.h
+/home/yair/CLionProjects/mission 3/mission-2/include/AIPlayer.h
 ../include/GameLogic1.h
-/home/gal/CLionProjects/mission-2/include/GameLogic1.h
+/home/yair/CLionProjects/mission 3/mission-2/include/GameLogic1.h
 iostream
 -
 stdio.h
 -
 
-/home/gal/CLionProjects/mission-2/src/Board.cpp
+/home/yair/CLionProjects/mission 3/mission-2/src/Board.cpp
 ../include/Board.h
-/home/gal/CLionProjects/mission-2/include/Board.h
+/home/yair/CLionProjects/mission 3/mission-2/include/Board.h
 
-/home/gal/CLionProjects/mission-2/src/ConsolePlayer.cpp
+/home/yair/CLionProjects/mission 3/mission-2/src/ConsolePlayer.cpp
 ../include/ConsolePlayer.h
-/home/gal/CLionProjects/mission-2/include/ConsolePlayer.h
+/home/yair/CLionProjects/mission 3/mission-2/include/ConsolePlayer.h
 ../include/GameLogic1.h
-/home/gal/CLionProjects/mission-2/include/GameLogic1.h
+/home/yair/CLionProjects/mission 3/mission-2/include/GameLogic1.h
 iostream
 -
 stdio.h
 -
 
-/home/gal/CLionProjects/mission-2/src/Game.cpp
+/home/yair/CLionProjects/mission 3/mission-2/src/Game.cpp
 ../include/Game.h
-/home/gal/CLionProjects/mission-2/include/Game.h
+/home/yair/CLionProjects/mission 3/mission-2/include/Game.h
 
-/home/gal/CLionProjects/mission-2/src/GameLogic.cpp
+/home/yair/CLionProjects/mission 3/mission-2/src/GameLogic.cpp
 ../include/GameLogic.h
-/home/gal/CLionProjects/mission-2/include/GameLogic.h
+/home/yair/CLionProjects/mission 3/mission-2/include/GameLogic.h
 iostream
 -
 
-/home/gal/CLionProjects/mission-2/src/GameLogic1.cpp
+/home/yair/CLionProjects/mission 3/mission-2/src/GameLogic1.cpp
 ../include/GameLogic1.h
-/home/gal/CLionProjects/mission-2/include/GameLogic1.h
+/home/yair/CLionProjects/mission 3/mission-2/include/GameLogic1.h
 
-/home/gal/CLionProjects/mission-2/src/Player.cpp
+/home/yair/CLionProjects/mission 3/mission-2/src/Player.cpp
 ../include/ConsolePlayer.h
-/home/gal/CLionProjects/mission-2/include/ConsolePlayer.h
+/home/yair/CLionProjects/mission 3/mission-2/include/ConsolePlayer.h
 
-/home/gal/CLionProjects/mission-2/src/Point.cpp
+/home/yair/CLionProjects/mission 3/mission-2/src/Point.cpp
 ../include/Point.h
-/home/gal/CLionProjects/mission-2/include/Point.h
+/home/yair/CLionProjects/mission 3/mission-2/include/Point.h
 iostream
 -
 stdio.h

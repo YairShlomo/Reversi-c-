@@ -6,5 +6,5 @@ CXX_FLAGS = -g    -Wall -Wshadow -DGTEST_HAS_PTHREAD=1 -fexceptions -Wextra -Wno
 
 CXX_DEFINES = 
 
-CXX_INCLUDES = -I/home/gal/CLionProjects/mission-2/lib/googletest-master/googlemock/include -I/home/gal/CLionProjects/mission-2/lib/googletest-master/googlemock -I/home/gal/CLionProjects/mission-2/lib/googletest-master/googletest/include -I/home/gal/CLionProjects/mission-2/lib/googletest-master/googletest 
+CXX_INCLUDES = -I"/home/yair/CLionProjects/mission 3/mission-2/lib/googletest-master/googlemock/include" -I"/home/yair/CLionProjects/mission 3/mission-2/lib/googletest-master/googlemock" -I"/home/yair/CLionProjects/mission 3/mission-2/lib/googletest-master/googletest/include" -I"/home/yair/CLionProjects/mission 3/mission-2/lib/googletest-master/googletest" 
 
