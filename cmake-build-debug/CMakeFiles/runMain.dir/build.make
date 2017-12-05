@@ -43,10 +43,10 @@ RM = /home/yair/clion-2017.2.3/bin/cmake/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/yair/CLionProjects/mission-2
+CMAKE_SOURCE_DIR = /home/yair/CLionProjects/mission-4
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/yair/CLionProjects/mission-2/cmake-build-debug
+CMAKE_BINARY_DIR = /home/yair/CLionProjects/mission-4/cmake-build-debug
 
 # Include any dependencies generated for this target.
 include CMakeFiles/runMain.dir/depend.make
@@ -59,16 +59,16 @@ include CMakeFiles/runMain.dir/flags.make
 
 CMakeFiles/runMain.dir/src/main.cpp.o: CMakeFiles/runMain.dir/flags.make
 CMakeFiles/runMain.dir/src/main.cpp.o: ../src/main.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/yair/CLionProjects/mission-2/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/runMain.dir/src/main.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/runMain.dir/src/main.cpp.o -c /home/yair/CLionProjects/mission-2/src/main.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/yair/CLionProjects/mission-4/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/runMain.dir/src/main.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/runMain.dir/src/main.cpp.o -c /home/yair/CLionProjects/mission-4/src/main.cpp
 
 CMakeFiles/runMain.dir/src/main.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/runMain.dir/src/main.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/yair/CLionProjects/mission-2/src/main.cpp > CMakeFiles/runMain.dir/src/main.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/yair/CLionProjects/mission-4/src/main.cpp > CMakeFiles/runMain.dir/src/main.cpp.i
 
 CMakeFiles/runMain.dir/src/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/runMain.dir/src/main.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/yair/CLionProjects/mission-2/src/main.cpp -o CMakeFiles/runMain.dir/src/main.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/yair/CLionProjects/mission-4/src/main.cpp -o CMakeFiles/runMain.dir/src/main.cpp.s
 
 CMakeFiles/runMain.dir/src/main.cpp.o.requires:
 
@@ -83,16 +83,16 @@ CMakeFiles/runMain.dir/src/main.cpp.o.provides.build: CMakeFiles/runMain.dir/src
 
 CMakeFiles/runMain.dir/src/Game.cpp.o: CMakeFiles/runMain.dir/flags.make
 CMakeFiles/runMain.dir/src/Game.cpp.o: ../src/Game.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/yair/CLionProjects/mission-2/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/runMain.dir/src/Game.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/runMain.dir/src/Game.cpp.o -c /home/yair/CLionProjects/mission-2/src/Game.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/yair/CLionProjects/mission-4/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/runMain.dir/src/Game.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/runMain.dir/src/Game.cpp.o -c /home/yair/CLionProjects/mission-4/src/Game.cpp
 
 CMakeFiles/runMain.dir/src/Game.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/runMain.dir/src/Game.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/yair/CLionProjects/mission-2/src/Game.cpp > CMakeFiles/runMain.dir/src/Game.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/yair/CLionProjects/mission-4/src/Game.cpp > CMakeFiles/runMain.dir/src/Game.cpp.i
 
 CMakeFiles/runMain.dir/src/Game.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/runMain.dir/src/Game.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/yair/CLionProjects/mission-2/src/Game.cpp -o CMakeFiles/runMain.dir/src/Game.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/yair/CLionProjects/mission-4/src/Game.cpp -o CMakeFiles/runMain.dir/src/Game.cpp.s
 
 CMakeFiles/runMain.dir/src/Game.cpp.o.requires:
 
@@ -107,16 +107,16 @@ CMakeFiles/runMain.dir/src/Game.cpp.o.provides.build: CMakeFiles/runMain.dir/src
 
 CMakeFiles/runMain.dir/src/ConsolePlayer.cpp.o: CMakeFiles/runMain.dir/flags.make
 CMakeFiles/runMain.dir/src/ConsolePlayer.cpp.o: ../src/ConsolePlayer.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/yair/CLionProjects/mission-2/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/runMain.dir/src/ConsolePlayer.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/runMain.dir/src/ConsolePlayer.cpp.o -c /home/yair/CLionProjects/mission-2/src/ConsolePlayer.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/yair/CLionProjects/mission-4/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/runMain.dir/src/ConsolePlayer.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/runMain.dir/src/ConsolePlayer.cpp.o -c /home/yair/CLionProjects/mission-4/src/ConsolePlayer.cpp
 
 CMakeFiles/runMain.dir/src/ConsolePlayer.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/runMain.dir/src/ConsolePlayer.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/yair/CLionProjects/mission-2/src/ConsolePlayer.cpp > CMakeFiles/runMain.dir/src/ConsolePlayer.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/yair/CLionProjects/mission-4/src/ConsolePlayer.cpp > CMakeFiles/runMain.dir/src/ConsolePlayer.cpp.i
 
 CMakeFiles/runMain.dir/src/ConsolePlayer.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/runMain.dir/src/ConsolePlayer.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/yair/CLionProjects/mission-2/src/ConsolePlayer.cpp -o CMakeFiles/runMain.dir/src/ConsolePlayer.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/yair/CLionProjects/mission-4/src/ConsolePlayer.cpp -o CMakeFiles/runMain.dir/src/ConsolePlayer.cpp.s
 
 CMakeFiles/runMain.dir/src/ConsolePlayer.cpp.o.requires:
 
@@ -131,16 +131,16 @@ CMakeFiles/runMain.dir/src/ConsolePlayer.cpp.o.provides.build: CMakeFiles/runMai
 
 CMakeFiles/runMain.dir/src/Point.cpp.o: CMakeFiles/runMain.dir/flags.make
 CMakeFiles/runMain.dir/src/Point.cpp.o: ../src/Point.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/yair/CLionProjects/mission-2/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/runMain.dir/src/Point.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/runMain.dir/src/Point.cpp.o -c /home/yair/CLionProjects/mission-2/src/Point.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/yair/CLionProjects/mission-4/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/runMain.dir/src/Point.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/runMain.dir/src/Point.cpp.o -c /home/yair/CLionProjects/mission-4/src/Point.cpp
 
 CMakeFiles/runMain.dir/src/Point.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/runMain.dir/src/Point.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/yair/CLionProjects/mission-2/src/Point.cpp > CMakeFiles/runMain.dir/src/Point.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/yair/CLionProjects/mission-4/src/Point.cpp > CMakeFiles/runMain.dir/src/Point.cpp.i
 
 CMakeFiles/runMain.dir/src/Point.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/runMain.dir/src/Point.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/yair/CLionProjects/mission-2/src/Point.cpp -o CMakeFiles/runMain.dir/src/Point.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/yair/CLionProjects/mission-4/src/Point.cpp -o CMakeFiles/runMain.dir/src/Point.cpp.s
 
 CMakeFiles/runMain.dir/src/Point.cpp.o.requires:
 
@@ -155,16 +155,16 @@ CMakeFiles/runMain.dir/src/Point.cpp.o.provides.build: CMakeFiles/runMain.dir/sr
 
 CMakeFiles/runMain.dir/src/GameLogic1.cpp.o: CMakeFiles/runMain.dir/flags.make
 CMakeFiles/runMain.dir/src/GameLogic1.cpp.o: ../src/GameLogic1.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/yair/CLionProjects/mission-2/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/runMain.dir/src/GameLogic1.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/runMain.dir/src/GameLogic1.cpp.o -c /home/yair/CLionProjects/mission-2/src/GameLogic1.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/yair/CLionProjects/mission-4/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/runMain.dir/src/GameLogic1.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/runMain.dir/src/GameLogic1.cpp.o -c /home/yair/CLionProjects/mission-4/src/GameLogic1.cpp
 
 CMakeFiles/runMain.dir/src/GameLogic1.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/runMain.dir/src/GameLogic1.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/yair/CLionProjects/mission-2/src/GameLogic1.cpp > CMakeFiles/runMain.dir/src/GameLogic1.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/yair/CLionProjects/mission-4/src/GameLogic1.cpp > CMakeFiles/runMain.dir/src/GameLogic1.cpp.i
 
 CMakeFiles/runMain.dir/src/GameLogic1.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/runMain.dir/src/GameLogic1.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/yair/CLionProjects/mission-2/src/GameLogic1.cpp -o CMakeFiles/runMain.dir/src/GameLogic1.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/yair/CLionProjects/mission-4/src/GameLogic1.cpp -o CMakeFiles/runMain.dir/src/GameLogic1.cpp.s
 
 CMakeFiles/runMain.dir/src/GameLogic1.cpp.o.requires:
 
@@ -179,16 +179,16 @@ CMakeFiles/runMain.dir/src/GameLogic1.cpp.o.provides.build: CMakeFiles/runMain.d
 
 CMakeFiles/runMain.dir/src/Board.cpp.o: CMakeFiles/runMain.dir/flags.make
 CMakeFiles/runMain.dir/src/Board.cpp.o: ../src/Board.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/yair/CLionProjects/mission-2/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/runMain.dir/src/Board.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/runMain.dir/src/Board.cpp.o -c /home/yair/CLionProjects/mission-2/src/Board.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/yair/CLionProjects/mission-4/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/runMain.dir/src/Board.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/runMain.dir/src/Board.cpp.o -c /home/yair/CLionProjects/mission-4/src/Board.cpp
 
 CMakeFiles/runMain.dir/src/Board.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/runMain.dir/src/Board.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/yair/CLionProjects/mission-2/src/Board.cpp > CMakeFiles/runMain.dir/src/Board.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/yair/CLionProjects/mission-4/src/Board.cpp > CMakeFiles/runMain.dir/src/Board.cpp.i
 
 CMakeFiles/runMain.dir/src/Board.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/runMain.dir/src/Board.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/yair/CLionProjects/mission-2/src/Board.cpp -o CMakeFiles/runMain.dir/src/Board.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/yair/CLionProjects/mission-4/src/Board.cpp -o CMakeFiles/runMain.dir/src/Board.cpp.s
 
 CMakeFiles/runMain.dir/src/Board.cpp.o.requires:
 
@@ -203,16 +203,16 @@ CMakeFiles/runMain.dir/src/Board.cpp.o.provides.build: CMakeFiles/runMain.dir/sr
 
 CMakeFiles/runMain.dir/src/Player.cpp.o: CMakeFiles/runMain.dir/flags.make
 CMakeFiles/runMain.dir/src/Player.cpp.o: ../src/Player.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/yair/CLionProjects/mission-2/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/runMain.dir/src/Player.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/runMain.dir/src/Player.cpp.o -c /home/yair/CLionProjects/mission-2/src/Player.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/yair/CLionProjects/mission-4/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/runMain.dir/src/Player.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/runMain.dir/src/Player.cpp.o -c /home/yair/CLionProjects/mission-4/src/Player.cpp
 
 CMakeFiles/runMain.dir/src/Player.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/runMain.dir/src/Player.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/yair/CLionProjects/mission-2/src/Player.cpp > CMakeFiles/runMain.dir/src/Player.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/yair/CLionProjects/mission-4/src/Player.cpp > CMakeFiles/runMain.dir/src/Player.cpp.i
 
 CMakeFiles/runMain.dir/src/Player.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/runMain.dir/src/Player.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/yair/CLionProjects/mission-2/src/Player.cpp -o CMakeFiles/runMain.dir/src/Player.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/yair/CLionProjects/mission-4/src/Player.cpp -o CMakeFiles/runMain.dir/src/Player.cpp.s
 
 CMakeFiles/runMain.dir/src/Player.cpp.o.requires:
 
@@ -227,16 +227,16 @@ CMakeFiles/runMain.dir/src/Player.cpp.o.provides.build: CMakeFiles/runMain.dir/s
 
 CMakeFiles/runMain.dir/src/GameLogic.cpp.o: CMakeFiles/runMain.dir/flags.make
 CMakeFiles/runMain.dir/src/GameLogic.cpp.o: ../src/GameLogic.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/yair/CLionProjects/mission-2/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/runMain.dir/src/GameLogic.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/runMain.dir/src/GameLogic.cpp.o -c /home/yair/CLionProjects/mission-2/src/GameLogic.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/yair/CLionProjects/mission-4/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/runMain.dir/src/GameLogic.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/runMain.dir/src/GameLogic.cpp.o -c /home/yair/CLionProjects/mission-4/src/GameLogic.cpp
 
 CMakeFiles/runMain.dir/src/GameLogic.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/runMain.dir/src/GameLogic.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/yair/CLionProjects/mission-2/src/GameLogic.cpp > CMakeFiles/runMain.dir/src/GameLogic.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/yair/CLionProjects/mission-4/src/GameLogic.cpp > CMakeFiles/runMain.dir/src/GameLogic.cpp.i
 
 CMakeFiles/runMain.dir/src/GameLogic.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/runMain.dir/src/GameLogic.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/yair/CLionProjects/mission-2/src/GameLogic.cpp -o CMakeFiles/runMain.dir/src/GameLogic.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/yair/CLionProjects/mission-4/src/GameLogic.cpp -o CMakeFiles/runMain.dir/src/GameLogic.cpp.s
 
 CMakeFiles/runMain.dir/src/GameLogic.cpp.o.requires:
 
@@ -251,16 +251,16 @@ CMakeFiles/runMain.dir/src/GameLogic.cpp.o.provides.build: CMakeFiles/runMain.di
 
 CMakeFiles/runMain.dir/src/AIPlayer.cpp.o: CMakeFiles/runMain.dir/flags.make
 CMakeFiles/runMain.dir/src/AIPlayer.cpp.o: ../src/AIPlayer.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/yair/CLionProjects/mission-2/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/runMain.dir/src/AIPlayer.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/runMain.dir/src/AIPlayer.cpp.o -c /home/yair/CLionProjects/mission-2/src/AIPlayer.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/yair/CLionProjects/mission-4/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/runMain.dir/src/AIPlayer.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/runMain.dir/src/AIPlayer.cpp.o -c /home/yair/CLionProjects/mission-4/src/AIPlayer.cpp
 
 CMakeFiles/runMain.dir/src/AIPlayer.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/runMain.dir/src/AIPlayer.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/yair/CLionProjects/mission-2/src/AIPlayer.cpp > CMakeFiles/runMain.dir/src/AIPlayer.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/yair/CLionProjects/mission-4/src/AIPlayer.cpp > CMakeFiles/runMain.dir/src/AIPlayer.cpp.i
 
 CMakeFiles/runMain.dir/src/AIPlayer.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/runMain.dir/src/AIPlayer.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/yair/CLionProjects/mission-2/src/AIPlayer.cpp -o CMakeFiles/runMain.dir/src/AIPlayer.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/yair/CLionProjects/mission-4/src/AIPlayer.cpp -o CMakeFiles/runMain.dir/src/AIPlayer.cpp.s
 
 CMakeFiles/runMain.dir/src/AIPlayer.cpp.o.requires:
 
@@ -275,16 +275,16 @@ CMakeFiles/runMain.dir/src/AIPlayer.cpp.o.provides.build: CMakeFiles/runMain.dir
 
 CMakeFiles/runMain.dir/src/OnlinePlayer.cpp.o: CMakeFiles/runMain.dir/flags.make
 CMakeFiles/runMain.dir/src/OnlinePlayer.cpp.o: ../src/OnlinePlayer.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/yair/CLionProjects/mission-2/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/runMain.dir/src/OnlinePlayer.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/runMain.dir/src/OnlinePlayer.cpp.o -c /home/yair/CLionProjects/mission-2/src/OnlinePlayer.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/yair/CLionProjects/mission-4/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/runMain.dir/src/OnlinePlayer.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/runMain.dir/src/OnlinePlayer.cpp.o -c /home/yair/CLionProjects/mission-4/src/OnlinePlayer.cpp
 
 CMakeFiles/runMain.dir/src/OnlinePlayer.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/runMain.dir/src/OnlinePlayer.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/yair/CLionProjects/mission-2/src/OnlinePlayer.cpp > CMakeFiles/runMain.dir/src/OnlinePlayer.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/yair/CLionProjects/mission-4/src/OnlinePlayer.cpp > CMakeFiles/runMain.dir/src/OnlinePlayer.cpp.i
 
 CMakeFiles/runMain.dir/src/OnlinePlayer.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/runMain.dir/src/OnlinePlayer.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/yair/CLionProjects/mission-2/src/OnlinePlayer.cpp -o CMakeFiles/runMain.dir/src/OnlinePlayer.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/yair/CLionProjects/mission-4/src/OnlinePlayer.cpp -o CMakeFiles/runMain.dir/src/OnlinePlayer.cpp.s
 
 CMakeFiles/runMain.dir/src/OnlinePlayer.cpp.o.requires:
 
@@ -325,7 +325,7 @@ runMain: CMakeFiles/runMain.dir/src/AIPlayer.cpp.o
 runMain: CMakeFiles/runMain.dir/src/OnlinePlayer.cpp.o
 runMain: CMakeFiles/runMain.dir/build.make
 runMain: CMakeFiles/runMain.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/yair/CLionProjects/mission-2/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Linking CXX executable runMain"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/yair/CLionProjects/mission-4/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Linking CXX executable runMain"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/runMain.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -351,6 +351,6 @@ CMakeFiles/runMain.dir/clean:
 .PHONY : CMakeFiles/runMain.dir/clean
 
 CMakeFiles/runMain.dir/depend:
-	cd /home/yair/CLionProjects/mission-2/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/yair/CLionProjects/mission-2 /home/yair/CLionProjects/mission-2 /home/yair/CLionProjects/mission-2/cmake-build-debug /home/yair/CLionProjects/mission-2/cmake-build-debug /home/yair/CLionProjects/mission-2/cmake-build-debug/CMakeFiles/runMain.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/yair/CLionProjects/mission-4/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/yair/CLionProjects/mission-4 /home/yair/CLionProjects/mission-4 /home/yair/CLionProjects/mission-4/cmake-build-debug /home/yair/CLionProjects/mission-4/cmake-build-debug /home/yair/CLionProjects/mission-4/cmake-build-debug/CMakeFiles/runMain.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/runMain.dir/depend
 

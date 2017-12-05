@@ -45,6 +45,7 @@ CMakeFiles/runMain.dir/src/OnlinePlayer.cpp.o: ../include/GameLogic1.h
 CMakeFiles/runMain.dir/src/OnlinePlayer.cpp.o: ../include/OnlinePlayer.h
 CMakeFiles/runMain.dir/src/OnlinePlayer.cpp.o: ../include/Player.h
 CMakeFiles/runMain.dir/src/OnlinePlayer.cpp.o: ../include/Point.h
+CMakeFiles/runMain.dir/src/OnlinePlayer.cpp.o: ../src/Client/Client.h
 CMakeFiles/runMain.dir/src/OnlinePlayer.cpp.o: ../src/OnlinePlayer.cpp
 
 CMakeFiles/runMain.dir/src/Player.cpp.o: ../include/Board.h

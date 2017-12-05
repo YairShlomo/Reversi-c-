@@ -9,6 +9,7 @@ ID: 305216962
 #include "../include/GameLogic1.h"
 #include<iostream>
 #include<stdio.h>
+#include "../src/Client/Client.h"
 OnlinePlayer::OnlinePlayer(char sign):
         Player(sign),sign(sign){
 }

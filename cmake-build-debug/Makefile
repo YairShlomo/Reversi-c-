@@ -48,10 +48,10 @@ RM = /home/yair/clion-2017.2.3/bin/cmake/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/yair/CLionProjects/mission-2
+CMAKE_SOURCE_DIR = /home/yair/CLionProjects/mission-4
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/yair/CLionProjects/mission-2/cmake-build-debug
+CMAKE_BINARY_DIR = /home/yair/CLionProjects/mission-4/cmake-build-debug
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -126,9 +126,9 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/yair/CLionProjects/mission-2/cmake-build-debug/CMakeFiles /home/yair/CLionProjects/mission-2/cmake-build-debug/CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/yair/CLionProjects/mission-4/cmake-build-debug/CMakeFiles /home/yair/CLionProjects/mission-4/cmake-build-debug/CMakeFiles/progress.marks
 	$(MAKE) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/yair/CLionProjects/mission-2/cmake-build-debug/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/yair/CLionProjects/mission-4/cmake-build-debug/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -456,6 +456,33 @@ src/Board.cpp.s:
 	$(MAKE) -f CMakeFiles/runMain.dir/build.make CMakeFiles/runMain.dir/src/Board.cpp.s
 .PHONY : src/Board.cpp.s
 
+src/Client/Client.o: src/Client/Client.cpp.o
+
+.PHONY : src/Client/Client.o
+
+# target to build an object file
+src/Client/Client.cpp.o:
+	$(MAKE) -f CMakeFiles/runUnitTests.dir/build.make CMakeFiles/runUnitTests.dir/src/Client/Client.cpp.o
+.PHONY : src/Client/Client.cpp.o
+
+src/Client/Client.i: src/Client/Client.cpp.i
+
+.PHONY : src/Client/Client.i
+
+# target to preprocess a source file
+src/Client/Client.cpp.i:
+	$(MAKE) -f CMakeFiles/runUnitTests.dir/build.make CMakeFiles/runUnitTests.dir/src/Client/Client.cpp.i
+.PHONY : src/Client/Client.cpp.i
+
+src/Client/Client.s: src/Client/Client.cpp.s
+
+.PHONY : src/Client/Client.s
+
+# target to generate assembly for a file
+src/Client/Client.cpp.s:
+	$(MAKE) -f CMakeFiles/runUnitTests.dir/build.make CMakeFiles/runUnitTests.dir/src/Client/Client.cpp.s
+.PHONY : src/Client/Client.cpp.s
+
 src/ConsolePlayer.o: src/ConsolePlayer.cpp.o
 
 .PHONY : src/ConsolePlayer.o
@@ -732,6 +759,9 @@ help:
 	@echo "... src/Board.o"
 	@echo "... src/Board.i"
 	@echo "... src/Board.s"
+	@echo "... src/Client/Client.o"
+	@echo "... src/Client/Client.i"
+	@echo "... src/Client/Client.s"
 	@echo "... src/ConsolePlayer.o"
 	@echo "... src/ConsolePlayer.i"
 	@echo "... src/ConsolePlayer.s"

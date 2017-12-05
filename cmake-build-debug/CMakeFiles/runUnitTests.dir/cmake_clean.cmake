@@ -5,6 +5,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/runUnitTests.dir/Tests/test_Game.cpp.o"
   "CMakeFiles/runUnitTests.dir/Tests/test_AIPlayer.cpp.o"
   "CMakeFiles/runUnitTests.dir/Tests/test_Board.cpp.o"
+  "CMakeFiles/runUnitTests.dir/src/Client/Client.cpp.o"
   "CMakeFiles/runUnitTests.dir/src/Game.cpp.o"
   "CMakeFiles/runUnitTests.dir/src/ConsolePlayer.cpp.o"
   "CMakeFiles/runUnitTests.dir/src/Point.cpp.o"
