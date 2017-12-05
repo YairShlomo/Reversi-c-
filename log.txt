@@ -1,0 +1,57 @@
+commit 50f64984e8721cb641a54d18f1970d31a49ebf30
+Author: YairShlomo <yyaaiirr1@gmail.com>
+Date:   Tue Nov 28 20:59:25 2017 +0200
+
+    main
+
+commit c43afb10b3edda280ccbf2d69f8b32f78bf661db
+Merge: 2a4893f 7755ff9
+Author: YairShlomo <33932692+YairShlomo@users.noreply.github.com>
+Date:   Tue Nov 28 19:01:31 2017 +0200
+
+    Merge pull request #1 from YairShlomo/nahum
+    
+    Nahum
+
+commit 7755ff96431b74065fe13506c62a480677cd4fba
+Merge: 4df8b20 2a4893f
+Author: galv14 <gale6@gmail.com>
+Date:   Tue Nov 28 18:15:09 2017 +0200
+
+    test2
+
+commit 4df8b208f6df65497e063fdd9c779c6d67b2311f
+Author: galv14 <gale6@gmail.com>
+Date:   Tue Nov 28 17:57:10 2017 +0200
+
+    test2
+
+commit 2a4893f6d4c7c9d48cbc16341fe2ebf4184fa79c
+Author: YairShlomo <yyaaiirr1@gmail.com>
+Date:   Tue Nov 28 17:52:02 2017 +0200
+
+    tests1
+
+commit def630d81a3338cde0c1e05339e952b03fea9fff
+Author: YairShlomo <yyaaiirr1@gmail.com>
+Date:   Sun Nov 26 15:35:26 2017 +0200
+
+    buildtest
+
+commit 2c51c55195f9defbe711326b6428c1e910a5935c
+Author: YairShlomo <yyaaiirr1@gmail.com>
+Date:   Sun Nov 26 14:02:58 2017 +0200
+
+    AIPlayer
+
+commit 20a1ddfab0ae6b8270ce245d4d9f2d0ff1bed32e
+Author: YairShlomo <yyaaiirr1@gmail.com>
+Date:   Thu Nov 23 18:56:23 2017 +0200
+
+    Initial Commit
+
+commit 2b9477cf4d737d51762039fd4427d6f6f37d634c
+Author: YairShlomo <yyaaiirr1@gmail.com>
+Date:   Thu Nov 23 16:58:50 2017 +0200
+
+    Initial Commit

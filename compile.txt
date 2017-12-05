@@ -1,0 +1,9 @@
+./GameLogic.o
+./Board.o
+./GameLogic1.o
+./ConsolePlayer.o
+./AIPlayer.o
+./main.o
+./Point.o
+./Player.o
+./Game.o

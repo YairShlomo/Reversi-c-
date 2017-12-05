@@ -1,0 +1,9 @@
+src/Game.cpp
+src/Board.cpp
+src/GameLogic.cpp
+src/main.cpp
+src/GameLogic1.cpp
+src/Point.cpp
+src/Player.cpp
+src/AIPlayer.cpp
+src/ConsolePlayer.cpp
