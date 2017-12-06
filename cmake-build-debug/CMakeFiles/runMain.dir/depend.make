@@ -12,6 +12,15 @@ CMakeFiles/runMain.dir/src/AIPlayer.cpp.o: ../src/AIPlayer.cpp
 CMakeFiles/runMain.dir/src/Board.cpp.o: ../include/Board.h
 CMakeFiles/runMain.dir/src/Board.cpp.o: ../src/Board.cpp
 
+CMakeFiles/runMain.dir/src/Client.cpp.o: ../include/Board.h
+CMakeFiles/runMain.dir/src/Client.cpp.o: ../include/Client.h
+CMakeFiles/runMain.dir/src/Client.cpp.o: ../include/ConsolePlayer.h
+CMakeFiles/runMain.dir/src/Client.cpp.o: ../include/GameLogic.h
+CMakeFiles/runMain.dir/src/Client.cpp.o: ../include/GameLogic1.h
+CMakeFiles/runMain.dir/src/Client.cpp.o: ../include/Player.h
+CMakeFiles/runMain.dir/src/Client.cpp.o: ../include/Point.h
+CMakeFiles/runMain.dir/src/Client.cpp.o: ../src/Client.cpp
+
 CMakeFiles/runMain.dir/src/ConsolePlayer.cpp.o: ../include/Board.h
 CMakeFiles/runMain.dir/src/ConsolePlayer.cpp.o: ../include/ConsolePlayer.h
 CMakeFiles/runMain.dir/src/ConsolePlayer.cpp.o: ../include/GameLogic.h
@@ -39,14 +48,23 @@ CMakeFiles/runMain.dir/src/GameLogic1.cpp.o: ../include/GameLogic1.h
 CMakeFiles/runMain.dir/src/GameLogic1.cpp.o: ../include/Point.h
 CMakeFiles/runMain.dir/src/GameLogic1.cpp.o: ../src/GameLogic1.cpp
 
-CMakeFiles/runMain.dir/src/OnlinePlayer.cpp.o: ../include/Board.h
-CMakeFiles/runMain.dir/src/OnlinePlayer.cpp.o: ../include/GameLogic.h
-CMakeFiles/runMain.dir/src/OnlinePlayer.cpp.o: ../include/GameLogic1.h
-CMakeFiles/runMain.dir/src/OnlinePlayer.cpp.o: ../include/OnlinePlayer.h
-CMakeFiles/runMain.dir/src/OnlinePlayer.cpp.o: ../include/Player.h
-CMakeFiles/runMain.dir/src/OnlinePlayer.cpp.o: ../include/Point.h
-CMakeFiles/runMain.dir/src/OnlinePlayer.cpp.o: ../src/Client/Client.h
-CMakeFiles/runMain.dir/src/OnlinePlayer.cpp.o: ../src/OnlinePlayer.cpp
+CMakeFiles/runMain.dir/src/GameOnline.cpp.o: ../include/Board.h
+CMakeFiles/runMain.dir/src/GameOnline.cpp.o: ../include/Game.h
+CMakeFiles/runMain.dir/src/GameOnline.cpp.o: ../include/GameLogic.h
+CMakeFiles/runMain.dir/src/GameOnline.cpp.o: ../include/GameLogic1.h
+CMakeFiles/runMain.dir/src/GameOnline.cpp.o: ../include/GameOnline.h
+CMakeFiles/runMain.dir/src/GameOnline.cpp.o: ../include/Player.h
+CMakeFiles/runMain.dir/src/GameOnline.cpp.o: ../include/Point.h
+CMakeFiles/runMain.dir/src/GameOnline.cpp.o: ../src/GameOnline.cpp
+
+CMakeFiles/runMain.dir/src/GameStandard.cpp.o: ../include/Board.h
+CMakeFiles/runMain.dir/src/GameStandard.cpp.o: ../include/Game.h
+CMakeFiles/runMain.dir/src/GameStandard.cpp.o: ../include/GameLogic.h
+CMakeFiles/runMain.dir/src/GameStandard.cpp.o: ../include/GameLogic1.h
+CMakeFiles/runMain.dir/src/GameStandard.cpp.o: ../include/GameStandard.h
+CMakeFiles/runMain.dir/src/GameStandard.cpp.o: ../include/Player.h
+CMakeFiles/runMain.dir/src/GameStandard.cpp.o: ../include/Point.h
+CMakeFiles/runMain.dir/src/GameStandard.cpp.o: ../src/GameStandard.cpp
 
 CMakeFiles/runMain.dir/src/Player.cpp.o: ../include/Board.h
 CMakeFiles/runMain.dir/src/Player.cpp.o: ../include/ConsolePlayer.h
@@ -61,11 +79,13 @@ CMakeFiles/runMain.dir/src/Point.cpp.o: ../src/Point.cpp
 
 CMakeFiles/runMain.dir/src/main.cpp.o: ../include/AIPlayer.h
 CMakeFiles/runMain.dir/src/main.cpp.o: ../include/Board.h
+CMakeFiles/runMain.dir/src/main.cpp.o: ../include/Client.h
 CMakeFiles/runMain.dir/src/main.cpp.o: ../include/ConsolePlayer.h
 CMakeFiles/runMain.dir/src/main.cpp.o: ../include/Game.h
 CMakeFiles/runMain.dir/src/main.cpp.o: ../include/GameLogic.h
 CMakeFiles/runMain.dir/src/main.cpp.o: ../include/GameLogic1.h
-CMakeFiles/runMain.dir/src/main.cpp.o: ../include/OnlinePlayer.h
+CMakeFiles/runMain.dir/src/main.cpp.o: ../include/GameOnline.h
+CMakeFiles/runMain.dir/src/main.cpp.o: ../include/GameStandard.h
 CMakeFiles/runMain.dir/src/main.cpp.o: ../include/Player.h
 CMakeFiles/runMain.dir/src/main.cpp.o: ../include/Point.h
 CMakeFiles/runMain.dir/src/main.cpp.o: ../src/main.cpp

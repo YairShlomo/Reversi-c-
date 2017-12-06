@@ -1,6 +1,5 @@
 file(REMOVE_RECURSE
   "CMakeFiles/runMain.dir/src/main.cpp.o"
-  "CMakeFiles/runMain.dir/src/Game.cpp.o"
   "CMakeFiles/runMain.dir/src/ConsolePlayer.cpp.o"
   "CMakeFiles/runMain.dir/src/Point.cpp.o"
   "CMakeFiles/runMain.dir/src/GameLogic1.cpp.o"
@@ -8,7 +7,10 @@ file(REMOVE_RECURSE
   "CMakeFiles/runMain.dir/src/Player.cpp.o"
   "CMakeFiles/runMain.dir/src/GameLogic.cpp.o"
   "CMakeFiles/runMain.dir/src/AIPlayer.cpp.o"
-  "CMakeFiles/runMain.dir/src/OnlinePlayer.cpp.o"
+  "CMakeFiles/runMain.dir/src/GameStandard.cpp.o"
+  "CMakeFiles/runMain.dir/src/Game.cpp.o"
+  "CMakeFiles/runMain.dir/src/Client.cpp.o"
+  "CMakeFiles/runMain.dir/src/GameOnline.cpp.o"
   "runMain.pdb"
   "runMain"
 )

@@ -27,6 +27,7 @@ public:
 * Constructor initialize member sign.
 */
     Player(char sign);
+    //Player();
     /**
 * getSign returns player sign.
 * @return char - PLayer's sign

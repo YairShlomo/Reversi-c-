@@ -12,6 +12,15 @@ CMakeFiles/runMain.dir/src/AIPlayer.cpp.o
 CMakeFiles/runMain.dir/src/Board.cpp.o
  /home/yair/CLionProjects/mission-4/include/Board.h
  /home/yair/CLionProjects/mission-4/src/Board.cpp
+CMakeFiles/runMain.dir/src/Client.cpp.o
+ /home/yair/CLionProjects/mission-4/include/Board.h
+ /home/yair/CLionProjects/mission-4/include/Client.h
+ /home/yair/CLionProjects/mission-4/include/ConsolePlayer.h
+ /home/yair/CLionProjects/mission-4/include/GameLogic.h
+ /home/yair/CLionProjects/mission-4/include/GameLogic1.h
+ /home/yair/CLionProjects/mission-4/include/Player.h
+ /home/yair/CLionProjects/mission-4/include/Point.h
+ /home/yair/CLionProjects/mission-4/src/Client.cpp
 CMakeFiles/runMain.dir/src/ConsolePlayer.cpp.o
  /home/yair/CLionProjects/mission-4/include/Board.h
  /home/yair/CLionProjects/mission-4/include/ConsolePlayer.h
@@ -39,15 +48,24 @@ CMakeFiles/runMain.dir/src/GameLogic1.cpp.o
  /home/yair/CLionProjects/mission-4/include/GameLogic1.h
  /home/yair/CLionProjects/mission-4/include/Point.h
  /home/yair/CLionProjects/mission-4/src/GameLogic1.cpp
-CMakeFiles/runMain.dir/src/OnlinePlayer.cpp.o
+CMakeFiles/runMain.dir/src/GameOnline.cpp.o
  /home/yair/CLionProjects/mission-4/include/Board.h
+ /home/yair/CLionProjects/mission-4/include/Game.h
  /home/yair/CLionProjects/mission-4/include/GameLogic.h
  /home/yair/CLionProjects/mission-4/include/GameLogic1.h
- /home/yair/CLionProjects/mission-4/include/OnlinePlayer.h
+ /home/yair/CLionProjects/mission-4/include/GameOnline.h
  /home/yair/CLionProjects/mission-4/include/Player.h
  /home/yair/CLionProjects/mission-4/include/Point.h
- /home/yair/CLionProjects/mission-4/src/Client/Client.h
- /home/yair/CLionProjects/mission-4/src/OnlinePlayer.cpp
+ /home/yair/CLionProjects/mission-4/src/GameOnline.cpp
+CMakeFiles/runMain.dir/src/GameStandard.cpp.o
+ /home/yair/CLionProjects/mission-4/include/Board.h
+ /home/yair/CLionProjects/mission-4/include/Game.h
+ /home/yair/CLionProjects/mission-4/include/GameLogic.h
+ /home/yair/CLionProjects/mission-4/include/GameLogic1.h
+ /home/yair/CLionProjects/mission-4/include/GameStandard.h
+ /home/yair/CLionProjects/mission-4/include/Player.h
+ /home/yair/CLionProjects/mission-4/include/Point.h
+ /home/yair/CLionProjects/mission-4/src/GameStandard.cpp
 CMakeFiles/runMain.dir/src/Player.cpp.o
  /home/yair/CLionProjects/mission-4/include/Board.h
  /home/yair/CLionProjects/mission-4/include/ConsolePlayer.h
@@ -62,11 +80,13 @@ CMakeFiles/runMain.dir/src/Point.cpp.o
 CMakeFiles/runMain.dir/src/main.cpp.o
  /home/yair/CLionProjects/mission-4/include/AIPlayer.h
  /home/yair/CLionProjects/mission-4/include/Board.h
+ /home/yair/CLionProjects/mission-4/include/Client.h
  /home/yair/CLionProjects/mission-4/include/ConsolePlayer.h
  /home/yair/CLionProjects/mission-4/include/Game.h
  /home/yair/CLionProjects/mission-4/include/GameLogic.h
  /home/yair/CLionProjects/mission-4/include/GameLogic1.h
- /home/yair/CLionProjects/mission-4/include/OnlinePlayer.h
+ /home/yair/CLionProjects/mission-4/include/GameOnline.h
+ /home/yair/CLionProjects/mission-4/include/GameStandard.h
  /home/yair/CLionProjects/mission-4/include/Player.h
  /home/yair/CLionProjects/mission-4/include/Point.h
  /home/yair/CLionProjects/mission-4/src/main.cpp

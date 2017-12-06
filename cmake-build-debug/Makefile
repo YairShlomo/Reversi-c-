@@ -456,32 +456,35 @@ src/Board.cpp.s:
 	$(MAKE) -f CMakeFiles/runMain.dir/build.make CMakeFiles/runMain.dir/src/Board.cpp.s
 .PHONY : src/Board.cpp.s
 
-src/Client/Client.o: src/Client/Client.cpp.o
+src/Client.o: src/Client.cpp.o
 
-.PHONY : src/Client/Client.o
+.PHONY : src/Client.o
 
 # target to build an object file
-src/Client/Client.cpp.o:
-	$(MAKE) -f CMakeFiles/runUnitTests.dir/build.make CMakeFiles/runUnitTests.dir/src/Client/Client.cpp.o
-.PHONY : src/Client/Client.cpp.o
+src/Client.cpp.o:
+	$(MAKE) -f CMakeFiles/runUnitTests.dir/build.make CMakeFiles/runUnitTests.dir/src/Client.cpp.o
+	$(MAKE) -f CMakeFiles/runMain.dir/build.make CMakeFiles/runMain.dir/src/Client.cpp.o
+.PHONY : src/Client.cpp.o
 
-src/Client/Client.i: src/Client/Client.cpp.i
+src/Client.i: src/Client.cpp.i
 
-.PHONY : src/Client/Client.i
+.PHONY : src/Client.i
 
 # target to preprocess a source file
-src/Client/Client.cpp.i:
-	$(MAKE) -f CMakeFiles/runUnitTests.dir/build.make CMakeFiles/runUnitTests.dir/src/Client/Client.cpp.i
-.PHONY : src/Client/Client.cpp.i
+src/Client.cpp.i:
+	$(MAKE) -f CMakeFiles/runUnitTests.dir/build.make CMakeFiles/runUnitTests.dir/src/Client.cpp.i
+	$(MAKE) -f CMakeFiles/runMain.dir/build.make CMakeFiles/runMain.dir/src/Client.cpp.i
+.PHONY : src/Client.cpp.i
 
-src/Client/Client.s: src/Client/Client.cpp.s
+src/Client.s: src/Client.cpp.s
 
-.PHONY : src/Client/Client.s
+.PHONY : src/Client.s
 
 # target to generate assembly for a file
-src/Client/Client.cpp.s:
-	$(MAKE) -f CMakeFiles/runUnitTests.dir/build.make CMakeFiles/runUnitTests.dir/src/Client/Client.cpp.s
-.PHONY : src/Client/Client.cpp.s
+src/Client.cpp.s:
+	$(MAKE) -f CMakeFiles/runUnitTests.dir/build.make CMakeFiles/runUnitTests.dir/src/Client.cpp.s
+	$(MAKE) -f CMakeFiles/runMain.dir/build.make CMakeFiles/runMain.dir/src/Client.cpp.s
+.PHONY : src/Client.cpp.s
 
 src/ConsolePlayer.o: src/ConsolePlayer.cpp.o
 
@@ -603,32 +606,65 @@ src/GameLogic1.cpp.s:
 	$(MAKE) -f CMakeFiles/runMain.dir/build.make CMakeFiles/runMain.dir/src/GameLogic1.cpp.s
 .PHONY : src/GameLogic1.cpp.s
 
-src/OnlinePlayer.o: src/OnlinePlayer.cpp.o
+src/GameOnline.o: src/GameOnline.cpp.o
 
-.PHONY : src/OnlinePlayer.o
+.PHONY : src/GameOnline.o
 
 # target to build an object file
-src/OnlinePlayer.cpp.o:
-	$(MAKE) -f CMakeFiles/runMain.dir/build.make CMakeFiles/runMain.dir/src/OnlinePlayer.cpp.o
-.PHONY : src/OnlinePlayer.cpp.o
+src/GameOnline.cpp.o:
+	$(MAKE) -f CMakeFiles/runUnitTests.dir/build.make CMakeFiles/runUnitTests.dir/src/GameOnline.cpp.o
+	$(MAKE) -f CMakeFiles/runMain.dir/build.make CMakeFiles/runMain.dir/src/GameOnline.cpp.o
+.PHONY : src/GameOnline.cpp.o
 
-src/OnlinePlayer.i: src/OnlinePlayer.cpp.i
+src/GameOnline.i: src/GameOnline.cpp.i
 
-.PHONY : src/OnlinePlayer.i
+.PHONY : src/GameOnline.i
 
 # target to preprocess a source file
-src/OnlinePlayer.cpp.i:
-	$(MAKE) -f CMakeFiles/runMain.dir/build.make CMakeFiles/runMain.dir/src/OnlinePlayer.cpp.i
-.PHONY : src/OnlinePlayer.cpp.i
+src/GameOnline.cpp.i:
+	$(MAKE) -f CMakeFiles/runUnitTests.dir/build.make CMakeFiles/runUnitTests.dir/src/GameOnline.cpp.i
+	$(MAKE) -f CMakeFiles/runMain.dir/build.make CMakeFiles/runMain.dir/src/GameOnline.cpp.i
+.PHONY : src/GameOnline.cpp.i
 
-src/OnlinePlayer.s: src/OnlinePlayer.cpp.s
+src/GameOnline.s: src/GameOnline.cpp.s
 
-.PHONY : src/OnlinePlayer.s
+.PHONY : src/GameOnline.s
 
 # target to generate assembly for a file
-src/OnlinePlayer.cpp.s:
-	$(MAKE) -f CMakeFiles/runMain.dir/build.make CMakeFiles/runMain.dir/src/OnlinePlayer.cpp.s
-.PHONY : src/OnlinePlayer.cpp.s
+src/GameOnline.cpp.s:
+	$(MAKE) -f CMakeFiles/runUnitTests.dir/build.make CMakeFiles/runUnitTests.dir/src/GameOnline.cpp.s
+	$(MAKE) -f CMakeFiles/runMain.dir/build.make CMakeFiles/runMain.dir/src/GameOnline.cpp.s
+.PHONY : src/GameOnline.cpp.s
+
+src/GameStandard.o: src/GameStandard.cpp.o
+
+.PHONY : src/GameStandard.o
+
+# target to build an object file
+src/GameStandard.cpp.o:
+	$(MAKE) -f CMakeFiles/runUnitTests.dir/build.make CMakeFiles/runUnitTests.dir/src/GameStandard.cpp.o
+	$(MAKE) -f CMakeFiles/runMain.dir/build.make CMakeFiles/runMain.dir/src/GameStandard.cpp.o
+.PHONY : src/GameStandard.cpp.o
+
+src/GameStandard.i: src/GameStandard.cpp.i
+
+.PHONY : src/GameStandard.i
+
+# target to preprocess a source file
+src/GameStandard.cpp.i:
+	$(MAKE) -f CMakeFiles/runUnitTests.dir/build.make CMakeFiles/runUnitTests.dir/src/GameStandard.cpp.i
+	$(MAKE) -f CMakeFiles/runMain.dir/build.make CMakeFiles/runMain.dir/src/GameStandard.cpp.i
+.PHONY : src/GameStandard.cpp.i
+
+src/GameStandard.s: src/GameStandard.cpp.s
+
+.PHONY : src/GameStandard.s
+
+# target to generate assembly for a file
+src/GameStandard.cpp.s:
+	$(MAKE) -f CMakeFiles/runUnitTests.dir/build.make CMakeFiles/runUnitTests.dir/src/GameStandard.cpp.s
+	$(MAKE) -f CMakeFiles/runMain.dir/build.make CMakeFiles/runMain.dir/src/GameStandard.cpp.s
+.PHONY : src/GameStandard.cpp.s
 
 src/Player.o: src/Player.cpp.o
 
@@ -759,9 +795,9 @@ help:
 	@echo "... src/Board.o"
 	@echo "... src/Board.i"
 	@echo "... src/Board.s"
-	@echo "... src/Client/Client.o"
-	@echo "... src/Client/Client.i"
-	@echo "... src/Client/Client.s"
+	@echo "... src/Client.o"
+	@echo "... src/Client.i"
+	@echo "... src/Client.s"
 	@echo "... src/ConsolePlayer.o"
 	@echo "... src/ConsolePlayer.i"
 	@echo "... src/ConsolePlayer.s"
@@ -774,9 +810,12 @@ help:
 	@echo "... src/GameLogic1.o"
 	@echo "... src/GameLogic1.i"
 	@echo "... src/GameLogic1.s"
-	@echo "... src/OnlinePlayer.o"
-	@echo "... src/OnlinePlayer.i"
-	@echo "... src/OnlinePlayer.s"
+	@echo "... src/GameOnline.o"
+	@echo "... src/GameOnline.i"
+	@echo "... src/GameOnline.s"
+	@echo "... src/GameStandard.o"
+	@echo "... src/GameStandard.i"
+	@echo "... src/GameStandard.s"
 	@echo "... src/Player.o"
 	@echo "... src/Player.i"
 	@echo "... src/Player.s"

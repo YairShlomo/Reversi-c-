@@ -9,12 +9,14 @@ ID: 305216962
 #include "../include/Game.h"
 #include "../include/ConsolePlayer.h"
 #include "../include/AIPlayer.h"
-#include "../include/OnlinePlayer.h"
+#include "../include/GameStandard.h"
+#include "../include/GameOnline.h"
+#include "../include/Client.h"
 
 #define NUMROW 3
 #define NUMCOL 3
+
 int opponentChoice();
-using namespace std;
 int main() {
     Board board(NUMROW,NUMCOL);
     GameLogic1* logic = new GameLogic1(board);
@@ -23,28 +25,26 @@ int main() {
         if (userChoice == 1) {
             ConsolePlayer pl1=ConsolePlayer('X');
             ConsolePlayer pl2('O');
-            Game game(pl1, pl2, board, logic);
+            GameStandard game(pl1, pl2, board, logic);
             game.play();
             delete (logic);
             return 0;
         } else if (userChoice == 2) {
             ConsolePlayer pl1=ConsolePlayer('X');
             AIPlayer pl2('O', board, logic);
-            Game game(pl1, pl2, board, logic);
+            GameStandard game(pl1, pl2, board, logic);
             game.play();
             delete (logic);
             return 0;
         } else if (userChoice == 3) {
-            OnlinePlayer pl1=OnlinePlayer('X');
-            OnlinePlayer pl2('O');
-        Game game(pl1, pl2, board, logic);
-        game.play();
-        delete (logic);
-        return 0;
-    }
-    }while (opponentChoice()==-1);
-
-
+            Client pl1('X',"127.0.0.1",5556);
+            ConsolePlayer pl2=ConsolePlayer('X');
+            //GameOnline game(pl1, pl2, board, logic);
+            //game.play();
+            delete (logic);
+            return 0;
+        }
+    } while (opponentChoice()==-1);
 }
 /**
     * opponentChoice get from user his choice about his opponent.

@@ -415,9 +415,6 @@
 		<Unit filename="/home/yair/CLionProjects/mission-4/Tests/test_Point.h">
 			<Option target="runUnitTests"/>
 		</Unit>
-		<Unit filename="/home/yair/CLionProjects/mission-4/include/OnlinePlayer.h">
-			<Option target="runUnitTests"/>
-		</Unit>
 		<Unit filename="/home/yair/CLionProjects/mission-4/lib/googletest-master/googlemock/src/gmock-all.cc">
 			<Option target="gmock_main"/>
 			<Option target="gmock"/>
@@ -441,11 +438,9 @@
 			<Option target="runUnitTests"/>
 			<Option target="runMain"/>
 		</Unit>
-		<Unit filename="/home/yair/CLionProjects/mission-4/src/Client/Client.cpp">
+		<Unit filename="/home/yair/CLionProjects/mission-4/src/Client.cpp">
 			<Option target="runUnitTests"/>
-		</Unit>
-		<Unit filename="/home/yair/CLionProjects/mission-4/src/Client/Client.h">
-			<Option target="runUnitTests"/>
+			<Option target="runMain"/>
 		</Unit>
 		<Unit filename="/home/yair/CLionProjects/mission-4/src/ConsolePlayer.cpp">
 			<Option target="runUnitTests"/>
@@ -463,7 +458,12 @@
 			<Option target="runUnitTests"/>
 			<Option target="runMain"/>
 		</Unit>
-		<Unit filename="/home/yair/CLionProjects/mission-4/src/OnlinePlayer.cpp">
+		<Unit filename="/home/yair/CLionProjects/mission-4/src/GameOnline.cpp">
+			<Option target="runUnitTests"/>
+			<Option target="runMain"/>
+		</Unit>
+		<Unit filename="/home/yair/CLionProjects/mission-4/src/GameStandard.cpp">
+			<Option target="runUnitTests"/>
 			<Option target="runMain"/>
 		</Unit>
 		<Unit filename="/home/yair/CLionProjects/mission-4/src/Player.cpp">
