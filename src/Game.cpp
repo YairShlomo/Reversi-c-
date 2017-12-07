@@ -32,7 +32,7 @@ int Game::play1Turn(Player &pl) {
     board.printBoard();
     vector<Point> optionalMoves=logic->optionalTurns(pl.getSign());
     Point* userPlay=pl.yourPlay(optionalMoves);
-    if(userPlay==NULL){
+    if(userPlay==NULL) {
         delete(userPlay);
 
         return 0;

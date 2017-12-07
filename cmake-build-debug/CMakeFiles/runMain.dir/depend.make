@@ -49,6 +49,7 @@ CMakeFiles/runMain.dir/src/GameLogic1.cpp.o: ../include/Point.h
 CMakeFiles/runMain.dir/src/GameLogic1.cpp.o: ../src/GameLogic1.cpp
 
 CMakeFiles/runMain.dir/src/GameOnline.cpp.o: ../include/Board.h
+CMakeFiles/runMain.dir/src/GameOnline.cpp.o: ../include/Client.h
 CMakeFiles/runMain.dir/src/GameOnline.cpp.o: ../include/Game.h
 CMakeFiles/runMain.dir/src/GameOnline.cpp.o: ../include/GameLogic.h
 CMakeFiles/runMain.dir/src/GameOnline.cpp.o: ../include/GameLogic1.h

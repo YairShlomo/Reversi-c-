@@ -103,6 +103,8 @@ GameLogic1.h
 /home/yair/CLionProjects/mission-4/include/GameLogic1.h
 Game.h
 /home/yair/CLionProjects/mission-4/include/Game.h
+Client.h
+/home/yair/CLionProjects/mission-4/include/Client.h
 
 /home/yair/CLionProjects/mission-4/include/GameStandard.h
 stdio.h
@@ -199,10 +201,14 @@ iostream
 /home/yair/CLionProjects/mission-4/include/GameLogic1.h
 
 /home/yair/CLionProjects/mission-4/src/GameOnline.cpp
+unistd.h
+-
 ../include/GameOnline.h
 /home/yair/CLionProjects/mission-4/include/GameOnline.h
 ../include/Game.h
 /home/yair/CLionProjects/mission-4/include/Game.h
+../include/Client.h
+/home/yair/CLionProjects/mission-4/include/Client.h
 
 /home/yair/CLionProjects/mission-4/src/GameStandard.cpp
 ../include/GameStandard.h

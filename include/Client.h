@@ -6,10 +6,12 @@
 #include<stdio.h>
 #include<string>
 
-class Client :public Player{
+class Client :public Player {
 public:
     Client(char sign ,const char *serverIP, int serverPort);
-    void connectToServer();
+    void moveTurn();
+
+        void connectToServer();
     /**
 * yourPlay is a abstract. returns a point play fom user.
 */
@@ -18,7 +20,10 @@ public:
 * * checkNextTurn is a abstract. checks if there is any option of play to Player.
 */
     bool checkNextTurn(GameLogic* logic);
-    int message(int arg1, char op, int arg2);
+    char* getMessage();
+    void sendMessage();
+    void endGame();
+
 private:
     const char *serverIP;
     int serverPort;

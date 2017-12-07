@@ -16,6 +16,7 @@ using namespace std;
 #include "Player.h"
 #include "GameLogic1.h"
 #include "Game.h"
+#include "Client.h"
 
 
 /**
@@ -24,7 +25,7 @@ using namespace std;
 class GameOnline :public Game {
 private:
     Board &board;
-    Player &pl1;
+    Client &pl1;
     Player &pl2;
     GameLogic *logic;
     //BlackTurn('X')-true. WhiteTurn('O')-false.
@@ -32,7 +33,7 @@ private:
     //counts num of times turns passed in a row.
     int countMoveTurn;
 public:
-    GameOnline(Player &pl1, Player &pl2, Board &boards, GameLogic *logic);
+    GameOnline(Client &pl1, Player &pl2, Board &boards, GameLogic *logic);
 
 /*
 * play in charge of the loop game and managing turns.

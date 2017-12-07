@@ -44,9 +44,23 @@ void Client::connectToServer() {
         cout << buffer;
     //close(clientSocket);
 }
-int Client::message(int arg1, char op, int arg2){
+void Client::sendMessage() {
+}
+char* Client::getMessage() {
+    char buffer[7];
+    int sendSize = read(clientSocket,&buffer, sizeof(buffer));
+    return buffer;
+}
 
-    int sendSize = read(clientSocket,&sign, sizeof(sign));
+void Client::endGame() {
+char finish[7] ="END";
+    int finishSize= sizeof(finishSize);
+    int sendMessage = write(clientSocket,finish,finishSize);
+}
+void Client::moveTurn() {
+    char finish[7] ="NOMOVE";
+    int finishSize= sizeof(finishSize);
+    int sendMessage = write(clientSocket,finish,finishSize);
 }
 Point* Client::yourPlay(vector<Point> vec) {
     int userX, userY;
@@ -75,7 +89,10 @@ Point* Client::yourPlay(vector<Point> vec) {
         return NULL;
     }
     Point* newPoint=new Point(userX, userY);
-    send
+    int sendPoint[2] = {userX, userY};
+    int sendSize = write(clientSocket,&sendPoint, sizeof(sendPoint));
+
+
     return newPoint;
 }
 
