@@ -33,7 +33,7 @@ void GameOnline::play() {
             }
 
             char* buffer=pl1.getMessage();
-            Point* nextMove=new (buffer[0],buffer[1]);
+            Point* nextMove=new Point(buffer[0],buffer[1]);
 
             board.setSign(nextMove->getRowNum()-1,nextMove->getColNum()-1,pl2.getSign());
             logic->checkFlipPieces(nextMove->getRowNum()-1,nextMove->getColNum()-1,pl2.oppositeSign(pl2.getSign()),true);

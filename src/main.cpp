@@ -38,9 +38,10 @@ int main() {
             return 0;
         } else if (userChoice == 3) {
             Client pl1= Client('X',"127.0.0.1",5556);
+            //cout << "Welc";
             ConsolePlayer pl2=ConsolePlayer('X');
-            //GameOnline game(pl1, pl2, board, logic);
-            //game.play();
+            GameOnline game(pl1, pl2, board, logic);
+            game.play();
             delete (logic);
             return 0;
         }

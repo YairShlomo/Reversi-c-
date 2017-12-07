@@ -13,6 +13,7 @@ using namespace std;
 Client::Client(char sign,const char *serverIP, int serverPort):
         Player(sign),sign(sign),serverIP(serverIP), serverPort(serverPort), clientSocket(0) {
     cout << "Client" << endl;
+    connectToServer();
 
 }
 void Client::connectToServer() {
@@ -27,12 +28,12 @@ void Client::connectToServer() {
     if(connect(clientSocket, (struct sockaddr*) &sin, sizeof(sin)) <0) {
         perror("error connecting to server");
     }
-    char data_addr[] ="im a message";
-    int data_len = strlen(data_addr);
-    int sent_bytes = send(clientSocket,data_addr,data_len,0);
-    if(sent_bytes<0)
-        perror("error writing to socket");
-    char buffer[4096];
+    //char data_addr[] ="im a message";
+    //int data_len = strlen(data_addr);
+    //int sent_bytes = send(clientSocket,data_addr,data_len,0);
+   // if(sent_bytes<0)
+      //  perror("error writing to socket");
+    char buffer[3];
     int expected_data_len = sizeof(buffer);
     int read_bytes = recv(clientSocket,buffer, expected_data_len,0);
     if (read_bytes == 0){
@@ -40,8 +41,14 @@ void Client::connectToServer() {
     }
     else if(read_bytes < 0)
         perror("error");
-    else
-        cout << buffer;
+    else {
+        if (buffer[0] == '1')
+            sign = 'X';
+        else
+            sign = 'O';
+    }
+
+       // cout << buffer[0]<< endl;
     //close(clientSocket);
 }
 void Client::sendMessage() {

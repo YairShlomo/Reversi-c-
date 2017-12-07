@@ -1,24 +1,24 @@
 Determining if the pthread_create exist failed with the following output:
-Change Dir: /home/yair/CLionProjects/mission-4/cmake-build-debug/CMakeFiles/CMakeTmp
+Change Dir: /home/gal/CLionProjects/mission-2/cmake-build-debug/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_c86e4/fast"
-/usr/bin/make -f CMakeFiles/cmTC_c86e4.dir/build.make CMakeFiles/cmTC_c86e4.dir/build
-make[1]: Entering directory '/home/yair/CLionProjects/mission-4/cmake-build-debug/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_c86e4.dir/CheckSymbolExists.c.o
-/usr/bin/cc    -o CMakeFiles/cmTC_c86e4.dir/CheckSymbolExists.c.o   -c /home/yair/CLionProjects/mission-4/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c
-Linking C executable cmTC_c86e4
-/home/yair/clion-2017.2.3/bin/cmake/bin/cmake -E cmake_link_script CMakeFiles/cmTC_c86e4.dir/link.txt --verbose=1
-/usr/bin/cc      -rdynamic CMakeFiles/cmTC_c86e4.dir/CheckSymbolExists.c.o  -o cmTC_c86e4 
-CMakeFiles/cmTC_c86e4.dir/CheckSymbolExists.c.o: In function `main':
+Run Build Command:"/usr/bin/make" "cmTC_f4d1b/fast"
+/usr/bin/make -f CMakeFiles/cmTC_f4d1b.dir/build.make CMakeFiles/cmTC_f4d1b.dir/build
+make[1]: Entering directory '/home/gal/CLionProjects/mission-2/cmake-build-debug/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_f4d1b.dir/CheckSymbolExists.c.o
+/usr/bin/cc    -o CMakeFiles/cmTC_f4d1b.dir/CheckSymbolExists.c.o   -c /home/gal/CLionProjects/mission-2/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+Linking C executable cmTC_f4d1b
+/home/gal/Desktop/clion-2017.2.3/bin/cmake/bin/cmake -E cmake_link_script CMakeFiles/cmTC_f4d1b.dir/link.txt --verbose=1
+/usr/bin/cc      -rdynamic CMakeFiles/cmTC_f4d1b.dir/CheckSymbolExists.c.o  -o cmTC_f4d1b 
+CMakeFiles/cmTC_f4d1b.dir/CheckSymbolExists.c.o: In function `main':
 CheckSymbolExists.c:(.text+0x16): undefined reference to `pthread_create'
 collect2: error: ld returned 1 exit status
-CMakeFiles/cmTC_c86e4.dir/build.make:97: recipe for target 'cmTC_c86e4' failed
-make[1]: *** [cmTC_c86e4] Error 1
-make[1]: Leaving directory '/home/yair/CLionProjects/mission-4/cmake-build-debug/CMakeFiles/CMakeTmp'
-Makefile:126: recipe for target 'cmTC_c86e4/fast' failed
-make: *** [cmTC_c86e4/fast] Error 2
+CMakeFiles/cmTC_f4d1b.dir/build.make:97: recipe for target 'cmTC_f4d1b' failed
+make[1]: *** [cmTC_f4d1b] Error 1
+make[1]: Leaving directory '/home/gal/CLionProjects/mission-2/cmake-build-debug/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_f4d1b/fast' failed
+make: *** [cmTC_f4d1b/fast] Error 2
 
-File /home/yair/CLionProjects/mission-4/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+File /home/gal/CLionProjects/mission-2/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
 /* */
 #include <pthread.h>
 
@@ -34,22 +34,22 @@ int main(int argc, char** argv)
 }
 
 Determining if the function pthread_create exists in the pthreads failed with the following output:
-Change Dir: /home/yair/CLionProjects/mission-4/cmake-build-debug/CMakeFiles/CMakeTmp
+Change Dir: /home/gal/CLionProjects/mission-2/cmake-build-debug/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_a552a/fast"
-/usr/bin/make -f CMakeFiles/cmTC_a552a.dir/build.make CMakeFiles/cmTC_a552a.dir/build
-make[1]: Entering directory '/home/yair/CLionProjects/mission-4/cmake-build-debug/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_a552a.dir/CheckFunctionExists.c.o
-/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=pthread_create   -o CMakeFiles/cmTC_a552a.dir/CheckFunctionExists.c.o   -c /home/yair/clion-2017.2.3/bin/cmake/share/cmake-3.9/Modules/CheckFunctionExists.c
-Linking C executable cmTC_a552a
-/home/yair/clion-2017.2.3/bin/cmake/bin/cmake -E cmake_link_script CMakeFiles/cmTC_a552a.dir/link.txt --verbose=1
-/usr/bin/cc  -DCHECK_FUNCTION_EXISTS=pthread_create    -rdynamic CMakeFiles/cmTC_a552a.dir/CheckFunctionExists.c.o  -o cmTC_a552a -lpthreads 
+Run Build Command:"/usr/bin/make" "cmTC_382f8/fast"
+/usr/bin/make -f CMakeFiles/cmTC_382f8.dir/build.make CMakeFiles/cmTC_382f8.dir/build
+make[1]: Entering directory '/home/gal/CLionProjects/mission-2/cmake-build-debug/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_382f8.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=pthread_create   -o CMakeFiles/cmTC_382f8.dir/CheckFunctionExists.c.o   -c /home/gal/Desktop/clion-2017.2.3/bin/cmake/share/cmake-3.9/Modules/CheckFunctionExists.c
+Linking C executable cmTC_382f8
+/home/gal/Desktop/clion-2017.2.3/bin/cmake/bin/cmake -E cmake_link_script CMakeFiles/cmTC_382f8.dir/link.txt --verbose=1
+/usr/bin/cc  -DCHECK_FUNCTION_EXISTS=pthread_create    -rdynamic CMakeFiles/cmTC_382f8.dir/CheckFunctionExists.c.o  -o cmTC_382f8 -lpthreads 
 /usr/bin/ld: cannot find -lpthreads
 collect2: error: ld returned 1 exit status
-CMakeFiles/cmTC_a552a.dir/build.make:97: recipe for target 'cmTC_a552a' failed
-make[1]: *** [cmTC_a552a] Error 1
-make[1]: Leaving directory '/home/yair/CLionProjects/mission-4/cmake-build-debug/CMakeFiles/CMakeTmp'
-Makefile:126: recipe for target 'cmTC_a552a/fast' failed
-make: *** [cmTC_a552a/fast] Error 2
+CMakeFiles/cmTC_382f8.dir/build.make:97: recipe for target 'cmTC_382f8' failed
+make[1]: *** [cmTC_382f8] Error 1
+make[1]: Leaving directory '/home/gal/CLionProjects/mission-2/cmake-build-debug/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_382f8/fast' failed
+make: *** [cmTC_382f8/fast] Error 2
 
 

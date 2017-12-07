@@ -1,4 +1,4 @@
-# Install script for directory: /home/yair/CLionProjects/mission-4/lib/googletest-master/googlemock
+# Install script for directory: /home/gal/CLionProjects/mission-2/lib/googletest-master/googlemock
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -33,20 +33,20 @@ if(NOT DEFINED CMAKE_INSTALL_SO_NO_EXE)
 endif()
 
 if("${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE STATIC_LIBRARY FILES "/home/yair/CLionProjects/mission-4/cmake-build-debug/lib/googletest-master/googlemock/libgmock.a")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE STATIC_LIBRARY FILES "/home/gal/CLionProjects/mission-2/cmake-build-debug/lib/googletest-master/googlemock/libgmock.a")
 endif()
 
 if("${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE STATIC_LIBRARY FILES "/home/yair/CLionProjects/mission-4/cmake-build-debug/lib/googletest-master/googlemock/libgmock_main.a")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE STATIC_LIBRARY FILES "/home/gal/CLionProjects/mission-2/cmake-build-debug/lib/googletest-master/googlemock/libgmock_main.a")
 endif()
 
 if("${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include" TYPE DIRECTORY FILES "/home/yair/CLionProjects/mission-4/lib/googletest-master/googlemock/include/gmock")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include" TYPE DIRECTORY FILES "/home/gal/CLionProjects/mission-2/lib/googletest-master/googlemock/include/gmock")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  include("/home/yair/CLionProjects/mission-4/cmake-build-debug/lib/googletest-master/googlemock/gtest/cmake_install.cmake")
+  include("/home/gal/CLionProjects/mission-2/cmake-build-debug/lib/googletest-master/googlemock/gtest/cmake_install.cmake")
 
 endif()
 
