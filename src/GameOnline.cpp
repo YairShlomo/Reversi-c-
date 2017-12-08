@@ -80,6 +80,7 @@ int GameOnline::play1Turn(Player &pl) {
     board.setSign(userPlay->getRowNum()-1,userPlay->getColNum()-1,pl.getSign());
     logic->checkFlipPieces(userPlay->getRowNum()-1,userPlay->getColNum()-1,pl.oppositeSign(pl.getSign()),true);
     oppositeTurn();
+    /*
     char buffer[7];
     buffer[0]='0'+userPlay->getRowNum();
     buffer[1]='0'+userPlay->getColNum();
@@ -87,6 +88,7 @@ int GameOnline::play1Turn(Player &pl) {
     cout << buffer[1] << endl;
 
     pl1.sendMessage(buffer);
+     */
     delete(userPlay);
     return 0;
 }
