@@ -69,12 +69,12 @@ char* Client::getMessage() {
 void Client::endGame() {
 char finish[7] ="END";
     int finishSize= sizeof(finishSize);
-    int sendMessage = write(clientSocket,finish,finishSize);
+    int sendMessage = write(clientSocket,&finish,finishSize);
 }
 void Client::moveTurn() {
     char finish[7] ="NOMOVE";
     int finishSize= sizeof(finishSize);
-    int sendMessage = write(clientSocket,finish,finishSize);
+    int sendMessage = write(clientSocket,&finish,finishSize);
 }
 Point* Client::yourPlay(vector<Point> vec) {
     int userX, userY;
