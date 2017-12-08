@@ -11,13 +11,18 @@
 
 using namespace std;
 Client::Client(char sign,const char *serverIP, int serverPort):
-        Player(sign),sign(sign),serverIP(serverIP), serverPort(serverPort), clientSocket(0) {
+        Player(sign),serverIP(serverIP), serverPort(serverPort), clientSocket(0) {
     cout << "Client" << endl;
     connectToServer();
 
 }
+/*
+char Client::getSign() {
+    return sign;
+}
+ */
 void Client::connectToServer() {
-    int clientSocket = socket(AF_INET, SOCK_STREAM,0);
+    clientSocket = socket(AF_INET, SOCK_STREAM,0);
     if(clientSocket<0)
         perror("error creating socket");
     struct sockaddr_in sin;
@@ -53,7 +58,7 @@ void Client::connectToServer() {
     //close(clientSocket);
 }
 void Client::sendMessage(char* message) {
-    int sendSize = read(clientSocket,&message, sizeof(message));
+    int sendSize = write(clientSocket,&message, sizeof(message));
 }
 char* Client::getMessage() {
     char buffer[7];

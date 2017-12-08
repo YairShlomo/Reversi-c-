@@ -10,7 +10,7 @@ ID: 305216962
 #include<iostream>
 #include<stdio.h>
 ConsolePlayer::ConsolePlayer(char sign):
-Player(sign),sign(sign){
+Player(sign) {
 }
 
 Point* ConsolePlayer::yourPlay(vector<Point> vec) {

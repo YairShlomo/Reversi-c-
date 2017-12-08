@@ -24,12 +24,14 @@ public:
     char* getMessage();
     void sendMessage();
     void endGame();
+    //char getSign();
 
-private:
+
+        private:
     const char *serverIP;
     int serverPort;
     int clientSocket;
     //representing sign of player.
-    char sign;
+    //char sign;
 };
 #endif /*CLIENT_H*/

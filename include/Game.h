@@ -24,6 +24,9 @@ private:
     Player &pl1;
     Player &pl2;
     GameLogic* logic;
+
+
+protected:
     //BlackTurn('X')-true. WhiteTurn('O')-false.
     bool blackTurn;
     //counts num of times turns passed in a row.

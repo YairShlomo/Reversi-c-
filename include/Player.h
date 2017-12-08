@@ -19,9 +19,9 @@ using namespace std;
  * Player represent any player. Father-class.
 */
 class Player {
-private:
+//private:
     //representing sign of player.
-    char sign;
+protected: char sign;
 public:
     /**
 * Constructor initialize member sign.

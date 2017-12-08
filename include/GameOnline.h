@@ -28,10 +28,7 @@ private:
     Client &pl1;
     Player &pl2;
     GameLogic *logic;
-    //BlackTurn('X')-true. WhiteTurn('O')-false.
-    bool blackTurn;
-    //counts num of times turns passed in a row.
-    int countMoveTurn;
+
 public:
     GameOnline(Client &pl1, Player &pl2, Board &boards, GameLogic *logic);
 
