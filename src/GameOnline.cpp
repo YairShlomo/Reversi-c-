@@ -13,8 +13,6 @@ ID: 305216962
 
 GameOnline::GameOnline(Client &pl1,Player &pl2,Board &boards ,GameLogic* logic):
         Game(pl1,pl2,boards,logic),pl1(pl1),pl2(pl2),board(boards),logic(logic) {
-
-
 }
 
 void GameOnline::play() {
@@ -23,7 +21,7 @@ void GameOnline::play() {
     } else {
         blackTurn = false;
     }
-        while ((score(pl1) + score(pl2) < board.getSizeY() * board.getSizeX())&(countMoveTurn<2)) {
+        while ((score(pl1.getSign()) + score(pl2.getSign()) < board.getSizeY() * board.getSizeX())&(countMoveTurn<2)) {
         if (blackTurn) {
             countMoveTurn += play1Turn(pl1);
         } else {

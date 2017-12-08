@@ -33,7 +33,6 @@ protected:
     int countMoveTurn;
 public:
     Game(Player &pl1,Player &pl2,Board &boards,GameLogic* logic);
-
     virtual void play()=0;
 
     /**
@@ -41,7 +40,7 @@ public:
 * @param Player - a player.
 * @return int - number of cells Player owns
 */
-    int score(Player &pl);
+    int score(char sign);
 
     /**
 * play1Turn is sets of action in any turn in game.

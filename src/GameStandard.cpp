@@ -14,7 +14,7 @@ GameStandard::GameStandard(Player &pl1,Player &pl2,Board &boards ,GameLogic* log
 
 
 void GameStandard::play() {
-    while ((score(pl1) + score(pl2) < board.getSizeY() * board.getSizeX())&(countMoveTurn<2)) {
+    while ((score(pl1.getSign()) + score(pl2.getSign()) < board.getSizeY() * board.getSizeX())&(countMoveTurn<2)) {
         if (blackTurn) {
             countMoveTurn+=play1Turn(pl1);
         } else {
@@ -48,6 +48,7 @@ int GameStandard::play1Turn(Player &pl) {
     delete(userPlay);
     return 0;
 }
+
 
 
 

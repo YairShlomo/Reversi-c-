@@ -14,7 +14,7 @@ Game::Game(Player &pl1,Player &pl2,Board &boards ,GameLogic* logic)
 }
 
 void Game::play() {
-    while ((score(pl1) + score(pl2) < board.getSizeY() * board.getSizeX())&(countMoveTurn<2)) {
+    while ((score(pl1.getSign()) + score(pl2.getSign()) < board.getSizeY() * board.getSizeX())&(countMoveTurn<2)) {
         if (blackTurn) {
             countMoveTurn+=play1Turn(pl1);
         } else {
@@ -57,11 +57,11 @@ void Game::oppositeTurn() {
     blackTurn = true;
 }
 
-int Game::score(Player &pl) {
+int Game::score(char sign) {
     int counter = 0;
     for (int i = 0; i < board.getSizeX(); ++i) {
         for (int j = 0; j < board.getSizeY(); ++j) {
-            if (board.getBoard()[i][j] == (char)pl.getSign()) {
+            if (board.getBoard()[i][j] == sign) {
                 counter++;
             }
         }
@@ -70,11 +70,11 @@ int Game::score(Player &pl) {
 }
 
 void Game::printWinner() {
-    if (score(pl1)>score(pl2)) {
+    if (score(pl1.getSign())>score(pl2.getSign())) {
         cout<< "Player '"<<pl1.getSign()<<"' wins!" <<endl;
         return;
     }
-    if (score(pl2)>score(pl1)) {
+    if (score(pl2.getSign())>score(pl1.getSign())) {
         cout << "Player '"<<pl2.getSign() << "' wins!" << endl;
         return;
     }

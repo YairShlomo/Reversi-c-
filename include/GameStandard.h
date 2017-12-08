@@ -36,6 +36,7 @@ private:
     int countMoveTurn;
 public:
     GameStandard(Player &pl1,Player &pl2,Board &boards,GameLogic* logic);
+
     void play();
 /** play in charge of the loop game and managing turns.
    */
