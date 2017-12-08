@@ -33,10 +33,11 @@ void Client::connectToServer() {
     //int sent_bytes = send(clientSocket,data_addr,data_len,0);
    // if(sent_bytes<0)
       //  perror("error writing to socket");
-    char buffer[3];
+    char buffer[1];
     int expected_data_len = sizeof(buffer);
     int read_bytes = recv(clientSocket,buffer, expected_data_len,0);
-    if (read_bytes == 0){
+    cout << buffer << endl;
+    if (read_bytes == 0) {
         perror("connection is close");
     }
     else if(read_bytes < 0)
@@ -51,7 +52,8 @@ void Client::connectToServer() {
        // cout << buffer[0]<< endl;
     //close(clientSocket);
 }
-void Client::sendMessage() {
+void Client::sendMessage(char* message) {
+    int sendSize = read(clientSocket,&message, sizeof(message));
 }
 char* Client::getMessage() {
     char buffer[7];

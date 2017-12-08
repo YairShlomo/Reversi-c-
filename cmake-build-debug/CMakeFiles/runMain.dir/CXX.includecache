@@ -6,7 +6,7 @@
 
 #IncludeRegexTransform: 
 
-/home/gal/CLionProjects/mission-2/include/AIPlayer.h
+/home/yair/CLionProjects/mission-4/include/AIPlayer.h
 stdio.h
 -
 stdlib.h
@@ -14,13 +14,13 @@ stdlib.h
 string
 -
 Player.h
-/home/gal/CLionProjects/mission-2/include/Player.h
+/home/yair/CLionProjects/mission-4/include/Player.h
 Point.h
-/home/gal/CLionProjects/mission-2/include/Point.h
+/home/yair/CLionProjects/mission-4/include/Point.h
 GameLogic.h
-/home/gal/CLionProjects/mission-2/include/GameLogic.h
+/home/yair/CLionProjects/mission-4/include/GameLogic.h
 
-/home/gal/CLionProjects/mission-2/include/Board.h
+/home/yair/CLionProjects/mission-4/include/Board.h
 stdio.h
 -
 string
@@ -28,27 +28,27 @@ string
 iostream
 -
 
-/home/gal/CLionProjects/mission-2/include/Client.h
+/home/yair/CLionProjects/mission-4/include/Client.h
 Player.h
-/home/gal/CLionProjects/mission-2/include/Player.h
+/home/yair/CLionProjects/mission-4/include/Player.h
 stdio.h
 -
 string
 -
 
-/home/gal/CLionProjects/mission-2/include/ConsolePlayer.h
+/home/yair/CLionProjects/mission-4/include/ConsolePlayer.h
 stdio.h
 -
 string
 -
 Player.h
-/home/gal/CLionProjects/mission-2/include/Player.h
+/home/yair/CLionProjects/mission-4/include/Player.h
 Point.h
-/home/gal/CLionProjects/mission-2/include/Point.h
+/home/yair/CLionProjects/mission-4/include/Point.h
 GameLogic1.h
-/home/gal/CLionProjects/mission-2/include/GameLogic1.h
+/home/yair/CLionProjects/mission-4/include/GameLogic1.h
 
-/home/gal/CLionProjects/mission-2/include/Game.h
+/home/yair/CLionProjects/mission-4/include/Game.h
 stdio.h
 -
 string
@@ -56,39 +56,39 @@ string
 iostream
 -
 Board.h
-/home/gal/CLionProjects/mission-2/include/Board.h
+/home/yair/CLionProjects/mission-4/include/Board.h
 Player.h
-/home/gal/CLionProjects/mission-2/include/Player.h
+/home/yair/CLionProjects/mission-4/include/Player.h
 GameLogic1.h
-/home/gal/CLionProjects/mission-2/include/GameLogic1.h
+/home/yair/CLionProjects/mission-4/include/GameLogic1.h
 
-/home/gal/CLionProjects/mission-2/include/GameLogic.h
+/home/yair/CLionProjects/mission-4/include/GameLogic.h
 stdio.h
 -
 string
 -
 Point.h
-/home/gal/CLionProjects/mission-2/include/Point.h
+/home/yair/CLionProjects/mission-4/include/Point.h
 Board.h
-/home/gal/CLionProjects/mission-2/include/Board.h
+/home/yair/CLionProjects/mission-4/include/Board.h
 vector
 -
 
-/home/gal/CLionProjects/mission-2/include/GameLogic1.h
+/home/yair/CLionProjects/mission-4/include/GameLogic1.h
 stdio.h
 -
 string
 -
 GameLogic.h
-/home/gal/CLionProjects/mission-2/include/GameLogic.h
+/home/yair/CLionProjects/mission-4/include/GameLogic.h
 Point.h
-/home/gal/CLionProjects/mission-2/include/Point.h
+/home/yair/CLionProjects/mission-4/include/Point.h
 Board.h
-/home/gal/CLionProjects/mission-2/include/Board.h
+/home/yair/CLionProjects/mission-4/include/Board.h
 vector
 -
 
-/home/gal/CLionProjects/mission-2/include/GameOnline.h
+/home/yair/CLionProjects/mission-4/include/GameOnline.h
 stdio.h
 -
 string
@@ -96,17 +96,17 @@ string
 iostream
 -
 Board.h
-/home/gal/CLionProjects/mission-2/include/Board.h
+/home/yair/CLionProjects/mission-4/include/Board.h
 Player.h
-/home/gal/CLionProjects/mission-2/include/Player.h
+/home/yair/CLionProjects/mission-4/include/Player.h
 GameLogic1.h
-/home/gal/CLionProjects/mission-2/include/GameLogic1.h
+/home/yair/CLionProjects/mission-4/include/GameLogic1.h
 Game.h
-/home/gal/CLionProjects/mission-2/include/Game.h
+/home/yair/CLionProjects/mission-4/include/Game.h
 Client.h
-/home/gal/CLionProjects/mission-2/include/Client.h
+/home/yair/CLionProjects/mission-4/include/Client.h
 
-/home/gal/CLionProjects/mission-2/include/GameStandard.h
+/home/yair/CLionProjects/mission-4/include/GameStandard.h
 stdio.h
 -
 string
@@ -114,15 +114,15 @@ string
 iostream
 -
 Board.h
-/home/gal/CLionProjects/mission-2/include/Board.h
+/home/yair/CLionProjects/mission-4/include/Board.h
 Player.h
-/home/gal/CLionProjects/mission-2/include/Player.h
+/home/yair/CLionProjects/mission-4/include/Player.h
 GameLogic1.h
-/home/gal/CLionProjects/mission-2/include/GameLogic1.h
+/home/yair/CLionProjects/mission-4/include/GameLogic1.h
 ../include/Game.h
-/home/gal/CLionProjects/mission-2/include/Game.h
+/home/yair/CLionProjects/mission-4/include/Game.h
 
-/home/gal/CLionProjects/mission-2/include/Player.h
+/home/yair/CLionProjects/mission-4/include/Player.h
 stdio.h
 -
 string
@@ -130,31 +130,31 @@ string
 vector
 -
 Point.h
-/home/gal/CLionProjects/mission-2/include/Point.h
+/home/yair/CLionProjects/mission-4/include/Point.h
 GameLogic1.h
-/home/gal/CLionProjects/mission-2/include/GameLogic1.h
+/home/yair/CLionProjects/mission-4/include/GameLogic1.h
 
-/home/gal/CLionProjects/mission-2/include/Point.h
+/home/yair/CLionProjects/mission-4/include/Point.h
 stdio.h
 -
 string
 -
 
-/home/gal/CLionProjects/mission-2/src/AIPlayer.cpp
+/home/yair/CLionProjects/mission-4/src/AIPlayer.cpp
 ../include/AIPlayer.h
-/home/gal/CLionProjects/mission-2/include/AIPlayer.h
+/home/yair/CLionProjects/mission-4/include/AIPlayer.h
 ../include/GameLogic1.h
-/home/gal/CLionProjects/mission-2/include/GameLogic1.h
+/home/yair/CLionProjects/mission-4/include/GameLogic1.h
 iostream
 -
 stdio.h
 -
 
-/home/gal/CLionProjects/mission-2/src/Board.cpp
+/home/yair/CLionProjects/mission-4/src/Board.cpp
 ../include/Board.h
-/home/gal/CLionProjects/mission-2/include/Board.h
+/home/yair/CLionProjects/mission-4/include/Board.h
 
-/home/gal/CLionProjects/mission-2/src/Client.cpp
+/home/yair/CLionProjects/mission-4/src/Client.cpp
 iostream
 -
 stdio.h
@@ -170,79 +170,79 @@ arpa/inet.h
 unistd.h
 -
 ../include/Client.h
-/home/gal/CLionProjects/mission-2/include/Client.h
+/home/yair/CLionProjects/mission-4/include/Client.h
 ../include/Player.h
-/home/gal/CLionProjects/mission-2/include/Player.h
+/home/yair/CLionProjects/mission-4/include/Player.h
 ../include/ConsolePlayer.h
-/home/gal/CLionProjects/mission-2/include/ConsolePlayer.h
+/home/yair/CLionProjects/mission-4/include/ConsolePlayer.h
 
-/home/gal/CLionProjects/mission-2/src/ConsolePlayer.cpp
+/home/yair/CLionProjects/mission-4/src/ConsolePlayer.cpp
 ../include/ConsolePlayer.h
-/home/gal/CLionProjects/mission-2/include/ConsolePlayer.h
+/home/yair/CLionProjects/mission-4/include/ConsolePlayer.h
 ../include/GameLogic1.h
-/home/gal/CLionProjects/mission-2/include/GameLogic1.h
+/home/yair/CLionProjects/mission-4/include/GameLogic1.h
 iostream
 -
 stdio.h
 -
 
-/home/gal/CLionProjects/mission-2/src/Game.cpp
+/home/yair/CLionProjects/mission-4/src/Game.cpp
 ../include/Game.h
-/home/gal/CLionProjects/mission-2/include/Game.h
+/home/yair/CLionProjects/mission-4/include/Game.h
 
-/home/gal/CLionProjects/mission-2/src/GameLogic.cpp
+/home/yair/CLionProjects/mission-4/src/GameLogic.cpp
 ../include/GameLogic.h
-/home/gal/CLionProjects/mission-2/include/GameLogic.h
+/home/yair/CLionProjects/mission-4/include/GameLogic.h
 iostream
 -
 
-/home/gal/CLionProjects/mission-2/src/GameLogic1.cpp
+/home/yair/CLionProjects/mission-4/src/GameLogic1.cpp
 ../include/GameLogic1.h
-/home/gal/CLionProjects/mission-2/include/GameLogic1.h
+/home/yair/CLionProjects/mission-4/include/GameLogic1.h
 
-/home/gal/CLionProjects/mission-2/src/GameOnline.cpp
+/home/yair/CLionProjects/mission-4/src/GameOnline.cpp
 unistd.h
 -
 cstring
 -
 ../include/GameOnline.h
-/home/gal/CLionProjects/mission-2/include/GameOnline.h
+/home/yair/CLionProjects/mission-4/include/GameOnline.h
 ../include/Game.h
-/home/gal/CLionProjects/mission-2/include/Game.h
+/home/yair/CLionProjects/mission-4/include/Game.h
 ../include/Client.h
-/home/gal/CLionProjects/mission-2/include/Client.h
+/home/yair/CLionProjects/mission-4/include/Client.h
 
-/home/gal/CLionProjects/mission-2/src/GameStandard.cpp
+/home/yair/CLionProjects/mission-4/src/GameStandard.cpp
 ../include/GameStandard.h
-/home/gal/CLionProjects/mission-2/include/GameStandard.h
+/home/yair/CLionProjects/mission-4/include/GameStandard.h
 ../include/Game.h
-/home/gal/CLionProjects/mission-2/include/Game.h
+/home/yair/CLionProjects/mission-4/include/Game.h
 
-/home/gal/CLionProjects/mission-2/src/Player.cpp
+/home/yair/CLionProjects/mission-4/src/Player.cpp
 ../include/ConsolePlayer.h
-/home/gal/CLionProjects/mission-2/include/ConsolePlayer.h
+/home/yair/CLionProjects/mission-4/include/ConsolePlayer.h
 
-/home/gal/CLionProjects/mission-2/src/Point.cpp
+/home/yair/CLionProjects/mission-4/src/Point.cpp
 ../include/Point.h
-/home/gal/CLionProjects/mission-2/include/Point.h
+/home/yair/CLionProjects/mission-4/include/Point.h
 iostream
 -
 stdio.h
 -
 
-/home/gal/CLionProjects/mission-2/src/main.cpp
+/home/yair/CLionProjects/mission-4/src/main.cpp
 ../include/Board.h
-/home/gal/CLionProjects/mission-2/include/Board.h
+/home/yair/CLionProjects/mission-4/include/Board.h
 ../include/Game.h
-/home/gal/CLionProjects/mission-2/include/Game.h
+/home/yair/CLionProjects/mission-4/include/Game.h
 ../include/ConsolePlayer.h
-/home/gal/CLionProjects/mission-2/include/ConsolePlayer.h
+/home/yair/CLionProjects/mission-4/include/ConsolePlayer.h
 ../include/AIPlayer.h
-/home/gal/CLionProjects/mission-2/include/AIPlayer.h
+/home/yair/CLionProjects/mission-4/include/AIPlayer.h
 ../include/GameStandard.h
-/home/gal/CLionProjects/mission-2/include/GameStandard.h
+/home/yair/CLionProjects/mission-4/include/GameStandard.h
 ../include/GameOnline.h
-/home/gal/CLionProjects/mission-2/include/GameOnline.h
+/home/yair/CLionProjects/mission-4/include/GameOnline.h
 ../include/Client.h
-/home/gal/CLionProjects/mission-2/include/Client.h
+/home/yair/CLionProjects/mission-4/include/Client.h
 

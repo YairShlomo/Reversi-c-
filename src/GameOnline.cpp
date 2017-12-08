@@ -18,23 +18,28 @@ GameOnline::GameOnline(Client &pl1,Player &pl2,Board &boards ,GameLogic* logic):
 }
 
 void GameOnline::play() {
-    while ((score(pl1) + score(pl2) < board.getSizeY() * board.getSizeX())&(countMoveTurn<2)) {
+    if (pl1.getSign()=='X') {
+        blackTurn = true;
+    } else {
+        blackTurn = false;
+    }
+        while ((score(pl1) + score(pl2) < board.getSizeY() * board.getSizeX())&(countMoveTurn<2)) {
         if (blackTurn) {
-            countMoveTurn+=play1Turn(pl1);
+            countMoveTurn += play1Turn(pl1);
         } else {
-            //new Point(buffer[0], buffer[1]);
             char* message=pl1.getMessage();
             if (strcmp(message,"NOMOVE")){
                 pl1.moveTurn();
             }
             if (strcmp(message,"END")) {
                 pl1.endGame();
-
             }
-
             char* buffer=pl1.getMessage();
-            Point* nextMove=new Point(buffer[0],buffer[1]);
-
+            char x=buffer[0];
+            char y=buffer[1];
+            int xint=atoi(&x);
+            int yint=atoi(&y);
+            Point* nextMove=new Point(x,y);
             board.setSign(nextMove->getRowNum()-1,nextMove->getColNum()-1,pl2.getSign());
             logic->checkFlipPieces(nextMove->getRowNum()-1,nextMove->getColNum()-1,pl2.oppositeSign(pl2.getSign()),true);
             oppositeTurn();
@@ -42,10 +47,8 @@ void GameOnline::play() {
         }
         if (countMoveTurn==1) {
             pl1.endGame();
-
         }
     }
-
     printWinner();
     if (blackTurn) {
         pl1.endGame();
@@ -77,6 +80,11 @@ int GameOnline::play1Turn(Player &pl) {
     board.setSign(userPlay->getRowNum()-1,userPlay->getColNum()-1,pl.getSign());
     logic->checkFlipPieces(userPlay->getRowNum()-1,userPlay->getColNum()-1,pl.oppositeSign(pl.getSign()),true);
     oppositeTurn();
+    char buffer[7];
+    buffer[0]='0'+userPlay->getRowNum();
+    buffer[1]='0'+userPlay->getColNum();
+
+    pl1.sendMessage(buffer);
     delete(userPlay);
     return 0;
 }

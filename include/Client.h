@@ -10,6 +10,7 @@ class Client :public Player {
 public:
     Client(char sign ,const char *serverIP, int serverPort);
     void moveTurn();
+    void sendMessage(char* message);
 
         void connectToServer();
     /**
