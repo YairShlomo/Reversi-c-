@@ -61,7 +61,6 @@ void Client::sendMessage(char* message) {
     int sendSize = write(clientSocket,&message, sizeof(message));
 }
 char* Client::getMessage() {
-    char buffer[7];
     int sendSize = read(clientSocket,&buffer, sizeof(buffer));
     return buffer;
 }

@@ -28,18 +28,24 @@ void GameOnline::play() {
             countMoveTurn += play1Turn(pl1);
         } else {
             char* message=pl1.getMessage();
-            if (strcmp(message,"NOMOVE")){
+            if (strcmp(message,"NOMOVE")==0){
                 pl1.moveTurn();
             }
-            if (strcmp(message,"END")) {
+            if (strcmp(message,"END")==0) {
                 pl1.endGame();
             }
-            char* buffer=pl1.getMessage();
-            char x=buffer[0];
-            char y=buffer[1];
+            char x=message[0];
+            char y=message[1];
+            /*
             int xint=atoi(&x);
             int yint=atoi(&y);
-            Point* nextMove=new Point(x,y);
+             */
+            int xint=x-'0';
+            int yint=y-'0';
+            cout << xint << endl;
+            cout << yint << endl;
+
+            Point* nextMove=new Point(xint,yint);
             board.setSign(nextMove->getRowNum()-1,nextMove->getColNum()-1,pl2.getSign());
             logic->checkFlipPieces(nextMove->getRowNum()-1,nextMove->getColNum()-1,pl2.oppositeSign(pl2.getSign()),true);
             oppositeTurn();

@@ -31,6 +31,8 @@ public:
     const char *serverIP;
     int serverPort;
     int clientSocket;
+    char buffer[7];
+
     //representing sign of player.
     //char sign;
 };
