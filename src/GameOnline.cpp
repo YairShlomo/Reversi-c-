@@ -83,7 +83,6 @@ int GameOnline::play1Turn(Player &pl) {
     char buffer[7];
     buffer[0]='0'+userPlay->getRowNum();
     buffer[1]='0'+userPlay->getColNum();
-    cout << buffer << endl;
     cout << buffer[0] << endl;
     cout << buffer[1] << endl;
 

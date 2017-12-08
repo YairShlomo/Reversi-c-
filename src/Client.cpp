@@ -103,9 +103,12 @@ Point* Client::yourPlay(vector<Point> vec) {
         return NULL;
     }
     Point* newPoint=new Point(userX, userY);
-    int sendPoint[2] = {userX, userY};
+    char sendPoint[7];
+    sendPoint[0]=userX +'0';
+    sendPoint[1]=userY +'0';
     int sendSize = write(clientSocket,&sendPoint, sizeof(sendPoint));
-
+    cout << sendPoint[0] << endl;
+    cout << sendPoint[1] << endl;
 
     return newPoint;
 }
