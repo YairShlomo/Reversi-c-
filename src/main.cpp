@@ -39,7 +39,7 @@ int main() {
         } else if (userChoice == 3) {
             Client pl1= Client('X',"127.0.0.1",5556);
             //cout << "Welc";
-            ConsolePlayer pl2=ConsolePlayer('X');
+            ConsolePlayer pl2=ConsolePlayer(logic->oppositeSign(pl1.getSign()));
             GameOnline game(pl1, pl2, board, logic);
             game.play();
             delete (logic);
