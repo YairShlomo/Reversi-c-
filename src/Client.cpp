@@ -72,7 +72,7 @@ char finish[7] ="END";
 }
 void Client::moveTurn() {
     char finish[7] ="NOMOVE";
-    int finishSize= sizeof(finishSize);
+    int finishSize= sizeof(finish);
     int sendMessage = write(clientSocket,&finish,finishSize);
 }
 Point* Client::yourPlay(vector<Point> vec) {
@@ -114,8 +114,9 @@ Point* Client::yourPlay(vector<Point> vec) {
 
 bool Client::checkNextTurn(GameLogic* logic) {
     if (logic->optionalTurns((getSign())).empty()) {
-        cout << "No possible moves. play passes back to other player. press any key to countinue" << endl;
-        cin.get();
+        cout << "No possible moves. play passes back to other player" << endl;
+        moveTurn();
+        //cin.get();
         return false;
     }
     return true;

@@ -21,44 +21,41 @@ void GameOnline::play() {
     } else {
         blackTurn = false;
     }
-        while ((score(pl1.getSign()) + score(pl2.getSign()) < board.getSizeY() * board.getSizeX())&(countMoveTurn<2)) {
-        if (blackTurn) {
-            countMoveTurn += play1Turn(pl1);
-        } else {
-            char* message=pl1.getMessage();
-            if (strcmp(message,"NOMOVE")==0){
-                pl1.moveTurn();
-            }
-            if (strcmp(message,"END")==0) {
-                pl1.endGame();
-            }
-            char x=message[0];
-            char y=message[1];
-            /*
-            int xint=atoi(&x);
-            int yint=atoi(&y);
-             */
-            int xint=x-'0';
-            int yint=y-'0';
-            cout << xint << endl;
-            cout << yint << endl;
+        while ((score(pl1.getSign()) + score(pl2.getSign()) < board.getSizeY() * board.getSizeX())) {
+            if (blackTurn) {
+                countMoveTurn += play1Turn(pl1);
+            } else {
+                char *message = pl1.getMessage();
+                if (strcmp(message, "NOMOVE") == 0) {
+                    if(countMoveTurn==1) {
+                        break;
+                    }
+                    oppositeTurn();
 
-            Point* nextMove=new Point(xint,yint);
-            board.setSign(nextMove->getRowNum()-1,nextMove->getColNum()-1,pl2.getSign());
-            logic->checkFlipPieces(nextMove->getRowNum()-1,nextMove->getColNum()-1,pl2.oppositeSign(pl2.getSign()),true);
-            oppositeTurn();
-            delete(nextMove);
+                } else if (strcmp(message, "END") == 0) {
+                    printWinner();
+                    return;
+                } else {
+                    char x = message[0];
+                    char y = message[1];
+                    int xint = x - '0';
+                    int yint = y - '0';
+                    cout << xint << endl;
+                    cout << yint << endl;
+                    Point *nextMove = new Point(xint, yint);
+                    board.setSign(nextMove->getRowNum() - 1, nextMove->getColNum() - 1, pl2.getSign());
+                    logic->checkFlipPieces(nextMove->getRowNum() - 1, nextMove->getColNum() - 1,
+                                           pl2.oppositeSign(pl2.getSign()), true);
+                    oppositeTurn();
+                    delete (nextMove);
+                }
+            }
         }
-        if (countMoveTurn==1) {
-            pl1.endGame();
-        }
-    }
+
+
     printWinner();
-    if (blackTurn) {
         pl1.endGame();
-    } else {
-        countMoveTurn+=play1Turn(pl2);
-    }
+
 }
 int GameOnline::play1Turn(Player &pl) {
     if   (!pl.checkNextTurn(logic)) {
@@ -78,7 +75,6 @@ int GameOnline::play1Turn(Player &pl) {
 
     if(!logic->checkValidPoint(userPlay,pl.getSign())) {
         delete(userPlay);
-
         return 0;
     }
     board.setSign(userPlay->getRowNum()-1,userPlay->getColNum()-1,pl.getSign());

@@ -7,7 +7,7 @@ ID: 305216962
 #ifndef TEST_GAME_H_H
 #define TEST_GAME_H_H
 #include <gtest/gtest.h>
-#include "../include/Game.h"
+#include "../include/GameStandard.h"
 #include "../include/AIPlayer.h"
 #include <iostream>
 using namespace std;
@@ -25,6 +25,6 @@ protected:
     Board board;
     GameLogic1* logic;
     AIPlayer pl1,pl2;
-    Game game;
+    GameStandard game; ;
 };
 #endif

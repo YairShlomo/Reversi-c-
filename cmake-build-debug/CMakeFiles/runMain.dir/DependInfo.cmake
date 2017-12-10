@@ -4,18 +4,18 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/home/yair/CLionProjects/mission-4/src/AIPlayer.cpp" "/home/yair/CLionProjects/mission-4/cmake-build-debug/CMakeFiles/runMain.dir/src/AIPlayer.cpp.o"
-  "/home/yair/CLionProjects/mission-4/src/Board.cpp" "/home/yair/CLionProjects/mission-4/cmake-build-debug/CMakeFiles/runMain.dir/src/Board.cpp.o"
-  "/home/yair/CLionProjects/mission-4/src/Client.cpp" "/home/yair/CLionProjects/mission-4/cmake-build-debug/CMakeFiles/runMain.dir/src/Client.cpp.o"
-  "/home/yair/CLionProjects/mission-4/src/ConsolePlayer.cpp" "/home/yair/CLionProjects/mission-4/cmake-build-debug/CMakeFiles/runMain.dir/src/ConsolePlayer.cpp.o"
-  "/home/yair/CLionProjects/mission-4/src/Game.cpp" "/home/yair/CLionProjects/mission-4/cmake-build-debug/CMakeFiles/runMain.dir/src/Game.cpp.o"
-  "/home/yair/CLionProjects/mission-4/src/GameLogic.cpp" "/home/yair/CLionProjects/mission-4/cmake-build-debug/CMakeFiles/runMain.dir/src/GameLogic.cpp.o"
-  "/home/yair/CLionProjects/mission-4/src/GameLogic1.cpp" "/home/yair/CLionProjects/mission-4/cmake-build-debug/CMakeFiles/runMain.dir/src/GameLogic1.cpp.o"
-  "/home/yair/CLionProjects/mission-4/src/GameOnline.cpp" "/home/yair/CLionProjects/mission-4/cmake-build-debug/CMakeFiles/runMain.dir/src/GameOnline.cpp.o"
-  "/home/yair/CLionProjects/mission-4/src/GameStandard.cpp" "/home/yair/CLionProjects/mission-4/cmake-build-debug/CMakeFiles/runMain.dir/src/GameStandard.cpp.o"
-  "/home/yair/CLionProjects/mission-4/src/Player.cpp" "/home/yair/CLionProjects/mission-4/cmake-build-debug/CMakeFiles/runMain.dir/src/Player.cpp.o"
-  "/home/yair/CLionProjects/mission-4/src/Point.cpp" "/home/yair/CLionProjects/mission-4/cmake-build-debug/CMakeFiles/runMain.dir/src/Point.cpp.o"
-  "/home/yair/CLionProjects/mission-4/src/main.cpp" "/home/yair/CLionProjects/mission-4/cmake-build-debug/CMakeFiles/runMain.dir/src/main.cpp.o"
+  "/home/yair/CLionProjects/client/src/AIPlayer.cpp" "/home/yair/CLionProjects/client/cmake-build-debug/CMakeFiles/runMain.dir/src/AIPlayer.cpp.o"
+  "/home/yair/CLionProjects/client/src/Board.cpp" "/home/yair/CLionProjects/client/cmake-build-debug/CMakeFiles/runMain.dir/src/Board.cpp.o"
+  "/home/yair/CLionProjects/client/src/Client.cpp" "/home/yair/CLionProjects/client/cmake-build-debug/CMakeFiles/runMain.dir/src/Client.cpp.o"
+  "/home/yair/CLionProjects/client/src/ConsolePlayer.cpp" "/home/yair/CLionProjects/client/cmake-build-debug/CMakeFiles/runMain.dir/src/ConsolePlayer.cpp.o"
+  "/home/yair/CLionProjects/client/src/Game.cpp" "/home/yair/CLionProjects/client/cmake-build-debug/CMakeFiles/runMain.dir/src/Game.cpp.o"
+  "/home/yair/CLionProjects/client/src/GameLogic.cpp" "/home/yair/CLionProjects/client/cmake-build-debug/CMakeFiles/runMain.dir/src/GameLogic.cpp.o"
+  "/home/yair/CLionProjects/client/src/GameLogic1.cpp" "/home/yair/CLionProjects/client/cmake-build-debug/CMakeFiles/runMain.dir/src/GameLogic1.cpp.o"
+  "/home/yair/CLionProjects/client/src/GameOnline.cpp" "/home/yair/CLionProjects/client/cmake-build-debug/CMakeFiles/runMain.dir/src/GameOnline.cpp.o"
+  "/home/yair/CLionProjects/client/src/GameStandard.cpp" "/home/yair/CLionProjects/client/cmake-build-debug/CMakeFiles/runMain.dir/src/GameStandard.cpp.o"
+  "/home/yair/CLionProjects/client/src/Player.cpp" "/home/yair/CLionProjects/client/cmake-build-debug/CMakeFiles/runMain.dir/src/Player.cpp.o"
+  "/home/yair/CLionProjects/client/src/Point.cpp" "/home/yair/CLionProjects/client/cmake-build-debug/CMakeFiles/runMain.dir/src/Point.cpp.o"
+  "/home/yair/CLionProjects/client/src/main.cpp" "/home/yair/CLionProjects/client/cmake-build-debug/CMakeFiles/runMain.dir/src/main.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 

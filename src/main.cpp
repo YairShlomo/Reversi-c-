@@ -5,6 +5,8 @@ Name:Gal Eini
 ID: 305216962
 */
 
+#include <fstream>
+#include <cstring>
 #include "../include/Board.h"
 #include "../include/Game.h"
 #include "../include/ConsolePlayer.h"
@@ -17,10 +19,26 @@ ID: 305216962
 #define NUMCOL 3
 
 int opponentChoice();
+string getlineInput(string line);
 int main() {
-    Board board(NUMROW,NUMCOL);
-    GameLogic1* logic = new GameLogic1(board);
-    do {
+    Board board(NUMROW, NUMCOL);
+    GameLogic1 *logic = new GameLogic1(board);
+    string line,Numb,port,ipAdress;
+    int portNumb;
+    ifstream myfile("../serverInfo.txt");
+    int i = 0;
+    if (myfile.is_open()) {
+        getline(myfile, line);
+        port = getlineInput(line);
+        portNumb =atoi(port.c_str());
+        getline(myfile, line);
+        ipAdress = getlineInput(line);
+    } else {
+        cout << "Unable to open file";
+
+        return 0;
+    }
+        do {
         int userChoice = opponentChoice();
         if (userChoice == 1) {
             ConsolePlayer pl1=ConsolePlayer('X');
@@ -37,8 +55,8 @@ int main() {
             delete (logic);
             return 0;
         } else if (userChoice == 3) {
-            Client pl1= Client('X',"127.0.0.1",5556);
-            //cout << "Welc";
+            const char* f=ipAdress.c_str();
+            Client pl1= Client('X',f,portNumb);
             ConsolePlayer pl2=ConsolePlayer(logic->oppositeSign(pl1.getSign()));
             GameOnline game(pl1, pl2, board, logic);
             game.play();
@@ -61,10 +79,18 @@ int opponentChoice() {
     cin >> userChoice;
     if (userChoice == 1) {
         return 1;
-    } if (userChoice == 2) {
+    }
+    if (userChoice == 2) {
         return 2;
-    } if (userChoice == 3) {
+    }
+    if (userChoice == 3) {
         return 3;
     }
     return -1;
+}
+string getlineInput(string line){
+    cout << line << '\n';
+    string delimiter = ":";
+    string token = line.substr(line.find(delimiter) + 1, line.find("\n"));
+    return token;
 }
