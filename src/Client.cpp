@@ -119,8 +119,6 @@ Point* Client::yourPlay(vector<Point> vec) {
         cout << "Error writing to socket" << endl;
         return NULL;
     }
-    cout << sendPoint[0] << endl;
-    cout << sendPoint[1] << endl;
     return newPoint;
 }
 
