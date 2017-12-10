@@ -38,10 +38,10 @@ int main() {
 
         return 0;
     }
-        do {
+    do {
         int userChoice = opponentChoice();
         if (userChoice == 1) {
-            ConsolePlayer pl1=ConsolePlayer('X');
+            ConsolePlayer pl1 = ConsolePlayer('X');
             ConsolePlayer pl2('O');
             GameStandard game(pl1, pl2, board, logic);
             game.play();
@@ -89,8 +89,7 @@ int opponentChoice() {
     return -1;
 }
 string getlineInput(string line){
-    cout << line << '\n';
-    string delimiter = ":";
+   string delimiter = ":";
     string token = line.substr(line.find(delimiter) + 1, line.find("\n"));
     return token;
 }

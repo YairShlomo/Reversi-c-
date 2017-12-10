@@ -1,12 +1,11 @@
-#ifndef UNTITLED_GAMEONLINE_H
-#define UNTITLED_GAMEONLINE_H
 /*
 Name:Yair Shlomo
 ID: 308536150
 Name:Gal Eini
 ID: 305216962
 */
-
+#ifndef UNTITLED_GAMEONLINE_H
+#define UNTITLED_GAMEONLINE_H
 
 using namespace std;
 #include<stdio.h>
@@ -17,10 +16,8 @@ using namespace std;
 #include "GameLogic1.h"
 #include "Game.h"
 #include "Client.h"
-
-
 /**
-* Game is managing steps of the game
+* GameOnline is managing game in online mode.
 */
 class GameOnline :public Game {
 private:

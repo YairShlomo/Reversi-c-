@@ -157,8 +157,6 @@ stdio.h
 /home/yair/CLionProjects/client/src/Client.cpp
 iostream
 -
-stdio.h
--
 sys/socket.h
 -
 netinet/in.h
@@ -171,10 +169,6 @@ unistd.h
 -
 ../include/Client.h
 /home/yair/CLionProjects/client/include/Client.h
-../include/Player.h
-/home/yair/CLionProjects/client/include/Player.h
-../include/ConsolePlayer.h
-/home/yair/CLionProjects/client/include/ConsolePlayer.h
 
 /home/yair/CLionProjects/client/src/ConsolePlayer.cpp
 ../include/ConsolePlayer.h
@@ -201,16 +195,10 @@ iostream
 /home/yair/CLionProjects/client/include/GameLogic1.h
 
 /home/yair/CLionProjects/client/src/GameOnline.cpp
-unistd.h
--
 cstring
 -
 ../include/GameOnline.h
 /home/yair/CLionProjects/client/include/GameOnline.h
-../include/Game.h
-/home/yair/CLionProjects/client/include/Game.h
-../include/Client.h
-/home/yair/CLionProjects/client/include/Client.h
 
 /home/yair/CLionProjects/client/src/GameStandard.cpp
 ../include/GameStandard.h

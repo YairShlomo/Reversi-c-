@@ -14,7 +14,6 @@ CMakeFiles/runMain.dir/src/Board.cpp.o: ../src/Board.cpp
 
 CMakeFiles/runMain.dir/src/Client.cpp.o: ../include/Board.h
 CMakeFiles/runMain.dir/src/Client.cpp.o: ../include/Client.h
-CMakeFiles/runMain.dir/src/Client.cpp.o: ../include/ConsolePlayer.h
 CMakeFiles/runMain.dir/src/Client.cpp.o: ../include/GameLogic.h
 CMakeFiles/runMain.dir/src/Client.cpp.o: ../include/GameLogic1.h
 CMakeFiles/runMain.dir/src/Client.cpp.o: ../include/Player.h

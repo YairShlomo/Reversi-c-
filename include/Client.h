@@ -1,5 +1,9 @@
-
-
+/*
+Name:Yair Shlomo
+ID: 308536150
+Name:Gal Eini
+ID: 305216962
+*/
 #ifndef CLIENT_H
 #define CLIENT_H
 #include "Player.h"
@@ -11,8 +15,7 @@ public:
     Client(char sign ,const char *serverIP, int serverPort);
     void moveTurn();
     void sendMessage(char* message);
-
-        void connectToServer();
+    void connectToServer();
     /**
 * yourPlay is a abstract. returns a point play fom user.
 */
@@ -22,7 +25,6 @@ public:
 */
     bool checkNextTurn(GameLogic* logic);
     char* getMessage();
-    void sendMessage();
     void endGame();
     //char getSign();
 

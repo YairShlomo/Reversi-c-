@@ -1,16 +1,11 @@
-
-
-#ifndef GAMESTANDARD_H
-#define GAMESTANDARD_H
-
 /*
 Name:Yair Shlomo
 ID: 308536150
 Name:Gal Eini
 ID: 305216962
 */
-
-
+#ifndef GAMESTANDARD_H
+#define GAMESTANDARD_H
 using namespace std;
 #include<stdio.h>
 #include<string>
@@ -22,7 +17,7 @@ using namespace std;
 
 
 /**
-* Game is managing steps of the game
+* GameStandard is managing steps of regular game
 */
 class GameStandard :public Game {
 private:

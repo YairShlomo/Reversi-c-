@@ -58,7 +58,6 @@ void Game::oppositeTurn() {
 }
 
 int Game::score(char sign) {
-    board.printBoard();
     int counter = 0;
     for (int i = 0; i < board.getSizeX(); ++i) {
         for (int j = 0; j < board.getSizeY(); ++j) {
