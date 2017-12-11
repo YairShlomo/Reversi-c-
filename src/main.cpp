@@ -55,14 +55,21 @@ int main() {
             delete (logic);
             return 0;
         } else if (userChoice == 3) {
-            const char* f=ipAdress.c_str();
-            Client pl1= Client('X',f,portNumb);
-            ConsolePlayer pl2=ConsolePlayer(logic->oppositeSign(pl1.getSign()));
-            GameOnline game(pl1, pl2, board, logic);
-            game.play();
-            delete (logic);
-            return 0;
+            const char *f = ipAdress.c_str();
+            try {
+                Client pl1 = Client('X', f, portNumb);
+                ConsolePlayer pl2=ConsolePlayer(logic->oppositeSign(pl1.getSign()));
+                GameOnline game(pl1, pl2, board, logic);
+                game.play();
+                delete (logic);
+                return 0;
+            } catch (const char *msg) {
+                cout << "Failed to connect to server. Reason: " << msg << endl;
+                exit(-1);
+            }
         }
+
+
     } while (opponentChoice()==-1);
 }
 /**

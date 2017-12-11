@@ -26,8 +26,7 @@ public:
     bool checkNextTurn(GameLogic* logic);
     char* getMessage();
     void endGame();
-    //char getSign();
-
+    void closeMe();
 
         private:
     const char *serverIP;

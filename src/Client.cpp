@@ -65,14 +65,21 @@ char* Client::getMessage() {
     int sendSize = read(clientSocket,&buffer, sizeof(buffer));
     return buffer;
 }
-
+void Client::closeMe() {
+    char finish[7];
+    finish[0]=getSign();
+    int finishSize= sizeof(finishSize);
+    int sendMessage = write(clientSocket,&finish,finishSize);
+    if (sendMessage == -1) {
+        throw "Error writing to socket";
+    }
+}
 void Client::endGame() {
 char finish[7] ="END";
     int finishSize= sizeof(finishSize);
     int sendMessage = write(clientSocket,&finish,finishSize);
     if (sendMessage == -1) {
-        cout << "Error writing to socket" << endl;
-        return;
+        throw "Error writing to socket";
     }
 }
 void Client::moveTurn() {
@@ -80,8 +87,7 @@ void Client::moveTurn() {
     int finishSize= sizeof(finish);
     int sendMessage = write(clientSocket,&finish,finishSize);
     if (sendMessage == -1) {
-        cout << "Error writing to socket" << endl;
-        return;
+        throw "Error writing to socket";
     }
 }
 Point* Client::yourPlay(vector<Point> vec) {
@@ -100,15 +106,13 @@ Point* Client::yourPlay(vector<Point> vec) {
     if (cin.fail()) {
         cin.clear();
         cin.ignore(10000,'\n');
-        cout << "not an integer input" << endl;
-        return NULL;
+        throw "not an integer input";
     }
     cin >> userY;
     if (cin.fail()) {
         cin.clear();
         cin.ignore(10000,'\n');
-        cout << "not an integer input" << endl;
-        return NULL;
+        throw "not an integer input";
     }
     Point* newPoint=new Point(userX, userY);
     char sendPoint[7];
@@ -116,8 +120,7 @@ Point* Client::yourPlay(vector<Point> vec) {
     sendPoint[1]=userY +'0';
     int sendMessage = write(clientSocket,&sendPoint, sizeof(sendPoint));
     if (sendMessage == -1) {
-        cout << "Error writing to socket" << endl;
-        return NULL;
+        throw "Error writing to socket";
     }
     return newPoint;
 }

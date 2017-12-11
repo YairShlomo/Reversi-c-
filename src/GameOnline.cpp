@@ -32,7 +32,9 @@ void GameOnline::play() {
                         break;
                     }
                     oppositeTurn();
-
+                } else if (strcmp(message, "ENDC") == 0) {
+                    pl1.closeMe();
+                    throw "Other client disconnected. Game ended";
                 } else if (strcmp(message, "END") == 0) {
                     printWinner();
                     return;
