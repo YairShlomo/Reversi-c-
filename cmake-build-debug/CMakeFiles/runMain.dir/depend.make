@@ -20,6 +20,9 @@ CMakeFiles/runMain.dir/src/Client.cpp.o: ../include/Player.h
 CMakeFiles/runMain.dir/src/Client.cpp.o: ../include/Point.h
 CMakeFiles/runMain.dir/src/Client.cpp.o: ../src/Client.cpp
 
+CMakeFiles/runMain.dir/src/Command.cpp.o: ../include/Command.h
+CMakeFiles/runMain.dir/src/Command.cpp.o: ../src/Command.cpp
+
 CMakeFiles/runMain.dir/src/ConsolePlayer.cpp.o: ../include/Board.h
 CMakeFiles/runMain.dir/src/ConsolePlayer.cpp.o: ../include/ConsolePlayer.h
 CMakeFiles/runMain.dir/src/ConsolePlayer.cpp.o: ../include/GameLogic.h

@@ -36,6 +36,12 @@ stdio.h
 string
 -
 
+/home/yair/CLionProjects/client/include/Command.h
+vector
+-
+string
+-
+
 /home/yair/CLionProjects/client/include/ConsolePlayer.h
 stdio.h
 -
@@ -169,6 +175,12 @@ unistd.h
 -
 ../include/Client.h
 /home/yair/CLionProjects/client/include/Client.h
+
+/home/yair/CLionProjects/client/src/Command.cpp
+../include/Command.h
+/home/yair/CLionProjects/client/include/Command.h
+iostream
+-
 
 /home/yair/CLionProjects/client/src/ConsolePlayer.cpp
 ../include/ConsolePlayer.h

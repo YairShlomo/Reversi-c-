@@ -415,6 +415,12 @@
 		<Unit filename="/home/yair/CLionProjects/client/Tests/test_Point.h">
 			<Option target="runUnitTests"/>
 		</Unit>
+		<Unit filename="/home/yair/CLionProjects/client/include/Command.h">
+			<Option target="runUnitTests"/>
+		</Unit>
+		<Unit filename="/home/yair/CLionProjects/client/include/CommandsManager.h">
+			<Option target="runUnitTests"/>
+		</Unit>
 		<Unit filename="/home/yair/CLionProjects/client/lib/googletest-master/googlemock/src/gmock-all.cc">
 			<Option target="gmock_main"/>
 			<Option target="gmock"/>
@@ -440,6 +446,9 @@
 		</Unit>
 		<Unit filename="/home/yair/CLionProjects/client/src/Client.cpp">
 			<Option target="runUnitTests"/>
+			<Option target="runMain"/>
+		</Unit>
+		<Unit filename="/home/yair/CLionProjects/client/src/CommandsManager.cpp">
 			<Option target="runMain"/>
 		</Unit>
 		<Unit filename="/home/yair/CLionProjects/client/src/ConsolePlayer.cpp">
@@ -472,6 +481,9 @@
 		</Unit>
 		<Unit filename="/home/yair/CLionProjects/client/src/Point.cpp">
 			<Option target="runUnitTests"/>
+			<Option target="runMain"/>
+		</Unit>
+		<Unit filename="/home/yair/CLionProjects/client/src/StartCommand.cpp">
 			<Option target="runMain"/>
 		</Unit>
 		<Unit filename="/home/yair/CLionProjects/client/src/main.cpp">

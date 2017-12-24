@@ -486,6 +486,33 @@ src/Client.cpp.s:
 	$(MAKE) -f CMakeFiles/runMain.dir/build.make CMakeFiles/runMain.dir/src/Client.cpp.s
 .PHONY : src/Client.cpp.s
 
+src/CommandsManager.o: src/CommandsManager.cpp.o
+
+.PHONY : src/CommandsManager.o
+
+# target to build an object file
+src/CommandsManager.cpp.o:
+	$(MAKE) -f CMakeFiles/runMain.dir/build.make CMakeFiles/runMain.dir/src/CommandsManager.cpp.o
+.PHONY : src/CommandsManager.cpp.o
+
+src/CommandsManager.i: src/CommandsManager.cpp.i
+
+.PHONY : src/CommandsManager.i
+
+# target to preprocess a source file
+src/CommandsManager.cpp.i:
+	$(MAKE) -f CMakeFiles/runMain.dir/build.make CMakeFiles/runMain.dir/src/CommandsManager.cpp.i
+.PHONY : src/CommandsManager.cpp.i
+
+src/CommandsManager.s: src/CommandsManager.cpp.s
+
+.PHONY : src/CommandsManager.s
+
+# target to generate assembly for a file
+src/CommandsManager.cpp.s:
+	$(MAKE) -f CMakeFiles/runMain.dir/build.make CMakeFiles/runMain.dir/src/CommandsManager.cpp.s
+.PHONY : src/CommandsManager.cpp.s
+
 src/ConsolePlayer.o: src/ConsolePlayer.cpp.o
 
 .PHONY : src/ConsolePlayer.o
@@ -726,6 +753,33 @@ src/Point.cpp.s:
 	$(MAKE) -f CMakeFiles/runMain.dir/build.make CMakeFiles/runMain.dir/src/Point.cpp.s
 .PHONY : src/Point.cpp.s
 
+src/StartCommand.o: src/StartCommand.cpp.o
+
+.PHONY : src/StartCommand.o
+
+# target to build an object file
+src/StartCommand.cpp.o:
+	$(MAKE) -f CMakeFiles/runMain.dir/build.make CMakeFiles/runMain.dir/src/StartCommand.cpp.o
+.PHONY : src/StartCommand.cpp.o
+
+src/StartCommand.i: src/StartCommand.cpp.i
+
+.PHONY : src/StartCommand.i
+
+# target to preprocess a source file
+src/StartCommand.cpp.i:
+	$(MAKE) -f CMakeFiles/runMain.dir/build.make CMakeFiles/runMain.dir/src/StartCommand.cpp.i
+.PHONY : src/StartCommand.cpp.i
+
+src/StartCommand.s: src/StartCommand.cpp.s
+
+.PHONY : src/StartCommand.s
+
+# target to generate assembly for a file
+src/StartCommand.cpp.s:
+	$(MAKE) -f CMakeFiles/runMain.dir/build.make CMakeFiles/runMain.dir/src/StartCommand.cpp.s
+.PHONY : src/StartCommand.cpp.s
+
 src/main.o: src/main.cpp.o
 
 .PHONY : src/main.o
@@ -798,6 +852,9 @@ help:
 	@echo "... src/Client.o"
 	@echo "... src/Client.i"
 	@echo "... src/Client.s"
+	@echo "... src/CommandsManager.o"
+	@echo "... src/CommandsManager.i"
+	@echo "... src/CommandsManager.s"
 	@echo "... src/ConsolePlayer.o"
 	@echo "... src/ConsolePlayer.i"
 	@echo "... src/ConsolePlayer.s"
@@ -822,6 +879,9 @@ help:
 	@echo "... src/Point.o"
 	@echo "... src/Point.i"
 	@echo "... src/Point.s"
+	@echo "... src/StartCommand.o"
+	@echo "... src/StartCommand.i"
+	@echo "... src/StartCommand.s"
 	@echo "... src/main.o"
 	@echo "... src/main.i"
 	@echo "... src/main.s"

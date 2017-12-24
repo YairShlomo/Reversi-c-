@@ -11,6 +11,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/runMain.dir/src/Game.cpp.o"
   "CMakeFiles/runMain.dir/src/Client.cpp.o"
   "CMakeFiles/runMain.dir/src/GameOnline.cpp.o"
+  "CMakeFiles/runMain.dir/src/CommandsManager.cpp.o"
+  "CMakeFiles/runMain.dir/src/StartCommand.cpp.o"
   "runMain.pdb"
   "runMain"
 )
