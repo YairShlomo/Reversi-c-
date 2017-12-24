@@ -345,54 +345,6 @@ CMakeFiles/runMain.dir/src/GameOnline.cpp.o.provides: CMakeFiles/runMain.dir/src
 CMakeFiles/runMain.dir/src/GameOnline.cpp.o.provides.build: CMakeFiles/runMain.dir/src/GameOnline.cpp.o
 
 
-CMakeFiles/runMain.dir/src/CommandsManager.cpp.o: CMakeFiles/runMain.dir/flags.make
-CMakeFiles/runMain.dir/src/CommandsManager.cpp.o: ../src/CommandsManager.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/yair/CLionProjects/client/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object CMakeFiles/runMain.dir/src/CommandsManager.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/runMain.dir/src/CommandsManager.cpp.o -c /home/yair/CLionProjects/client/src/CommandsManager.cpp
-
-CMakeFiles/runMain.dir/src/CommandsManager.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/runMain.dir/src/CommandsManager.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/yair/CLionProjects/client/src/CommandsManager.cpp > CMakeFiles/runMain.dir/src/CommandsManager.cpp.i
-
-CMakeFiles/runMain.dir/src/CommandsManager.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/runMain.dir/src/CommandsManager.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/yair/CLionProjects/client/src/CommandsManager.cpp -o CMakeFiles/runMain.dir/src/CommandsManager.cpp.s
-
-CMakeFiles/runMain.dir/src/CommandsManager.cpp.o.requires:
-
-.PHONY : CMakeFiles/runMain.dir/src/CommandsManager.cpp.o.requires
-
-CMakeFiles/runMain.dir/src/CommandsManager.cpp.o.provides: CMakeFiles/runMain.dir/src/CommandsManager.cpp.o.requires
-	$(MAKE) -f CMakeFiles/runMain.dir/build.make CMakeFiles/runMain.dir/src/CommandsManager.cpp.o.provides.build
-.PHONY : CMakeFiles/runMain.dir/src/CommandsManager.cpp.o.provides
-
-CMakeFiles/runMain.dir/src/CommandsManager.cpp.o.provides.build: CMakeFiles/runMain.dir/src/CommandsManager.cpp.o
-
-
-CMakeFiles/runMain.dir/src/StartCommand.cpp.o: CMakeFiles/runMain.dir/flags.make
-CMakeFiles/runMain.dir/src/StartCommand.cpp.o: ../src/StartCommand.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/yair/CLionProjects/client/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building CXX object CMakeFiles/runMain.dir/src/StartCommand.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/runMain.dir/src/StartCommand.cpp.o -c /home/yair/CLionProjects/client/src/StartCommand.cpp
-
-CMakeFiles/runMain.dir/src/StartCommand.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/runMain.dir/src/StartCommand.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/yair/CLionProjects/client/src/StartCommand.cpp > CMakeFiles/runMain.dir/src/StartCommand.cpp.i
-
-CMakeFiles/runMain.dir/src/StartCommand.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/runMain.dir/src/StartCommand.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/yair/CLionProjects/client/src/StartCommand.cpp -o CMakeFiles/runMain.dir/src/StartCommand.cpp.s
-
-CMakeFiles/runMain.dir/src/StartCommand.cpp.o.requires:
-
-.PHONY : CMakeFiles/runMain.dir/src/StartCommand.cpp.o.requires
-
-CMakeFiles/runMain.dir/src/StartCommand.cpp.o.provides: CMakeFiles/runMain.dir/src/StartCommand.cpp.o.requires
-	$(MAKE) -f CMakeFiles/runMain.dir/build.make CMakeFiles/runMain.dir/src/StartCommand.cpp.o.provides.build
-.PHONY : CMakeFiles/runMain.dir/src/StartCommand.cpp.o.provides
-
-CMakeFiles/runMain.dir/src/StartCommand.cpp.o.provides.build: CMakeFiles/runMain.dir/src/StartCommand.cpp.o
-
-
 # Object files for target runMain
 runMain_OBJECTS = \
 "CMakeFiles/runMain.dir/src/main.cpp.o" \
@@ -406,9 +358,7 @@ runMain_OBJECTS = \
 "CMakeFiles/runMain.dir/src/GameStandard.cpp.o" \
 "CMakeFiles/runMain.dir/src/Game.cpp.o" \
 "CMakeFiles/runMain.dir/src/Client.cpp.o" \
-"CMakeFiles/runMain.dir/src/GameOnline.cpp.o" \
-"CMakeFiles/runMain.dir/src/CommandsManager.cpp.o" \
-"CMakeFiles/runMain.dir/src/StartCommand.cpp.o"
+"CMakeFiles/runMain.dir/src/GameOnline.cpp.o"
 
 # External object files for target runMain
 runMain_EXTERNAL_OBJECTS =
@@ -425,11 +375,9 @@ runMain: CMakeFiles/runMain.dir/src/GameStandard.cpp.o
 runMain: CMakeFiles/runMain.dir/src/Game.cpp.o
 runMain: CMakeFiles/runMain.dir/src/Client.cpp.o
 runMain: CMakeFiles/runMain.dir/src/GameOnline.cpp.o
-runMain: CMakeFiles/runMain.dir/src/CommandsManager.cpp.o
-runMain: CMakeFiles/runMain.dir/src/StartCommand.cpp.o
 runMain: CMakeFiles/runMain.dir/build.make
 runMain: CMakeFiles/runMain.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/yair/CLionProjects/client/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Linking CXX executable runMain"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/yair/CLionProjects/client/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Linking CXX executable runMain"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/runMain.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -449,8 +397,6 @@ CMakeFiles/runMain.dir/requires: CMakeFiles/runMain.dir/src/GameStandard.cpp.o.r
 CMakeFiles/runMain.dir/requires: CMakeFiles/runMain.dir/src/Game.cpp.o.requires
 CMakeFiles/runMain.dir/requires: CMakeFiles/runMain.dir/src/Client.cpp.o.requires
 CMakeFiles/runMain.dir/requires: CMakeFiles/runMain.dir/src/GameOnline.cpp.o.requires
-CMakeFiles/runMain.dir/requires: CMakeFiles/runMain.dir/src/CommandsManager.cpp.o.requires
-CMakeFiles/runMain.dir/requires: CMakeFiles/runMain.dir/src/StartCommand.cpp.o.requires
 
 .PHONY : CMakeFiles/runMain.dir/requires
 
