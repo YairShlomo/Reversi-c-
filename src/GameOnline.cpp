@@ -22,6 +22,7 @@ void GameOnline::play() {
     cout << "current board:" << endl;
     board.printBoard();
         while ((score(pl1.getSign()) + score(pl2.getSign()) < board.getSizeY() * board.getSizeX())) {
+            //pl1.getSendCommand();
             if (blackTurn) {
                 countMoveTurn += play1Turn(pl1);
             } else {

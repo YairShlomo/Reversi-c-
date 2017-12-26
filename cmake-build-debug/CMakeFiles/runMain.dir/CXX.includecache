@@ -169,6 +169,10 @@ unistd.h
 -
 ../include/Client.h
 /home/yair/CLionProjects/client/include/Client.h
+sstream
+-
+string
+-
 
 /home/yair/CLionProjects/client/src/ConsolePlayer.cpp
 ../include/ConsolePlayer.h

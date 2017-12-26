@@ -12,12 +12,16 @@ ID: 305216962
 #include <unistd.h>
 #include "../include/Client.h"
 
+#include <sstream>
+#include <string>
+
+
+
 
 using namespace std;
 Client::Client(char sign,const char *serverIP, int serverPort):
         Player(sign),serverIP(serverIP), serverPort(serverPort), clientSocket(0) {
     connectToServer();
-
 }
 
 void Client::connectToServer() {
@@ -42,6 +46,13 @@ void Client::connectToServer() {
         throw "Error accepting client";
     }
     if (buffer[0] == '1') {
+        string myCommand;
+        cin>>myCommand;
+        int myCommandSize= sizeof(myCommand);
+        int sendMessage = write(clientSocket,&myCommand,myCommandSize);
+        if (sendMessage == -1) {
+            throw "Error writing to socket";
+        }
         cout << "connected to server" << endl;
         cout << "Waiting for another client connections..." << endl;
         read_bytes = recv(clientSocket, buffer, expected_data_len, 0);
@@ -59,7 +70,25 @@ void Client::connectToServer() {
         sign = 'O';
 }
 
+int Client::isValidCommand(string myCommand) {
+    stringstream ss(myCommand);
+    string command;
+    ss >> command;
+    const char *cstr = command.c_str();
+    if ((!strcmp(cstr,"play")!=0)&(!strcmp(cstr,"close")!=0)) {
+        cout << "wrong command.only 'play','close' commands available ";
+        return 1;
+    }
+    return 0;
+}
 
+void Client::sendCommand(string myCommand) {
+    int myCommandSize= sizeof(myCommand);
+    int sendMessage = write(clientSocket,&myCommand,myCommandSize);
+    if (sendMessage == -1) {
+        throw "Error writing to socket";
+    }
+}
 
 char* Client::getMessage() {
     int sendSize = read(clientSocket,&buffer, sizeof(buffer));
@@ -83,12 +112,35 @@ char finish[7] ="END";
     }
 }
 void Client::moveTurn() {
-    char finish[7] ="NOMOVE";
+    string finish ="play NOMOVE";
+    //char finish[7] ="play NOMOVE";
     int finishSize= sizeof(finish);
     int sendMessage = write(clientSocket,&finish,finishSize);
     if (sendMessage == -1) {
         throw "Error writing to socket";
     }
+}
+Point* Client::extractPoint(string myCommand) {
+    string buf;
+    stringstream ss(myCommand);
+    vector<string> tokens;
+    string command;
+    ss >> command;
+    const char *cstr = command.c_str();
+    if ((!strcmp(cstr,"play")!=0)&(!strcmp(cstr,"close")!=0)) {
+        throw "wrong command.only 'play','close' commands available ";
+    }
+
+    //tokens.push_back(command);
+
+    while (ss >> buf)
+        tokens.push_back(buf);
+    //tokens.erase(tokens.begin());
+    int x = atoi(tokens[0].c_str());
+    int y = atoi(tokens[1].c_str());
+
+    return new Point(x, y);
+
 }
 Point* Client::yourPlay(vector<Point> vec) {
     int userX, userY;
@@ -102,18 +154,29 @@ Point* Client::yourPlay(vector<Point> vec) {
     }
     cout << "" << endl;
     cout << "Please enter your move row ,col:(enter row,col separately)" << endl;
+    string myCommand;
+    cin>>myCommand;
+    if ((isValidCommand(myCommand))==1) {
+        return NULL;
+    }
+    Point* newPoint=extractPoint(myCommand);
+
+    sendCommand(myCommand);
+    /*
     cin >> userX;
     if (cin.fail()) {
         cin.clear();
         cin.ignore(10000,'\n');
         throw "not an integer input";
     }
+
     cin >> userY;
     if (cin.fail()) {
         cin.clear();
         cin.ignore(10000,'\n');
         throw "not an integer input";
     }
+
     Point* newPoint=new Point(userX, userY);
     char sendPoint[7];
     sendPoint[0]=userX +'0';
@@ -122,6 +185,8 @@ Point* Client::yourPlay(vector<Point> vec) {
     if (sendMessage == -1) {
         throw "Error writing to socket";
     }
+          */
+
     return newPoint;
 }
 
