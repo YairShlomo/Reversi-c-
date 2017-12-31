@@ -14,8 +14,7 @@ ID: 305216962
 
 #include <sstream>
 #include <string>
-
-
+#include <map>
 
 
 using namespace std;
@@ -42,32 +41,46 @@ void Client::connectToServer() {
     if (read_bytes == 0) {
         perror("connection is close");
     }
-    if (clientSocket == -1) {
+    if (read_bytes == -1) {
         throw "Error accepting client";
     }
     if (buffer[0] == '1') {
-        string myCommand;
-        cin>>myCommand;
-        int myCommandSize= sizeof(myCommand);
-        int sendMessage = write(clientSocket,&myCommand,myCommandSize);
-        if (sendMessage == -1) {
-            throw "Error writing to socket";
-        }
         cout << "connected to server" << endl;
-        cout << "Waiting for another client connections..." << endl;
-        read_bytes = recv(clientSocket, buffer, expected_data_len, 0);
-    }
-        if (read_bytes == 0) {
-            perror("connection is close");
-            return;
-        } else if (read_bytes < 0) {
-            perror("error");
-            return;
-        }
-    if (buffer[0] == '1')
-        sign = 'X';
-    else
-        sign = 'O';
+       //main cout << "connected to server" << endl;
+        do {
+            char myCommand[100];
+            char command[5] = {"list"};
+            //string myCommand;
+            cin >> buffer;
+            int myCommandSize = sizeof(myCommand);
+            int sendMessage = write(clientSocket, &myCommand, myCommandSize);
+            if (sendMessage == -1) {
+                throw "Error writing to socket";
+            }
+
+            //cout << "Waiting for another client connections..." << endl;
+            read_bytes = recv(clientSocket, buffer, expected_data_len, 0);
+
+            if (read_bytes == 0) {
+                perror("connection is close");
+                return;
+            } else if (read_bytes < 0) {
+                perror("error");
+                return;
+            }
+            if (buffer[0] == '1')
+                sign = 'X';
+            else if (buffer[0] == '1') {
+                sign = 'O';
+            } else if (strcmp(buffer, "list") != 0) {
+                cout << "Games avaliable to play are:\n";
+                do {
+                    read_bytes = recv(clientSocket, buffer, expected_data_len, 0);
+                    cout << buffer << "\n";
+                } while (strcmp(buffer, "0") != 0);
+            }
+        } while(strcmp(buffer,"list")==0);
+
 }
 
 int Client::isValidCommand(string myCommand) {
