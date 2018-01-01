@@ -35,7 +35,7 @@ void Client::connectToServer() {
     if (connect(clientSocket, (struct sockaddr *) &sin, sizeof(sin)) < 0) {
         perror("error connecting to server");
     }
-    char buffer[2];
+    char buffer[11];
     int expected_data_len = sizeof(buffer);
     int read_bytes = recv(clientSocket, buffer, expected_data_len, 0);
     if (read_bytes == 0) {
@@ -47,9 +47,11 @@ void Client::connectToServer() {
     if (buffer[0] == '1') {
         cout << "connected to server" << endl;
         //main cout << "connected to server" << endl;
-        char command[11] = {"list_games"};
+
+
         do {
             char myCommand[100];
+
             int myCommandSize = sizeof(myCommand);
             //string myCommand;
 //            gets(myCommand );
@@ -58,11 +60,12 @@ void Client::connectToServer() {
 
            // cout<< myCommand<< endl;
             int sendMessage = write(clientSocket, &myCommand, myCommandSize);
+            cout<< myCommand<< endl;
+
             if (sendMessage == -1) {
                 throw "Error writing to socket";
             }
 
-            //cout << "Waiting for another client connections..." << endl;
             read_bytes = recv(clientSocket, buffer, expected_data_len, 0);
 
             if (read_bytes == 0) {
@@ -72,14 +75,34 @@ void Client::connectToServer() {
                 perror("error");
                 return;
             }
+            /*
             if (buffer[0] == '1')
                 sign = 'X';
+                */
             else if (buffer[0] == '2') {
                 sign = 'O';
-            } else if (strcmp(command, "list_games") == 0) {
+            } else if (strcmp(buffer, "start") == 0) {
+                cout << "Waiting for another client connections..." << endl;
+                read_bytes = recv(clientSocket, buffer, expected_data_len, 0);
+                if (read_bytes == 0) {
+                    perror("connection is close");
+                    return;
+                } else if (read_bytes < 0) {
+                    perror("error");
+                    return;
+                } else if (strcmp(buffer, "bad name")==0) {
+                    continue;
+                } else if (buffer[0] == '1') {
+                    sign = 'X';
+                } else
+                    throw "error";
+            } else if (strcmp(buffer, "list_games") == 0) {
                 cout << "Games avaliable to play are:\n";
+                char bufferGames[50];
+
                 do {
-                    read_bytes = recv(clientSocket, buffer, expected_data_len, 0);
+                    read_bytes = recv(clientSocket, bufferGames, expected_data_len, 0);
+
                     if (read_bytes == 0) {
                         perror("connection is close");
                         return;
@@ -87,10 +110,12 @@ void Client::connectToServer() {
                         perror("error");
                         return;
                     }
-                    cout << buffer << "\n";
-                } while (buffer[0] != '0');
+                    if (bufferGames[0] != '0') {
+                        cout << bufferGames << "\n";
+                    }
+                } while (bufferGames[0] != '0');
             }
-        } while (strcmp(command, "list_games") == 0);
+        } while (strcmp(buffer, "list_games") == 0);
     }
 }
 
@@ -98,15 +123,20 @@ int Client::isValidCommand(string myCommand) {
     stringstream ss(myCommand);
     string command;
     ss >> command;
-    const char *cstr = command.c_str();
-    if ((!strcmp(cstr,"play")!=0)&(!strcmp(cstr,"close")!=0)) {
-        cout << "wrong command.only 'play','close' commands available ";
+    const char *firstWord = command.c_str();
+    if ((!strcmp(firstWord,"play")!=0)) {
         return 1;
     }
-    return 0;
+    if (!strcmp(firstWord,"close")!=0) {
+        return 2;
+
+    } else {
+        cout << "wrong command.only 'play','close' commands available ";
+        return 0;
+    }
 }
 
-void Client::sendCommand(string myCommand) {
+void Client::sendCommand(char* myCommand) {
     int myCommandSize= sizeof(myCommand);
     int sendMessage = write(clientSocket,&myCommand,myCommandSize);
     if (sendMessage == -1) {
@@ -150,10 +180,7 @@ Point* Client::extractPoint(string myCommand) {
     vector<string> tokens;
     string command;
     ss >> command;
-    const char *cstr = command.c_str();
-    if ((!strcmp(cstr,"play")!=0)&(!strcmp(cstr,"close")!=0)) {
-        throw "wrong command.only 'play','close' commands available ";
-    }
+
 
     //tokens.push_back(command);
 
@@ -178,42 +205,62 @@ Point* Client::yourPlay(vector<Point> vec) {
     }
     cout << "" << endl;
     cout << "Please enter your move row ,col:(enter row,col separately)" << endl;
-    string myCommand;
-    cin>>myCommand;
-    if ((isValidCommand(myCommand))==1) {
-        return NULL;
-    }
-    Point* newPoint=extractPoint(myCommand);
 
-    sendCommand(myCommand);
-    /*
-    cin >> userX;
-    if (cin.fail()) {
-        cin.clear();
-        cin.ignore(10000,'\n');
-        throw "not an integer input";
-    }
+    char myCommand[100];
+    int isValid;
+    do {
+        int myCommandSize = sizeof(myCommand);
 
-    cin >> userY;
-    if (cin.fail()) {
-        cin.clear();
-        cin.ignore(10000,'\n');
-        throw "not an integer input";
-    }
-
-    Point* newPoint=new Point(userX, userY);
-    char sendPoint[7];
-    sendPoint[0]=userX +'0';
-    sendPoint[1]=userY +'0';
-    int sendMessage = write(clientSocket,&sendPoint, sizeof(sendPoint));
+        fgetc(stdin);
+        fgets(myCommand, myCommandSize, stdin);
+        string myCommandString(myCommand);
+        isValid=(isValidCommand(myCommandString));
+        // string myCommand;
+        if (isValid== 2) {
+            //sendMessage(myCommand);
+            int myCommandSize= sizeof(myCommand);
+            int sendMessage = write(clientSocket,&myCommand,myCommandSize);
+            if (sendMessage == -1) {
+                throw "Error writing to socket";
+            }
+            return NULL;
+        }
+    }while(isValid==0);
+    string myCommandString(myCommand);
+    Point* newPoint = extractPoint(myCommandString);
+   // sendCommand(myCommand);
+    int myCommandSize= sizeof(myCommand);
+    int sendMessage = write(clientSocket,&myCommand,myCommandSize);
     if (sendMessage == -1) {
         throw "Error writing to socket";
     }
-          */
+        /*
+        cin >> userX;
+        if (cin.fail()) {
+            cin.clear();
+            cin.ignore(10000,'\n');
+            throw "not an integer input";
+        }
 
-    return newPoint;
+        cin >> userY;
+        if (cin.fail()) {
+            cin.clear();
+            cin.ignore(10000,'\n');
+            throw "not an integer input";
+        }
+
+        Point* newPoint=new Point(userX, userY);
+        char sendPoint[7];
+        sendPoint[0]=userX +'0';
+        sendPoint[1]=userY +'0';
+        int sendMessage = write(clientSocket,&sendPoint, sizeof(sendPoint));
+        if (sendMessage == -1) {
+            throw "Error writing to socket";
+        }
+              */
+
+        return newPoint;
 }
-
 bool Client::checkNextTurn(GameLogic* logic) {
     if (logic->optionalTurns((getSign())).empty()) {
         cout << "No possible moves. play passes back to other player" << endl;

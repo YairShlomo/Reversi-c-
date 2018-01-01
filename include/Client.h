@@ -28,10 +28,10 @@ public:
     char* getMessage();
     void endGame();
     void closeMe();
-    void sendCommand(string myCommand);
+    void sendCommand(char* myCommand);
     Point* extractPoint(string command);
     int isValidCommand(string myCommand);
-        private:
+private:
     const char *serverIP;
     int serverPort;
     int clientSocket;

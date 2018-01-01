@@ -64,12 +64,10 @@ int GameOnline::play1Turn(Player &pl) {
     countMoveTurn=0;
     vector<Point> optionalMoves=logic->optionalTurns(pl.getSign());
     Point* userPlay=pl.yourPlay(optionalMoves);
-    if(userPlay==NULL){
+    if(userPlay==NULL) {
         delete(userPlay);
-
         return 0;
     }
-
     if(!logic->checkValidPoint(userPlay,pl.getSign())) {
         delete(userPlay);
         return 0;
