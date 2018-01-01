@@ -9,7 +9,8 @@ ID: 305216962
 #include "Player.h"
 #include<stdio.h>
 #include<string>
-
+#include<cstdio>
+#include<iostream>
 class Client :public Player {
 public:
     Client(char sign ,const char *serverIP, int serverPort);

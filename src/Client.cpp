@@ -4,7 +4,6 @@ ID: 308536150
 Name:Gal Eini
 ID: 305216962
 */
-#include <iostream>
 #include <sys/socket.h>
 #include <netinet/in.h>
 #include <string.h>
@@ -24,6 +23,7 @@ Client::Client(char sign,const char *serverIP, int serverPort):
 }
 
 void Client::connectToServer() {
+
     clientSocket = socket(AF_INET, SOCK_STREAM, 0);
     if (clientSocket < 0)
         perror("error creating socket");
@@ -46,13 +46,17 @@ void Client::connectToServer() {
     }
     if (buffer[0] == '1') {
         cout << "connected to server" << endl;
-       //main cout << "connected to server" << endl;
+        //main cout << "connected to server" << endl;
+        char command[11] = {"list_games"};
         do {
             char myCommand[100];
-            char command[5] = {"list"};
-            //string myCommand;
-            cin >> buffer;
             int myCommandSize = sizeof(myCommand);
+            //string myCommand;
+//            gets(myCommand );
+            fgetc(stdin);
+            fgets(myCommand,myCommandSize,stdin);
+
+           // cout<< myCommand<< endl;
             int sendMessage = write(clientSocket, &myCommand, myCommandSize);
             if (sendMessage == -1) {
                 throw "Error writing to socket";
@@ -70,17 +74,24 @@ void Client::connectToServer() {
             }
             if (buffer[0] == '1')
                 sign = 'X';
-            else if (buffer[0] == '1') {
+            else if (buffer[0] == '2') {
                 sign = 'O';
-            } else if (strcmp(buffer, "list") != 0) {
+            } else if (strcmp(command, "list_games") == 0) {
                 cout << "Games avaliable to play are:\n";
                 do {
                     read_bytes = recv(clientSocket, buffer, expected_data_len, 0);
+                    if (read_bytes == 0) {
+                        perror("connection is close");
+                        return;
+                    } else if (read_bytes < 0) {
+                        perror("error");
+                        return;
+                    }
                     cout << buffer << "\n";
-                } while (strcmp(buffer, "0") != 0);
+                } while (buffer[0] != '0');
             }
-        } while(strcmp(buffer,"list")==0);
-
+        } while (strcmp(command, "list_games") == 0);
+    }
 }
 
 int Client::isValidCommand(string myCommand) {
