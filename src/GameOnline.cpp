@@ -30,18 +30,19 @@ void GameOnline::play() {
             } else {
                 cout << "waiting for other player's move..." << endl;
                 vector<string> tokens = pl1.getArgs();
-                if (tokens[0].compare("NOMOVE") == 0) {
+                if (tokens[0].compare("NOM") == 0) {
                     if(countMoveTurn==1) {
                         break;
                     }
                     oppositeTurn();
-                } else if (tokens[0].compare("ENDC") == 0) {
+                } else if (tokens[0].compare("ENC") == 0) {
                     pl1.closeMe();
                     throw "Other client disconnected. Game ended";
                 } else if (tokens[0].compare("END") == 0) {
                     printWinner();
                     return;
                 } else {
+                    string j=tokens[1];
                     int xInt = atoi(tokens[0].c_str());
                     int yInt = atoi(tokens[1].c_str());
 

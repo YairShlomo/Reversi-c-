@@ -78,7 +78,7 @@ void Client::connectToServer() {
             if (buffer[0] == '1')
                 sign = 'X';
                 */
-            else if (buffer[0] == '2') {
+            if (buffer[0] == '2') {
                 sign = 'O';
             } else if (strcmp(buffer, "start") == 0) {
                 cout << "Waiting for another client connections..." << endl;
@@ -158,7 +158,7 @@ void Client::closeMe() {
     }
 }
 void Client::endGame() {
-char finish[7] ="END";
+char finish[4] ="END";
     int finishSize= sizeof(finishSize);
     int sendMessage = write(clientSocket,&finish,finishSize);
     if (sendMessage == -1) {
@@ -166,7 +166,8 @@ char finish[7] ="END";
     }
 }
 void Client::moveTurn() {
-    string finish ="play NOMOVE";
+    char finish[10] ="play NOMO";
+
     //char finish[7] ="play NOMOVE";
     int finishSize= sizeof(finish);
     int sendMessage = write(clientSocket,&finish,finishSize);
@@ -268,12 +269,11 @@ bool Client::checkNextTurn(GameLogic* logic) {
     return true;
 }
 vector<string> Client::getArgs() {
-    char bufferArg[50];
+    char bufferArg[10];
     int expected_data_len = sizeof(bufferArg);
-
+    int read_bytes;
     vector<string> tokens;
-    do {
-        int read_bytes = recv(clientSocket, bufferArg, expected_data_len, 0);
+        read_bytes = recv(clientSocket, bufferArg, expected_data_len, 0);
 
         if (read_bytes == 0) {
             perror("connection is close");
@@ -282,9 +282,23 @@ vector<string> Client::getArgs() {
             perror("error");
             throw "error reading";
         }
-        if (strcmp(bufferArg,"S") !=0) {
-            tokens.push_back(bufferArg);
-        }
-    } while (strcmp(bufferArg,"NOMORE") !=0);
+    if ((strcmp(bufferArg,"NOM")==0)||(strcmp(bufferArg,"ENC")==0)||(strcmp(bufferArg,"END")==0)) {
+        string command(bufferArg);
+        tokens.push_back(command);
+        return tokens;
+    }
+    stringstream xSS;
+    string x;
+    char xC = bufferArg[0];
+    xSS << xC;
+    xSS >> x;
+    tokens.push_back(x);
+    stringstream ySS;
+    string y;
+    char yC = bufferArg[2];
+    ySS << yC;
+    ySS >> y;
+    tokens.push_back(y);
+    return tokens;
 
 }
