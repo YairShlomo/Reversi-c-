@@ -42,7 +42,7 @@ void GameOnline::play() {
                     printWinner();
                     return;
                 } else {
-                    string j=tokens[1];
+                   //3 string j=tokens[1];
                     int xInt = atoi(tokens[0].c_str());
                     int yInt = atoi(tokens[1].c_str());
 

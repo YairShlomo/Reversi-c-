@@ -131,7 +131,7 @@ int Client::isValidCommand(string myCommand) {
         return 2;
 
     } else {
-        cout << "wrong command.only 'play','close' commands available ";
+        cout << "wrong command.only 'play','close' commands available \n";
         return 0;
     }
 }
@@ -158,15 +158,16 @@ void Client::closeMe() {
     }
 }
 void Client::endGame() {
-char finish[4] ="END";
-    int finishSize= sizeof(finishSize);
+char finish[9] ="play END";
+    //int finishSize= sizeof(finishSize);
+    int finishSize= 9;
     int sendMessage = write(clientSocket,&finish,finishSize);
     if (sendMessage == -1) {
         throw "Error writing to socket";
     }
 }
 void Client::moveTurn() {
-    char finish[10] ="play NOMO";
+    char finish[10] ="play NOM";
 
     //char finish[7] ="play NOMOVE";
     int finishSize= sizeof(finish);
@@ -197,6 +198,7 @@ Point* Client::extractPoint(string myCommand) {
 Point* Client::yourPlay(vector<Point> vec) {
     int userX, userY;
     cout << getSign() << ": It's your move" << endl;
+
     cout << "Your possible moves: " << flush;
     for (unsigned i = 0; i < vec.size(); ++i) {
         vec[i].printPoint();
@@ -273,8 +275,9 @@ vector<string> Client::getArgs() {
     int expected_data_len = sizeof(bufferArg);
     int read_bytes;
     vector<string> tokens;
-        read_bytes = recv(clientSocket, bufferArg, expected_data_len, 0);
 
+        read_bytes = recv(clientSocket, bufferArg, expected_data_len, 0);
+        cout<<bufferArg<<endl;
         if (read_bytes == 0) {
             perror("connection is close");
             throw "client disconnected";
@@ -282,6 +285,27 @@ vector<string> Client::getArgs() {
             perror("error");
             throw "error reading";
         }
+/*
+    do {
+        int read_bytes = recv(clientSocket, bufferArg, expected_data_len, 0);
+        cout<<bufferArg<<endl;
+        if (read_bytes == 0) {
+            perror("connection is close");
+            throw "client disconnected";
+        } else if (read_bytes < 0) {
+            perror("error");
+            throw "error reading";
+        }
+            stringstream ss;
+            string s;
+            char c = bufferArg[0];
+            ss << c;
+            ss >> s;
+            tokens.push_back(s);
+    } while (bufferArg[2]!='S');
+    return tokens;
+*/
+
     if ((strcmp(bufferArg,"NOM")==0)||(strcmp(bufferArg,"ENC")==0)||(strcmp(bufferArg,"END")==0)) {
         string command(bufferArg);
         tokens.push_back(command);
@@ -295,10 +319,10 @@ vector<string> Client::getArgs() {
     tokens.push_back(x);
     stringstream ySS;
     string y;
-    char yC = bufferArg[2];
+    char yC = bufferArg[1];
     ySS << yC;
     ySS >> y;
     tokens.push_back(y);
-    return tokens;
 
+    return tokens;
 }
