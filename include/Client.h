@@ -31,6 +31,7 @@ public:
     void sendCommand(char* myCommand);
     Point* extractPoint(string command);
     int isValidCommand(string myCommand);
+    vector<string> getArgs();
 private:
     const char *serverIP;
     int serverPort;

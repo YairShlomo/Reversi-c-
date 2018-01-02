@@ -23,7 +23,7 @@ Client::Client(char sign,const char *serverIP, int serverPort):
 }
 
 void Client::connectToServer() {
-
+    fgetc(stdin);
     clientSocket = socket(AF_INET, SOCK_STREAM, 0);
     if (clientSocket < 0)
         perror("error creating socket");
@@ -55,7 +55,6 @@ void Client::connectToServer() {
             int myCommandSize = sizeof(myCommand);
             //string myCommand;
 //            gets(myCommand );
-            fgetc(stdin);
             fgets(myCommand,myCommandSize,stdin);
 
            // cout<< myCommand<< endl;
@@ -99,6 +98,7 @@ void Client::connectToServer() {
             } else if (strcmp(buffer, "list_games") == 0) {
                 cout << "Games avaliable to play are:\n";
                 char bufferGames[50];
+                int expected_data_len = sizeof(bufferGames+1);
 
                 do {
                     read_bytes = recv(clientSocket, bufferGames, expected_data_len, 0);
@@ -205,13 +205,11 @@ Point* Client::yourPlay(vector<Point> vec) {
     }
     cout << "" << endl;
     cout << "Please enter your move row ,col:(enter row,col separately)" << endl;
-
     char myCommand[100];
     int isValid;
     do {
         int myCommandSize = sizeof(myCommand);
-
-        fgetc(stdin);
+        //fgetc(stdin);
         fgets(myCommand, myCommandSize, stdin);
         string myCommandString(myCommand);
         isValid=(isValidCommand(myCommandString));
@@ -268,4 +266,25 @@ bool Client::checkNextTurn(GameLogic* logic) {
         return false;
     }
     return true;
+}
+vector<string> Client::getArgs() {
+    char bufferArg[50];
+    int expected_data_len = sizeof(bufferArg);
+
+    vector<string> tokens;
+    do {
+        int read_bytes = recv(clientSocket, bufferArg, expected_data_len, 0);
+
+        if (read_bytes == 0) {
+            perror("connection is close");
+            throw "client disconnected";
+        } else if (read_bytes < 0) {
+            perror("error");
+            throw "error reading";
+        }
+        if (strcmp(bufferArg,"S") !=0) {
+            tokens.push_back(bufferArg);
+        }
+    } while (strcmp(bufferArg,"NOMORE") !=0);
+
 }

@@ -21,30 +21,37 @@ void GameOnline::play() {
     }
     cout << "current board:" << endl;
     board.printBoard();
-        while ((score(pl1.getSign()) + score(pl2.getSign()) < board.getSizeY() * board.getSizeX())) {
+
+
+    while ((score(pl1.getSign()) + score(pl2.getSign()) < board.getSizeY() * board.getSizeX())) {
             //pl1.getSendCommand();
             if (blackTurn) {
-                countMoveTurn += play1Turn(pl1);
+              countMoveTurn += play1Turn(pl1);
             } else {
                 cout << "waiting for other player's move..." << endl;
-                char *message = pl1.getMessage();
-                if (strcmp(message, "NOMOVE") == 0) {
+                vector<string> tokens = pl1.getArgs();
+                if (tokens[0].compare("NOMOVE") == 0) {
                     if(countMoveTurn==1) {
                         break;
                     }
                     oppositeTurn();
-                } else if (strcmp(message, "ENDC") == 0) {
+                } else if (tokens[0].compare("ENDC") == 0) {
                     pl1.closeMe();
                     throw "Other client disconnected. Game ended";
-                } else if (strcmp(message, "END") == 0) {
+                } else if (tokens[0].compare("END") == 0) {
                     printWinner();
                     return;
                 } else {
-                    char x = message[0];
-                    char y = message[1];
+                    int xInt = atoi(tokens[0].c_str());
+                    int yInt = atoi(tokens[1].c_str());
+
+                    /*
+                    char x = tokens[0].c_str();
+                    char y = tokens[1];
                     int xint = x - '0';
                     int yint = y - '0';
-                    Point *nextMove = new Point(xint, yint);
+                     */
+                    Point *nextMove = new Point(xInt, yInt);
                     board.setSign(nextMove->getRowNum() - 1, nextMove->getColNum() - 1, pl2.getSign());
                     logic->checkFlipPieces(nextMove->getRowNum() - 1, nextMove->getColNum() - 1,
                                            pl2.oppositeSign(pl2.getSign()), true);
