@@ -45,17 +45,12 @@ void GameOnline::play() {
                    //3 string j=tokens[1];
                     int xInt = atoi(tokens[0].c_str());
                     int yInt = atoi(tokens[1].c_str());
-
-                    /*
-                    char x = tokens[0].c_str();
-                    char y = tokens[1];
-                    int xint = x - '0';
-                    int yint = y - '0';
-                     */
                     Point *nextMove = new Point(xInt, yInt);
                     board.setSign(nextMove->getRowNum() - 1, nextMove->getColNum() - 1, pl2.getSign());
                     logic->checkFlipPieces(nextMove->getRowNum() - 1, nextMove->getColNum() - 1,
                                            pl2.oppositeSign(pl2.getSign()), true);
+                    cout << "current board:" << endl;
+                    board.printBoard();
                     oppositeTurn();
                     delete (nextMove);
                 }
@@ -72,6 +67,7 @@ int GameOnline::play1Turn(Player &pl) {
     countMoveTurn=0;
     vector<Point> optionalMoves=logic->optionalTurns(pl.getSign());
     Point* userPlay=pl.yourPlay(optionalMoves);
+
     if(userPlay==NULL) {
         delete(userPlay);
         return 0;

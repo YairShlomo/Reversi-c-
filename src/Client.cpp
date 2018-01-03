@@ -48,7 +48,7 @@ void Client::connectToServer() {
         cout << "connected to server" << endl;
         //main cout << "connected to server" << endl;
 
-
+        menu();
         do {
             char myCommand[100];
 
@@ -80,6 +80,9 @@ void Client::connectToServer() {
                 */
             if (buffer[0] == '2') {
                 sign = 'O';
+            } else if (strcmp(buffer,"ENS")==0){
+                "Server closed. you disconnected";
+                return;
             } else if (strcmp(buffer, "start") == 0) {
                 cout << "Waiting for another client connections..." << endl;
                 read_bytes = recv(clientSocket, buffer, expected_data_len, 0);
@@ -118,7 +121,18 @@ void Client::connectToServer() {
         } while (strcmp(buffer, "list_games") == 0);
     }
 }
+void Client::menu(){
+    cout<<"Commands availavle are:"<<endl;
+    cout<<"press start x- for start new game name x"<<endl;
+    cout<<"press join x- for joining a game name x"<<endl;
+    cout<<"press list_games - to see all games avaliable to join to"<<endl;
 
+}
+void Client::menuGame(){
+    cout<<"Commands availavle are:"<<endl;
+    cout<<"press play x- for playing x move"<<endl;
+
+}
 int Client::isValidCommand(string myCommand) {
     stringstream ss(myCommand);
     string command;
@@ -127,7 +141,7 @@ int Client::isValidCommand(string myCommand) {
     if ((!strcmp(firstWord,"play")!=0)) {
         return 1;
     }
-    if (!strcmp(firstWord,"close")!=0) {
+    if (!strcmp(firstWord,"ENDS")!=0) {
         return 2;
 
     } else {
@@ -207,7 +221,9 @@ Point* Client::yourPlay(vector<Point> vec) {
         }
     }
     cout << "" << endl;
-    cout << "Please enter your move row ,col:(enter row,col separately)" << endl;
+    cout << "Please enter your move row ,col like this: play x y" << endl;
+    //void menu();
+
     char myCommand[100];
     int isValid;
     do {
@@ -306,7 +322,8 @@ vector<string> Client::getArgs() {
     return tokens;
 */
 
-    if ((strcmp(bufferArg,"NOM")==0)||(strcmp(bufferArg,"ENC")==0)||(strcmp(bufferArg,"END")==0)) {
+    if ((strcmp(bufferArg,"NOM")==0)||(strcmp(bufferArg,"ENC")==0)||
+            (strcmp(bufferArg,"END")==0)||(strcmp(bufferArg,"ENS")==0)) {
         string command(bufferArg);
         tokens.push_back(command);
         return tokens;

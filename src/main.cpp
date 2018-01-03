@@ -21,6 +21,7 @@ ID: 305216962
 int opponentChoice();
 string getlineInput(string line);
 int main() {
+    int userChoice =0;
     Board board(NUMROW, NUMCOL);
     GameLogic1 *logic = new GameLogic1(board);
     string line,Numb,port,ipAdress;
@@ -39,7 +40,7 @@ int main() {
         return 0;
     }
     do {
-        int userChoice = opponentChoice();
+        userChoice = opponentChoice();
         if (userChoice == 1) {
             ConsolePlayer pl1 = ConsolePlayer('X');
             ConsolePlayer pl2('O');
@@ -78,12 +79,16 @@ int main() {
    */
 int opponentChoice() {
     int userChoice;
+    //string userChoiceString;
     cout << "Welcome to Reversi!" << endl;
     cout << "Choose an opponent type:" << endl;
     cout << "1. a human local Player" << endl;
     cout << "2. an AI Player" << endl;
     cout << "3. remote Player" << endl;
-    cin >> userChoice;
+    cin >>userChoice;
+   // getline(cin ,userChoiceString);
+
+    //int userChoice=atoi(userChoiceString.c_str());
     if (userChoice == 1) {
         return 1;
     }

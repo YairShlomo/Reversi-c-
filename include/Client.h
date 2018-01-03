@@ -32,6 +32,9 @@ public:
     Point* extractPoint(string command);
     int isValidCommand(string myCommand);
     vector<string> getArgs();
+    void menu();
+    void menuGame();
+
 private:
     const char *serverIP;
     int serverPort;
