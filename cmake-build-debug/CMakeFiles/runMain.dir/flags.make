@@ -6,5 +6,5 @@ CXX_FLAGS = -g   -std=gnu++11
 
 CXX_DEFINES = 
 
-CXX_INCLUDES = -I/home/yair/CLionProjects/client/lib/googletest-master/googletest/include 
+CXX_INCLUDES = -I/home/gal/CLionProjects/Client/lib/googletest-master/googletest/include 
 

@@ -203,8 +203,10 @@ Point* Client::extractPoint(string myCommand) {
     while (ss >> buf)
         tokens.push_back(buf);
     //tokens.erase(tokens.begin());
-    int x = atoi(tokens[0].c_str());
-    int y = atoi(tokens[1].c_str());
+    int x;
+    x = atoi(tokens[0].c_str());
+    int y;
+    y = atoi(tokens[1].c_str());
 
     return new Point(x, y);
 
